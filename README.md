@@ -8,9 +8,9 @@ Elasticsearch Reference\(2.4\) 官方文档翻译
 
 # 译者
 
-项目地址：[https:\/\/github.com\/lihongzheshuai\/elasticsearch-reference-zh](https://github.com/lihongzheshuai/elasticsearch-reference-zh)
+项目地址：[https://github.com/lihongzheshuai/elasticsearch-reference-zh](https://github.com/lihongzheshuai/elasticsearch-reference-zh)
 
-个人博客：[http:\/\/www.coderli.com](http://www.coderli.com "http://www.coderli.com")
+个人博客：[http://www.coderli.com](http://www.coderli.com "http://www.coderli.com")
 
 Github主页：[https:\/\/github.com\/lihongzheshuai](https://github.com/lihongzheshuai)
 
