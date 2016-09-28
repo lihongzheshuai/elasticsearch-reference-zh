@@ -12,7 +12,7 @@ Elasticsearch Reference\(2.4\) 官方文档翻译
 
 个人博客：[http://www.coderli.com](http://www.coderli.com "http://www.coderli.com")
 
-Github主页：[https:\/\/github.com\/lihongzheshuai](https://github.com/lihongzheshuai)
+Github主页：[https://github.com/lihongzheshuai](https://github.com/lihongzheshuai)
 
 QQ：57959968
 
