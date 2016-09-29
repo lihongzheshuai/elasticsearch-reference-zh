@@ -58,5 +58,5 @@ cd elasticsearch-2.4.1/bin
 ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 ```
 
-同时注意到输出中关于http信息的部分，其显示了可访问节点的HTTP地址（192.168.8.112）和端口号（9200）。Elasticsearch默认使用9200端口暴露REST API。
+同时注意到输出中关于http信息的部分，其显示了可访问节点的HTTP地址（192.168.8.112）和端口号（9200）。Elasticsearch默认使用9200端口暴露REST API。该端口号也可以配置。
 
