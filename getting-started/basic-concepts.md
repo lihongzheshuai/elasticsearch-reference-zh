@@ -64,3 +64,5 @@ Elasticsearch是一个准实时的查询平台。也就是说从你对文档建�
 
 > 注意：每个Elasticsearch中的分块对应Lucene中的索引。每个索引有最大文档数的限制。根据问题[LUCENE-5843](https://issues.apache.org/jira/browse/LUCENE-5843) 所述，这个数量为Integer.MAX\_VALUE - 128 即 2,147,483,519。可以通过\_cat\/shards api 来监控分块大小。
 
+有了这些理论基础，我们开始进入更有趣的章节...
+
