@@ -7,3 +7,5 @@ java -version
 echo $JAVA_HOME
 ```
 
+
+
