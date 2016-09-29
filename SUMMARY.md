@@ -2,6 +2,9 @@
 
 * [简介](README.md)
 * [开始](getting-started/getting-started.md)
-    * [基本概念](getting-started/basic-concepts.md)
-        * [译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
+  * [基本概念](getting-started/basic-concepts.md)
+    * [译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
+  * [安装](getting-started/installation.md)
+
+
 
