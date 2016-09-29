@@ -23,8 +23,31 @@ tar -xvf elasticsearch-2.4.1.tar.gz
 
 这将会在当前文件夹下生成大量的文件和文件夹。然后我们进入bin目录：
 
-```
+```bash
 cd elasticsearch-2.4.1/bin
+```
+
+现在我们已经准备好启动节点和一个集群了（Windows用户需要运行elasticsearch.bat脚本）：
+
+```
+./elasticsearch
+```
+
+如果一切正常，你将看到如下输出信息：
+
+```
+./elasticsearch
+[2014-03-13 13:42:17,218][INFO ][node           ] [New Goblin] version[2.4.1], pid[2085], build[5c03844/2014-02-25T15:52:53Z]
+[2014-03-13 13:42:17,219][INFO ][node           ] [New Goblin] initializing ...
+[2014-03-13 13:42:17,223][INFO ][plugins        ] [New Goblin] loaded [], sites []
+[2014-03-13 13:42:19,831][INFO ][node           ] [New Goblin] initialized
+[2014-03-13 13:42:19,832][INFO ][node           ] [New Goblin] starting ...
+[2014-03-13 13:42:19,958][INFO ][transport      ] [New Goblin] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.112:9300]}
+[2014-03-13 13:42:23,030][INFO ][cluster.service] [New Goblin] new_master [New Goblin][rWMtGj3dQouz2r6ZFL9v4g][mwubuntu1][inet[/192.168.8.112:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-13 13:42:23,100][INFO ][discovery      ] [New Goblin] elasticsearch/rWMtGj3dQouz2r6ZFL9v4g
+[2014-03-13 13:42:23,125][INFO ][http           ] [New Goblin] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.112:9200]}
+[2014-03-13 13:42:23,629][INFO ][gateway        ] [New Goblin] recovered [1] indices into cluster_state
+[2014-03-13 13:42:23,630][INFO ][node           ] [New Goblin] started
 ```
 
 
