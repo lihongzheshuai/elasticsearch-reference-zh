@@ -58,5 +58,5 @@ cd elasticsearch-2.4.1/bin
 ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 ```
 
-同时注意到，
+同时注意到输出中关于http信息的部分，
 
