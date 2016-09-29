@@ -7,5 +7,5 @@ java -version
 echo $JAVA_HOME
 ```
 
-安装好Java以后，我们可以下载并运行Elasticsearch。安装包可从网站[www.elastic.co\/downloads](http://www.elastic.co/downloads)下载，该网站还包含其他已发布的历史版本。
+安装好Java以后，我们可以下载并运行Elasticsearch。安装包可从网站[www.elastic.co\/downloads](http://www.elastic.co/downloads)下载，该网站还包含其他已发布的历史版本。对于每个发布的版本，你可以选择使用zip包或tar包，以及deb或rpm格式的包。
 
