@@ -1,4 +1,4 @@
 # 安装
 
-Elasticsearch
+Elasticsearch最低需要Java7版本。
 
