@@ -7,5 +7,5 @@ java -version
 echo $JAVA_HOME
 ```
 
-
+安装好Java以后，我们可以下载并运行Elasticsearch。
 
