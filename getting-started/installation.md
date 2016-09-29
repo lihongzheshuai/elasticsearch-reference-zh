@@ -1,4 +1,6 @@
 # 安装
 
-Elasticsearch最低需要Java7版本。以本当编写时间为参考，推荐使用Oracle JDK 1.8.0\_73版本（译者注：当前最新版为1.8.0\_102）。Java的安装在不同平台下差异很大，因此这里我们不细说这部分内容。Oralce推荐的安装文档参见[Oracle的官网 ](http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) 的
+Elasticsearch最低需要Java7版本。以本当编写时间为参考，推荐使用Oracle JDK 1.8.0\_73版本（译者注：当前最新版为1.8.0\_102）。Java的安装在不同平台下差异很大，因此这里我们不细说这部分内容。Oralce推荐的安装文档参见[Oracle的官网](http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) 。这里我只提一点，在你安装Elasticsearch之前，请通过以下命令检查你的Java版本\(然后确定是否需要安装或升级Java\)。
+
+
 
