@@ -17,5 +17,5 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 
 可以看到，我们的集群名为“elasticsearch”，并且状态是绿色的。
 
-
+不论何时检查集群状态，我们都有可能得到绿色、黄色或者红色的状态值。
 
