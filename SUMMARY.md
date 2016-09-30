@@ -4,7 +4,8 @@
 * [开始](getting-started/getting-started.md)
   * [基本概念](getting-started/basic-concepts.md)
     * [译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
-  * [安装](getting-started/installation.md)
 
+  * [安装](getting-started/installation.md)
+  * [探测你的集群](getting-started/exploring-your-cluster/README.md)
 
 
