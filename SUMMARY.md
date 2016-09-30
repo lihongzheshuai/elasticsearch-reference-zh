@@ -13,6 +13,5 @@
 
     * [集群健康状态](getting-started/exploring-your-cluster/cluster-health.md)
 
-
-* cat APIs
+* [cat APIs](cat-apis/README.md)
 
