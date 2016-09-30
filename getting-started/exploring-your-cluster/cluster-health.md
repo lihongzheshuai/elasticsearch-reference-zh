@@ -15,7 +15,7 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 1394735289 14:28:09  elasticsearch green           1         1      0   0    0    0        0
 ```
 
-
+可以看到，我们的集群名为“elasticsearch”，并且状态是绿色的。
 
 
 
