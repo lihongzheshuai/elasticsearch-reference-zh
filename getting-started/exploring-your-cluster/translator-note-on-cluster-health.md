@@ -13,3 +13,5 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 
 Elasticsearch还支持组播的自动探测机制，不过根据组播原理，这个机制需要交换机等设备的支持。笔者尚未进行具体的验证。
 
+概括来说，理解了单播的机制，我们也就自然而然的理解了Elasticsearch集群的配置方法，即只需要在集群中选择几个节点作为单播节点，配置到ES的配置文件中即可。
+
