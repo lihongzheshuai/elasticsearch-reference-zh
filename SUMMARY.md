@@ -13,6 +13,6 @@
 
     * [集群健康状态](getting-started/exploring-your-cluster/cluster-health.md)
       * [译者注（集群健康状态）](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
-    * [列出所有节点](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
+    * [列出所有索引](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
 * [cat APIs](cat-apis/README.md)
 
