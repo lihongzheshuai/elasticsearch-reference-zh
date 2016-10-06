@@ -11,5 +11,21 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 }'
 ```
 
+响应如下：
+
+```
+curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
+{
+  "name": "John Doe"
+}'
+{
+  "_index" : "customer",
+  "_type" : "external",
+  "_id" : "1",
+  "_version" : 1,
+  "created" : true
+}
+```
+
 
 
