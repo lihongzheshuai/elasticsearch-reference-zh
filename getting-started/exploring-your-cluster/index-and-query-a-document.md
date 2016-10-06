@@ -4,5 +4,3 @@
 
 现在我们在customer索引中索引一个简单的customer文档，类型为“external”，ID是1，
 
-
-
