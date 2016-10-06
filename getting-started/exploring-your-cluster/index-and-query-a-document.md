@@ -4,5 +4,12 @@
 
 现在我们在customer索引中索引一个简单的customer文档，类型为“external”，ID是1，JSON文档格式为： { "name": "John Doe" }
 
+```
+curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
+{
+  "name": "John Doe"
+}'
+```
+
 
 
