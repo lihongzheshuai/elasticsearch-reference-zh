@@ -12,10 +12,14 @@
   * [探测你的集群](getting-started/exploring-your-cluster/README.md)
 
     * [集群健康状态](getting-started/exploring-your-cluster/cluster-health.md)
+
       * [译者注（集群健康状态）](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
 
     * [列出所有索引](getting-started/exploring-your-cluster/list-all-indices.md)
+
     * [创建索引](getting-started/exploring-your-cluster/create-an-index.md)
+    * [创建索引](getting-started/exploring-your-cluster/create-an-index.md)
+
 
 
 * [cat APIs](cat-apis/README.md)
