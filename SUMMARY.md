@@ -18,7 +18,7 @@
     * [列出所有索引](getting-started/exploring-your-cluster/list-all-indices.md)
 
     * [创建索引](getting-started/exploring-your-cluster/create-an-index.md)
-    * [索引和查询文档](getting-started/exploring-your-cluster/create-an-index.md)
+    * [索引和查询文档](getting-started/exploring-your-cluster/index-and-query-a-document.md)
 
 
 
