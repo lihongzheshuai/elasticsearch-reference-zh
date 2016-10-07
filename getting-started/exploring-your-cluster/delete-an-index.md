@@ -22,3 +22,17 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 
 在继续之前，我们来回顾一下目前学到的与文档有关的API：
 
+```
+curl -XPUT 'localhost:9200/customer'
+curl -XPUT 'localhost:9200/customer/external/1' -d '
+{
+  "name": "John Doe"
+}'
+curl 'localhost:9200/customer/external/1'
+curl -XDELETE 'localhost:9200/customer
+```
+
+如果我们是用心去学习的上述API，其实我们可以发现Elasticsearch中访问数据的url规则。概括起来就是：
+
+
+
