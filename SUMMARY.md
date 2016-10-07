@@ -23,7 +23,7 @@
 
     * [删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
 
-    * [探测你的集群](getting-started/exploring-your-cluster/README.md)
+  * [探测你的集群](getting-started/exploring-your-cluster/README.md)
 
 
 * [cat APIs](cat-apis/README.md)
