@@ -33,5 +33,13 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 
 现在我们来获取刚刚索引的文档：
 
+```
+curl -XGET 'localhost:9200/customer/external/1?pretty'
+```
+
+响应信息为：
+
+
+
 
 
