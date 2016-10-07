@@ -39,7 +39,17 @@ curl -XGET 'localhost:9200/customer/external/1?pretty'
 
 响应信息为：
 
-
+```
+curl -XGET 'localhost:9200/customer/external/1?pretty'
+{
+  "_index" : "customer",
+  "_type" : "external",
+  "_id" : "1",
+  "_version" : 1,
+  "found" : true,
+  "_source" : { "name": "John Doe" }
+}
+```
 
 
 
