@@ -34,5 +34,9 @@ curl -XDELETE 'localhost:9200/customer
 
 如果我们是用心去学习的上述API，其实我们可以发现Elasticsearch中访问数据的url规则。概括起来就是：
 
+```
+curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
+```
 
+该REST接口规则适用于所有API命令，
 
