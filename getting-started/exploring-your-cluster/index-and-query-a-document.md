@@ -51,5 +51,5 @@ curl -XGET 'localhost:9200/customer/external/1?pretty'
 }
 ```
 
-这里值得一提的是found字段，
+这里值得一提的信息有，found字段，其状态表明我们查到到了ID为1的文档；\_source字段，其值为我们之前加入索引的完整的文档信息。
 
