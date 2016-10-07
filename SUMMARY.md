@@ -20,8 +20,10 @@
     * [创建索引](getting-started/exploring-your-cluster/create-an-index.md)
 
     * [索引和查询文档](getting-started/exploring-your-cluster/index-and-query-a-document.md)
+
     * [删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
 
+    * [探测你的集群](getting-started/exploring-your-cluster/README.md)
 
 
 * [cat APIs](cat-apis/README.md)
