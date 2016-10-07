@@ -29,5 +29,5 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 
 从上述信息中可以看到，我们成功的在customer索引中创建了一个新的隶属于external类型的customer文档。该文档的内部ID为1，由我们在创建时指定。
 
-
+需要指出的是，Elasticsearch并不需要在创建文档前事先创建好的索引。
 
