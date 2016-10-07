@@ -27,5 +27,5 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 }
 ```
 
-
+从上述信息中可以看到，
 
