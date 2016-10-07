@@ -38,5 +38,5 @@ curl -XDELETE 'localhost:9200/customer
 curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
 ```
 
-该REST接口规则适用于所有API命令，
+该REST接口规则适用于所有API命令，如果你可以记住它那么对于你掌握Elasticsearch来说就开了一个好头。
 
