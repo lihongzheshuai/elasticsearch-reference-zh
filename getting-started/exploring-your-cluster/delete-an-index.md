@@ -20,5 +20,5 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 
 这代表索引已被成功删除，我们又回到了集群的初始状态。
 
-在继续之前，我们来回顾一下目前学到的文档相关的API：
+在继续之前，我们来回顾一下目前学到的与文档有关的API：
 
