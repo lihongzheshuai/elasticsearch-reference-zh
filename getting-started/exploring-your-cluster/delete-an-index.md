@@ -20,7 +20,3 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 
 这代表索引已被成功删除，我们又回到了集群的初始状态。
 
-
-
-
-
