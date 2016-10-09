@@ -24,3 +24,14 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 
 上述命令将文档内容中的名字从"John Doe"改为"Jane Doe"。如果我们用不同ID，那么将会索引一个新的文档，原有文档不会改变。
 
+```
+curl -XPUT 'localhost:9200/customer/external/2?pretty' -d '
+{
+  "name": "Jane Doe"
+}'
+```
+
+上述命令索引了一个新的文档，ID为2。
+
+
+
