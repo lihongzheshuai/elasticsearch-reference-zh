@@ -23,13 +23,15 @@
 
     * [删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
 
-* [修改你的数据](getting-started/modifying-your-data/README.md)
+  * [修改你的数据](getting-started/modifying-your-data/README.md)
 
-  * [更新文档](getting-started/modifying-your-data/updating-documents.md)
-    * [译者注\(更新文档\)](getting-started/modifying-your-data/translator-note-updating-documents.md)
+      * [更新文档](getting-started/modifying-your-data/updating-documents.md)
 
-  * [删除文档](getting-started/modifying-your-data/deleting-documents.md)
-  * [批量处理](getting-started/modifying-your-data/batch-processing.md)
+        * [译者注\(更新文档\)](getting-started/modifying-your-data/translator-note-updating-documents.md)
+
+      * [删除文档](getting-started/modifying-your-data/deleting-documents.md)
+
+      * [批量处理](getting-started/modifying-your-data/batch-processing.md)
 
 * [cat APIs](cat-apis/README.md)
 
