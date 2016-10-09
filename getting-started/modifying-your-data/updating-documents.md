@@ -20,7 +20,5 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 }'
 ```
 
-
-
-
+我们也可以利用脚本做更新操作。
 
