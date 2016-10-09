@@ -39,7 +39,5 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 yellow bank    5   1       1000            0    424.4kb        424.4kb
 ```
 
-说明我们已经成功的批量的索引了1000个文档进入bank索引（在account type下）。
-
-
+说明我们已经成功的批量的索引了1000个文档进入名为bank的索引（在account type下）。
 
