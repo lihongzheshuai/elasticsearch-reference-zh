@@ -19,7 +19,7 @@
 
     * [1.3.3 创建索引](getting-started/exploring-your-cluster/create-an-index.md)
 
-    * [索引和查询文档](getting-started/exploring-your-cluster/index-and-query-a-document.md)
+    * [1.3.4 索引和查询文档](getting-started/exploring-your-cluster/index-and-query-a-document.md)
 
     * [删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
 
