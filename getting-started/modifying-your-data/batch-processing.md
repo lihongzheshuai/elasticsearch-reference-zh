@@ -13,5 +13,19 @@ curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
 '
 ```
 
+下面的例子通过一个bulk操作在更新第一个文档（ID为1的）的同时删除第二个文档（ID为2的）：
+
+```
+curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
+{"update":{"_id":"1"}}
+{"doc": { "name": "John Doe becomes Jane Doe" } }
+{"delete":{"_id":"2"}}
+'
+```
+
+注意到，对于delete操作，之后没有关联的文档信息而只需要指定需要删除的文档ID。
+
+bulk API顺序的执行所有的操作。不论前一个操作因为何种原因失败，它都会继续执行后续的操作。
+
 
 
