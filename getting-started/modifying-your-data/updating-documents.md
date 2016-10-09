@@ -20,5 +20,5 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 }'
 ```
 
-我们也可以利用脚本做更新操作。
+我们也可以利用脚本做更新操作。不过需要注意的是，动态脚本功能在1.4.3版本里是默认禁用的，
 
