@@ -22,5 +22,5 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 }'
 ```
 
-上述命令将文档内容中的名字从"John Doe"改为""
+上述命令将文档内容中的名字从"John Doe"改为"Jane Doe"。
 
