@@ -11,7 +11,7 @@
 
   * [1.3 探测你的集群](getting-started/exploring-your-cluster/README.md)
 
-    * [集群健康状态](getting-started/exploring-your-cluster/cluster-health.md)
+    * [1.3.1 集群健康状态](getting-started/exploring-your-cluster/cluster-health.md)
 
       * [译者注（集群健康状态）](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
 
