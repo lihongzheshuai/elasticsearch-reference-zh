@@ -15,7 +15,7 @@
 
       * [1.3.1.1 译者注（集群健康状态）](getting-started/exploring-your-cluster/translator-note-on-cluster-health.md)
 
-    * [列出所有索引](getting-started/exploring-your-cluster/list-all-indices.md)
+    * [1.3.2 列出所有索引](getting-started/exploring-your-cluster/list-all-indices.md)
 
     * [创建索引](getting-started/exploring-your-cluster/create-an-index.md)
 
