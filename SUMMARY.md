@@ -3,7 +3,7 @@
 * [简介](README.md)
 * [1 开始](getting-started/getting-started.md)
 
-  * [基本概念](getting-started/basic-concepts.md)
+  * [1.1 基本概念](getting-started/basic-concepts.md)
 
     * [译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
 
