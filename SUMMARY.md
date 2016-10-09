@@ -5,7 +5,7 @@
 
   * [1.1 基本概念](getting-started/basic-concepts.md)
 
-    * [译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
+    * [1.1.1 译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
 
   * [安装](getting-started/installation.md)
 
