@@ -13,5 +13,7 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 }'
 ```
 
-上述命令会将指定文档保存到customer索引中，类型是external，ID是1。
+上述命令会将指定文档保存到customer索引中，类型是external，ID是1。如果我们用不同（或相同）的文档内容再次执行该命令，Elasticsearch将会替换（也就是重新索引）新的文档，ID仍是1：
+
+
 
