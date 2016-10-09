@@ -29,3 +29,7 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 }'
 ```
 
+在上面的例子中，ctx.\_source 指向当前将被更新的文档。
+
+需要指出的是，到本文档编写时为止，只可以同时更新一个文档。在未来，Elasticsearch将会支持通过查询条件（类似于SQL语句中的UPDATE-WHERE）同时更新多个文档。
+
