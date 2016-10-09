@@ -35,7 +35,7 @@
     * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
 
 
-  * [探测你的数据](getting-started/exploring-your-data/README.md)
+  * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
 
 * [cat APIs](cat-apis/README.md)
