@@ -27,8 +27,10 @@
 
   * [更新文档](getting-started/modifying-your-data/updating-documents.md)
     * [译者注\(更新文档\)](getting-started/modifying-your-data/translator-note-updating-documents.md)
+  * [删除文档](getting-started/modifying-your-data/deleting-documents.md)
 
 * [cat APIs](cat-apis/README.md)
+
 * [模块\(Modules\)](modules/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
 
