@@ -7,7 +7,7 @@
 
     * [1.1.1 译者注\(基本概念\)](getting-started/translator-comment-on-basic-concepts.md)
 
-  * [安装](getting-started/installation.md)
+  * [1.2 安装](getting-started/installation.md)
 
   * [探测你的集群](getting-started/exploring-your-cluster/README.md)
 
