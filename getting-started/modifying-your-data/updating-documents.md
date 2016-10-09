@@ -11,5 +11,16 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 }'
 ```
 
+下面的例子展示了如何把我们之前的文档（ID为1的）name字段的值更新为"Jane Doe"同时添加age字段:
+
+```
+curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
+{
+  "doc": { "name": "Jane Doe", "age": 20 }
+}'
+```
+
+
+
 
 
