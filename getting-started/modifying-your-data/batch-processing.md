@@ -4,5 +4,14 @@
 
 举个例子，下面请求通过一个bulk操作同时索引两个文档（ID为1的John Doe 和 ID为2的 Jane Doe）：
 
+```
+curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
+{"index":{"_id":"1"}}
+{"name": "John Doe" }
+{"index":{"_id":"2"}}
+{"name": "Jane Doe" }
+'
+```
+
 
 
