@@ -20,7 +20,7 @@ curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
 }'
 ```
 
-我们也可以利用脚本做更新操作。不过需要注意的是，动态脚本功能从1.4.3版本起是默认禁用的，更多信息详见脚本文档。下面的例子，利用脚本将age的值增加5：
+我们也可以利用脚本做更新操作。不过需要注意的是，动态脚本功能自1.4.3版本起是默认禁用的，更多信息详见脚本文档。下面的例子，利用脚本将age的值增加5：
 
 ```
 curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
