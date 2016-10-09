@@ -33,5 +33,18 @@ curl -XPUT 'localhost:9200/customer/external/2?pretty' -d '
 
 上述命令索引了一个新的文档，ID为2。
 
+在索引时，ID值是可选的。如果未指定，Elasticsearch将会生成一个随机ID用来索引文档。由Elasticsearch生成的实际ID（或是我们指定的ID）会在索引API的响应值中返回。
+
+下面例子展示了如何索引一个未指定ID的文档：
+
+```
+curl -XPOST 'localhost:9200/customer/external?pretty' -d '
+{
+  "name": "Jane Doe"
+}'
+```
+
+需要注意的是，在上面的例子中，由于没有指定ID我们使用POST方法替代了PUT方法。
+
 
 
