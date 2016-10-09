@@ -26,7 +26,7 @@
 
   * [1.4 修改你的数据](getting-started/modifying-your-data/README.md)
 
-    * [更新文档](getting-started/modifying-your-data/updating-documents.md)
+    * [1.4.1 更新文档](getting-started/modifying-your-data/updating-documents.md)
 
       * [译者注\(更新文档\)](getting-started/modifying-your-data/translator-note-updating-documents.md)
 
