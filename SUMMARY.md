@@ -32,5 +32,7 @@
 
 * [cat APIs](cat-apis/README.md)
 * [模块(Modules)](modules/README.md)
+    * [脚本(Scripting)](modules/README.md)
+
 
 
