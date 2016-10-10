@@ -25,6 +25,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
   "query": { "match": { "account_number": 20 } }
 }'
 ```
+de 
 
 
 
