@@ -15,5 +15,16 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 如果你写过SQL，你就会发现上述例子与SQL中的SELECT 字段列表 FROM 语句很类似。
 
-现在我们继续深入学习查询部分。前面我们学习了如何通过match_all请求查询所有文档。现在我们介绍一种称为匹配查询(match query)的新的查询类型。
+现在我们继续深入学习查询部分。前面我们学习了如何通过match_all请求查询所有文档。现在我们介绍一种称为[匹配查询(match query)](/query-dsl/full-text-query/match-query.md)的新的查询类型，可以理解为基于字段的查询（也就是针对特定字段或字段组的查询）。
+
+下面的例子返回账户编号为20的文档:
+
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": { "match": { "account_number": 20 } }
+}'
+```
+
+
 
