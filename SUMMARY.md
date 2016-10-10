@@ -55,7 +55,7 @@
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
-  * [11.3 全文检索](query-dsl/README.md)
+  * [11.3 全文检索](query-dsl/full-text-query/README.md)
 
 
 
