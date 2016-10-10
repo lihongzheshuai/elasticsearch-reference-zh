@@ -29,13 +29,13 @@ cd elasticsearch-2.4.1/bin
 
 现在我们已经准备好启动节点和一个集群了（Windows用户需要运行elasticsearch.bat脚本）：
 
-```
+```bash
 ./elasticsearch
 ```
 
 如果一切正常，你将看到如下输出信息：
 
-```
+```bash
 ./elasticsearch
 [2014-03-13 13:42:17,218][INFO ][node           ] [New Goblin] version[2.4.1], pid[2085], build[5c03844/2014-02-25T15:52:53Z]
 [2014-03-13 13:42:17,219][INFO ][node           ] [New Goblin] initializing ...
@@ -54,7 +54,7 @@ cd elasticsearch-2.4.1/bin
 
 如之前所说，我们可以指定集群或节点的名字。可在启动Elasticsearch时在命令输入如下命令：
 
-```
+```bash
 ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 ```
 
