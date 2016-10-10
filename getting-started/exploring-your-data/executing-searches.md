@@ -92,7 +92,21 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 在上述例子中，布尔语句should代表其包含的查询语句列表中只要有一个满足即算匹配成功。
 
+下面的例子组合两个match查询，返回所有地址中既不包含"mill"也不包含"lane"词组的账号文档：
 
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "address": "mill" } },
+        { "match": { "address": "lane" } }
+      ]
+    }
+  }
+}'
+```
 
 
 
