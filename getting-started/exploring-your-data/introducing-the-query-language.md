@@ -35,5 +35,17 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-from参数\(从0开始\)指定了返回文档中起始文档的序号，size参数指定了从起始文档开始需要返回文档的个数。该特性对于分页返回查询结果非常有用。
+from参数\(从0开始\)指定了返回文档中起始文档的序号，size参数指定了从起始文档开始需要返回文档的个数。该特性对于分页返回查询结果非常有用。如果from不指定，默认是从0开始。
+
+下面的例子执行了一个match\_all查询请求，并且对结果集中的账户余额的进行降序排序，返回前10个（默认值）文档:
+
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": { "match_all": {} },
+  "sort": { "balance": { "order": "desc" } }
+}'
+```
+
+
 
