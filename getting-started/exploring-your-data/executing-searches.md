@@ -36,5 +36,23 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
+下面的例子返回所有地址中含有"mill"或"lane"词组的文档:
 
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": { "match": { "address": "mill lane" } }
+}'
+```
+
+下面的例子是match一个的变形\(match\_phrase\)，将会返回所有地址中含有短语"mill lane"账户文档:
+
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": { "match_phrase": { "address": "mill lane" } }
+}'
+```
+
+现在我们来介绍布尔查询\(bool\(ean\) query\)
 
