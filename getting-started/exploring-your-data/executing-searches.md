@@ -11,6 +11,10 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
   "_source": ["account_number", "balance"]
 }'
 ```
-上面例子素偶写
+上面例子缩减了_source字段。该请求仍会返回一个名为_source的字段，不过其中只包含account_number和balance两个字段。
+
+如果你写过SQL，你就会发现上述例子与SQL中的SELECT 字段列表 FROM 语句很类似。
+
+
 
 
