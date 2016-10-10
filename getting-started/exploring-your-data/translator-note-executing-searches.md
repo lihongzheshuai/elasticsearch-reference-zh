@@ -2,7 +2,7 @@
 
 在[1.5.3执行查询](/getting-started/exploring-your-data/executing-searches.md)章节中提到了布尔查询支持嵌套组合，但是并未给出具体的样例。笔者做了如下实验：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": {
@@ -26,7 +26,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 响应信息如下：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
  {
    "query": {
