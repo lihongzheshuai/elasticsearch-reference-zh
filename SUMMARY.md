@@ -29,7 +29,7 @@
 
      * [1.4.1.1 译者注\(更新文档\)](getting-started/modifying-your-data/translator-note-updating-documents.md)
 
-  * [1.4.2 删除文档](getting-started/modifying-your-data/deleting-documents.md)
+   * [1.4.2 删除文档](getting-started/modifying-your-data/deleting-documents.md)
 
   * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
 * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
