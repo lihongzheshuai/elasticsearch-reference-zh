@@ -59,6 +59,9 @@
 
     * [11.3.1 匹配查询(Match Query)](query-dsl/full-text-query/match-query.md)
 
+  * [11.5 组合查询](query-dsl/compound-queries/README.md)
+
+
 
 
 
