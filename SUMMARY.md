@@ -42,7 +42,7 @@
 
    * [1.5.3 执行查询](getting-started/exploring-your-data/executing-searches.md)
 
-     * [1.5.3.1 执行查询](getting-started/exploring-your-data/executing-searches.md)
+     * [1.5.3.1 译者注 - 关于嵌套布尔查询](getting-started/exploring-your-data/translator-note-executing-searches.md)
 
 
 * [cat APIs](cat-apis/README.md)
