@@ -23,8 +23,7 @@
     * [1.3.4 索引和查询文档](getting-started/exploring-your-cluster/index-and-query-a-document.md)
 
     * [1.3.5 删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
-
-* [1.4 修改你的数据](getting-started/modifying-your-data/README.md)
+    * [1.4 修改你的数据](getting-started/modifying-your-data/README.md)
 
   * [1.4.1 更新文档](getting-started/modifying-your-data/updating-documents.md)
 
@@ -33,6 +32,7 @@
   * [1.4.2 删除文档](getting-started/modifying-your-data/deleting-documents.md)
 
   * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
+
 
 * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
