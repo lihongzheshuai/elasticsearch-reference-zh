@@ -46,6 +46,8 @@
 
   * [脚本\(Scripting\)](modules/scripting/README.md)
 * [6 查询接口](search-apis/README.md)
+    * [6.2 URI查询](search-apis/uri-search.md)
+
 
 
 
