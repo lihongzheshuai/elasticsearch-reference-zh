@@ -72,7 +72,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-在上述例子中，布尔语句must代表其包含的查询语句必须同时满足才算匹配成功。
+在上述例子中，布尔语句must代表其包含的查询语句必须同时满足（全部为true）才算匹配成功。
 
 相反的，下面的例子组合两个match查询，返回所有地址中包含"mill"或者"lane"词组的账户文档:
 
@@ -90,7 +90,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-在上述例子中，布尔语句should代表其包含的查询语句列表中只要有一个满足即算匹配成功。
+在上述例子中，布尔语句should代表其包含的查询语句列表中只要有一个满足（只要有一个为true）即算匹配成功。
 
 下面的例子组合两个match查询，返回所有地址中既不包含"mill"也不包含"lane"词组的账号文档：
 
@@ -107,6 +107,8 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
   }
 }'
 ```
+
+在上述例子中，布尔语句must\_not代表其包含的查询语句列表必须都不满足（全部不为true）才算匹配成功。
 
 
 
