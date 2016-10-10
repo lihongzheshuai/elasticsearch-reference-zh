@@ -33,18 +33,19 @@
 
     * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
 
+
   * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
     * [1.5.1 查询API](getting-started/exploring-your-data/the-search-api.md)
+
 
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
 
   * [脚本\(Scripting\)](modules/scripting/README.md)
+
 * [6 查询接口](search-apis/README.md)
-    * [6.2 URI查询](search-apis/uri-search.md)
-
-
+  * [6.2 URI查询](search-apis/uri-search.md)
 
 
