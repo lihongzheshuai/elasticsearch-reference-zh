@@ -110,5 +110,23 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 在上述例子中，布尔语句must\_not代表其包含的查询语句列表必须都不满足（全部不为true）才算匹配成功。
 
+在一个布尔查询中，我们可以同时组合must,should和must\_not语句。进一步的，我们可以嵌套布尔查询语句，从而可以实现任意复杂的多层次的布尔逻辑。
 
+下面的例子将返回年龄为40岁的但是不居住在ID的账户文档：
+
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "age": "40" } }
+      ],
+      "must_not": [
+        { "match": { "state": "ID" } }
+      ]
+    }
+  }
+}'
+```
 
