@@ -19,7 +19,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子返回账户编号为20的文档:
 
-```bash
+```
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match": { "account_number": 20 } }
