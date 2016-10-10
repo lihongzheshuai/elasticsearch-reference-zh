@@ -54,5 +54,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-现在我们来介绍布尔查询\(bool\(ean\) query\)
+现在我们来介绍[布尔查询\(bool\(ean\) query\)](/query-dsl/compound-queries/bool-query.md)。布尔查询允许我们将若干小的查询通过布尔逻辑组合成一个大的查询。
+
+
 
