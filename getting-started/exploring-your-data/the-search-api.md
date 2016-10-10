@@ -8,5 +8,9 @@
 curl 'localhost:9200/bank/_search?q=*&pretty'
 ```
 
-我们来仔细分析该查询请求。
+我们来仔细分析该查询请求。我们查询的是bank索引（通过\_search 入口）下的内容，参数q=\* 意味着通知Elasticsearch 匹配该索引在的所有文档。参数pretty在这里依然只是通知Elasticsearch将返回信息以一种更方便阅读的JSON格式输出。
+
+响应信息如下（只展示一部分内容）：
+
+
 
