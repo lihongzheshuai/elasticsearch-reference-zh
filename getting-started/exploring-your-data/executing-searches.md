@@ -56,5 +56,27 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 现在我们来介绍[布尔查询\(bool\(ean\) query\)](/query-dsl/compound-queries/bool-query.md)。布尔查询允许我们将若干小的查询通过布尔逻辑组合成一个大的查询。
 
+下面的例子组合了两个match 查询，返回所有地址中同时包含"mill"和"lane"词组的账户文档:
+
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "address": "mill" } },
+        { "match": { "address": "lane" } }
+      ]
+    }
+  }
+}'
+```
+
+在上述例子中，布尔语句must代表其包含的查询语句必须同时满足，对应的文档才算匹配成功。
+
+
+
+
+
 
 
