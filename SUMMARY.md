@@ -35,7 +35,7 @@
   * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
     * [1.5.1 查询API](getting-started/exploring-your-data/the-search-api.md)
-    * [1.5.2 查询语句介绍](getting-started/exploring-your-data/introducing-the-query-language.md)
+    * [1.5.2 查询语言介绍](getting-started/exploring-your-data/introducing-the-query-language.md)
 
 
 * [cat APIs](cat-apis/README.md)
