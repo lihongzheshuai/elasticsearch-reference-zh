@@ -26,7 +26,14 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面例子执行了一个match\_all 请求，并且返回第11条到第20条的文档:
 
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": { "match_all": {} },
+  "from": 10,
+  "size": 10
+}'
+```
 
-
-
+from参数\(从0开始\)指定了返回文档中起始文档的序号，size参数指定了从起始文档开始需要返回文档的个数。该特性对于分页返回查询结果非常有用。
 
