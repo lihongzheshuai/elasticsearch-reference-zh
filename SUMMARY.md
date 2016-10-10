@@ -32,7 +32,7 @@
    * [1.4.2 删除文档](getting-started/modifying-your-data/deleting-documents.md)
 
    * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
-* [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
+  * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
   * [1.5.1 查询API](getting-started/exploring-your-data/the-search-api.md)
   * [1.5.2 查询语句介绍](getting-started/exploring-your-data/introducing-the-query-language.md)
