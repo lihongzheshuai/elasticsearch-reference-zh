@@ -23,6 +23,7 @@
 
     * [1.3.5 删除索引](getting-started/exploring-your-cluster/delete-an-index.md)
 
+
   * [1.4 修改你的数据](getting-started/modifying-your-data/README.md)
 
     * [1.4.1 更新文档](getting-started/modifying-your-data/updating-documents.md)
@@ -33,10 +34,12 @@
 
     * [1.4.3 批量处理](getting-started/modifying-your-data/batch-processing.md)
 
+
   * [1.5 探测你的数据](getting-started/exploring-your-data/README.md)
 
     * [1.5.1 查询API](getting-started/exploring-your-data/the-search-api.md)
     * [1.5.2 查询语句介绍](getting-started/exploring-your-data/introducing-the-query-language.md)
+
 
 * [cat APIs](cat-apis/README.md)
 
@@ -48,5 +51,7 @@
 
   * [6.2 URI查询](search-apis/uri-search.md)
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
+* [11 查询领域专用语言(DSL)](query-dsl/README.md)
+
 
 
