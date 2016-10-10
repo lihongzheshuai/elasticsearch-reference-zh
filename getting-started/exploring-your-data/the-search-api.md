@@ -4,5 +4,7 @@
 
 查询的REST API的入口为\_search。下面的例子将返回bank索引中的所有文档：
 
-
+```
+curl 'localhost:9200/bank/_search?q=*&pretty'
+```
 
