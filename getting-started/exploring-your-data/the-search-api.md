@@ -8,3 +8,5 @@
 curl 'localhost:9200/bank/_search?q=*&pretty'
 ```
 
+我们来仔细分析该查询请求。
+
