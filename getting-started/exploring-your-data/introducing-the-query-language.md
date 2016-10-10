@@ -24,5 +24,9 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 需要注意的是，如果没有指定size参数，默认返回10条数据。
 
+下面例子执行了一个match\_all 请求，并且返回第11条到第20条的文档:
+
+
+
 
 
