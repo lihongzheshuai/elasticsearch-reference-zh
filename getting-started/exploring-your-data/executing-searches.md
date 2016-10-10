@@ -72,9 +72,25 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-在上述例子中，布尔语句must代表其包含的查询语句必须同时满足，对应的文档才算匹配成功。
+在上述例子中，布尔语句must代表其包含的查询语句必须同时满足才算匹配成功。
 
+相反的，下面的例子组合两个match查询，返回所有地址中包含"mill"或者"lane"词组的账户文档:
 
+```
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "address": "mill" } },
+        { "match": { "address": "lane" } }
+      ]
+    }
+  }
+}'
+```
+
+在上述例子中，布尔语句should代表其包含的查询语句列表中只要有一个满足即算匹配成功。
 
 
 
