@@ -4,7 +4,7 @@ Elasticsearch提供类似JSON格式的领域特定语言\(DSL\)用于执行查�
 
 回顾上一个例子中我们执行的查询请求：
 
-```
+```bash
 {
   "query": { "match_all": {} }
 }
@@ -14,7 +14,7 @@ Elasticsearch提供类似JSON格式的领域特定语言\(DSL\)用于执行查�
 
 除了参数query，我们还可以提供其他参数从而影响查询结果。例如，下面的请求执行了match\_all 操作，但是仅返回一个文档：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_all": {} },
@@ -26,7 +26,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面例子执行了一个match\_all 请求，并且返回第11条到第20条的文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_all": {} },
@@ -39,13 +39,11 @@ from参数\(从0开始\)指定了返回文档中起始文档的序号，size参�
 
 下面的例子执行了一个match\_all查询请求，并且对结果集中的账户余额的进行降序排序，返回前10个（默认值）文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_all": {} },
   "sort": { "balance": { "order": "desc" } }
 }'
 ```
-
-
 
