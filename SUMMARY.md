@@ -50,7 +50,7 @@
 
   * [1.6 总结](getting-started/conclusion.md)
 
-* [2 设置](setup/README.md)
+* [2 安装](setup/README.md)
 
   * [2.1 配置](setup/configuration.md)
 
