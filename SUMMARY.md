@@ -52,6 +52,8 @@
 
 * [2 设置](setup/README.md)
 
+  * [2.1 配置](setup/configuration.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
