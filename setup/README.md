@@ -59,5 +59,7 @@ $ kill `cat pid` 注2
 
 Elasticsearch 是用Java开发编译的，运行需要[Java 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)以上的版本。只支持Oracle版的Java以及OpenJDK。所有的Elasticsearch节点和客户端需要使用相同版本的JVM。
 
+我们推荐安装Java 8\_u20 或 Java 7\_u55 以上的版本。Java7早起的版本已经的bug可能会造成索引损坏和数据丢失。如果在错误的Java版本上运行Elasticsearch，将会拒绝运行。
 
+可以通过JAVA\_HOME环境变量配置使用的Java版本。
 
