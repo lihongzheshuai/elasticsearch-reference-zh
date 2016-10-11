@@ -49,7 +49,7 @@ $ kill `cat pid` 注2
 > 
 > Elasticsearch shell脚本提供一些额外的特性。首先，我们直接介绍的，通过脚本可以快速的切换进程的前端和后端运行模式。
 > 
-> 另一个特性是，可以直接向脚本传递-D 或 getopt命令长型配置参数\(getopt long style configuration parameters \)。此处设置的参数，会覆盖JAVA\_OPTS 或 ES\_JAVA\_OPTS 里配置的同名参数。例如：
+> 另一个特性是，可以直接向脚本传递-D 或 getopt 长风格配置参数\(getopt long style configuration parameters \)。此处设置的参数，会覆盖JAVA\_OPTS 或 ES\_JAVA\_OPTS 里配置的同名参数。例如：
 > 
 > ```bash
 > $ bin/elasticsearch -Des.index.refresh_interval=5s --node.name=my-node
