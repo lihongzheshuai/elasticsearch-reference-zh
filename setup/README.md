@@ -26,5 +26,16 @@ $ bin/elasticsearch
 $ bin/elasticsearch -d
 ```
 
+### PID\(进程ID\)
+
+Elasticsearch进程会在启动期将PID写入指定文件，便于后续方便的停止进程:
+
+```bash
+$ bin/elasticsearch -d -p pid 注1
+$ kill `cat pid` 注2
+```
+
+
+
 
 
