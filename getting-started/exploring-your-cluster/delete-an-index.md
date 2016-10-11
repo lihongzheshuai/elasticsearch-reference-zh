@@ -2,14 +2,14 @@
 
 现在我们删除刚刚创建的索引，然后再次查询索引列表：
 
-```
+```bash
 curl -XDELETE 'localhost:9200/customer?pretty'
 curl 'localhost:9200/_cat/indices?v'
 ```
 
 响应信息如下：
 
-```
+```bash
 curl -XDELETE 'localhost:9200/customer?pretty'
 {
   "acknowledged" : true
@@ -22,7 +22,7 @@ health index pri rep docs.count docs.deleted store.size pri.store.size
 
 在继续之前，我们来回顾一下目前学到的与文档有关的API：
 
-```
+```bash
 curl -XPUT 'localhost:9200/customer'
 curl -XPUT 'localhost:9200/customer/external/1' -d '
 {
@@ -34,7 +34,7 @@ curl -XDELETE 'localhost:9200/customer
 
 如果我们是用心去学习的上述API，其实我们可以发现Elasticsearch中访问数据的url规则。概括起来就是：
 
-```
+```bash
 curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
 ```
 
