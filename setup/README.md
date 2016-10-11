@@ -10,5 +10,5 @@
 
 ## 安装 {#installation}
 
-在下载并解压完最新版本后，Elasticsearch可通过如下命令运行：
+在[下载](https://www.elastic.co/downloads/elasticsearch)并解压完最新版本后，Elasticsearch可通过如下命令运行：
 
