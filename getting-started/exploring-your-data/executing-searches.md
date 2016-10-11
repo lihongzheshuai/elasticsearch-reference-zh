@@ -20,7 +20,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子返回账户编号为20的文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match": { "account_number": 20 } }
@@ -29,7 +29,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子返回所有地址中包含"mill"词组的文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match": { "address": "mill" } }
@@ -38,7 +38,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子返回所有地址中含有"mill"或"lane"词组的文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match": { "address": "mill lane" } }
@@ -47,7 +47,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子是match一个的变形\(match\_phrase\)，将会返回所有地址中含有短语"mill lane"账户文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_phrase": { "address": "mill lane" } }
@@ -58,7 +58,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子组合了两个match 查询，返回所有地址中同时包含"mill"和"lane"词组的账户文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": {
@@ -76,7 +76,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 相反的，下面的例子组合两个match查询，返回所有地址中包含"mill"或者"lane"词组的账户文档:
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": {
@@ -94,7 +94,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子组合两个match查询，返回所有地址中既不包含"mill"也不包含"lane"词组的账号文档：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": {
@@ -114,7 +114,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子将返回年龄为40岁的但是不居住在ID州的账户文档：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": {
