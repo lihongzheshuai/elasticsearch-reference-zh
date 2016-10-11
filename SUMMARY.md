@@ -56,6 +56,8 @@
 
   * [2.2 在Linux上以服务形式运行](setup/running-as-a-service-on-linux.md)
 
+  * [2.3 在Windows上以服务形式运行](setup/running-as-a-service-on-windows.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
