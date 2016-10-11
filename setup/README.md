@@ -35,7 +35,9 @@ $ bin/elasticsearch -d -p pid 注1
 $ kill `cat pid` 注2
 ```
 
+> 注1：PID被写入名为pid的文件。
+> 
+> 注2：kill命令向PID值保存在pid文件的中的进程发送一个终止信号。
 
-
-
+> 注意：针对Linux和Windows提供的启动脚本，可以帮助你启动和停止Elastisearch进程。
 
