@@ -46,6 +46,8 @@
 
     * [1.5.4 执行过滤器](getting-started/exploring-your-data/executing-filters.md)
 
+    * [1.5.5 执行聚合](getting-started/exploring-your-data/executing-aggregations.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
