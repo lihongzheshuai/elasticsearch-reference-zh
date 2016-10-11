@@ -60,6 +60,8 @@
 
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
 
+* [7 聚合](aggregations/README.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
