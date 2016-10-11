@@ -12,3 +12,9 @@
 
 在[下载](https://www.elastic.co/downloads/elasticsearch)并解压完最新版本后，Elasticsearch可通过如下命令运行：
 
+```bash
+$ bin/elasticsearch
+```
+
+在\*nix操作系统上，上述命令将会在前台运行程序。
+
