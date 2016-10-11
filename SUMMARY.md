@@ -55,6 +55,7 @@
 * [6 查询接口](search-apis/README.md)
 
   * [6.2 URI查询](search-apis/uri-search.md)
+
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
@@ -62,6 +63,10 @@
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
 
     * [11.3.1 匹配查询(Match Query)](query-dsl/full-text-query/match-query.md)
+
+  * [11.4 词条级查询(Term level Query)](query-dsl/term-level-query/README.md)
+
+     * [11.4.3 范围查询(Range Query)](query-dsl/term-level-query/range-query.md)
 
   * [11.5 组合查询](query-dsl/compound-queries/README.md)
 
