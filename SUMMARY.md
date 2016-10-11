@@ -62,6 +62,8 @@
 
   * [2.5 仓库](setup/repositories.md)
 
+  * [2.6 升级](setup/upgrading/README.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
