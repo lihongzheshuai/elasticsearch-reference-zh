@@ -60,7 +60,7 @@
 
   * [2.4 目录结构](setup/directory-layout.md)
 
-  * [2.5 目录结构](setup/directory-layout.md)
+  * [2.5 仓库](setup/repositories.md)
 
 * [cat APIs](cat-apis/README.md)
 
