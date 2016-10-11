@@ -4,5 +4,5 @@
 
 不过不是所有查询条件都需要计算分数，尤其当其只需要“过滤”出文档集的时候。Elasticsearch会探测这些情况，并自动的优化查询执行过程从而忽略计算无用的分数。
 
-
+前面章节中介绍的[布尔查询（bool query）](/query-dsl/compound-queries/bool-query.md)同样支持filter语句，通过filter过滤条件可以进一步过滤匹配文档的范围，而无需修改分数的计算规则。比如，
 
