@@ -74,5 +74,28 @@ SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 
 注意到，为了不展现搜索的数据内容我们设置了size=0，因为我们只关注响应中有关集合信息的部分。
 
+在上述聚合查询的基础上，下面的例子计算每个state中账户余额的平均值\(同样根据state中的数据的数量降序排列，并返回前10条数据\)：
+
+```bash
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "size": 0,
+  "aggs": {
+    "group_by_state": {
+      "terms": {
+        "field": "state"
+      },
+      "aggs": {
+        "average_balance": {
+          "avg": {
+            "field": "balance"
+          }
+        }
+      }
+    }
+  }
+}'
+```
+
 
 
