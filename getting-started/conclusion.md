@@ -1,4 +1,4 @@
 # 总结
 
-Elasticsearch是一个既简单又复杂的产品。到目前为止，我们已经初步了解了Elasticsearch是什么，如何观测其内部状态，以及如何通过REST APIs进行工作。我希望这个向导能帮助你更好的理解Elasticsearch是什么，更重要的是能激发你去进一步了解其他精彩的特性。
+Elasticsearch是一个既简单又复杂的产品。到目前为止，我们已经初步了解了Elasticsearch是什么，如何观测其内部状态，以及如何通过REST APIs进行工作。我希望这个向导能帮助你更好的理解Elasticsearch是什么，更重要的是能激发你去进一步了解其它精彩的特性。
 
