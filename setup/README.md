@@ -39,5 +39,9 @@ $ kill `cat pid` 注2
 > 
 > 注2：kill命令向PID值保存在pid文件的中的进程发送一个终止信号。
 
-> 注意：针对Linux和Windows提供的启动脚本，可以帮助你启动和停止Elastisearch进程。
+> 注意：针对[Linux](/setup/running-as-a-service-on-linux.md)和[Windows](/setup/running-as-a-service-on-windows.md)提供的启动脚本，可以帮助你启动和停止Elastisearch进程。
+
+
+
+
 
