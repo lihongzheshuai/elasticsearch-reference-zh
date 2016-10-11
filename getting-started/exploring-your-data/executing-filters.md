@@ -6,5 +6,26 @@
 
 前面章节中介绍的[布尔查询（bool query）](/query-dsl/compound-queries/bool-query.md)同样支持filter语句，通过filter过滤条件可以进一步过滤匹配文档的范围，而无需修改分数的计算规则。比如，[范围查询（range query）](/query-dsl/term-level-query/range-query.md)，该查询允许我们通过一个范围值过滤文档。通常用于数值型或日期型的字段过滤。
 
+在下面的例子里，使用布尔查询范围账户余额在20000到30000之间的账户，包括20000和30000。话句话说，就是我们想要查询出余额大于等于20000或者小于等于30000的账户信息:
 
+```bash
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "query": {
+    "bool": {
+      "must": { "match_all": {} },
+      "filter": {
+        "range": {
+          "balance": {
+            "gte": 20000,
+            "lte": 30000
+          }
+        }
+      }
+    }
+  }
+}'
+```
+
+分析上述查询语句，布尔查询包含match\_all查询\(查询部分\)和range查询\(过滤部分\)两部分信息。
 
