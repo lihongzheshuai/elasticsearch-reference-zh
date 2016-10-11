@@ -18,5 +18,11 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
+上述查询相当于如下SQL语句：
+
+```
+SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
+```
+
 
 
