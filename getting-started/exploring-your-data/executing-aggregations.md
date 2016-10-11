@@ -72,5 +72,7 @@ SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 
 我们可以看到，有21个账户在AL\(abama\)，然后17个账户在TX，15个账户在ID\(aho\)，等等。
 
+注意到，为了不展现搜索的数据内容我们设置了size=0，因为我们只关注响应中有关集合信息的部分。
+
 
 
