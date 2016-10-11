@@ -97,5 +97,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
+请注意我们是如何在group\_by\_state聚合操作中嵌套average\_state操作的。这是所有聚合操作的通用格式。你可以任意嵌套聚合操作，从而逐步抽取出你的数据的概要信息。
+
 
 
