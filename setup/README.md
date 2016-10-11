@@ -55,3 +55,9 @@ $ kill `cat pid` 注2
 > $ bin/elasticsearch -Des.index.refresh_interval=5s --node.name=my-node
 > ```
 
+## Java（JVM）版本
+
+Elasticsearch 是用Java开发编译的，运行需要[Java 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)以上的版本。只支持Oracle版的Java以及OpenJDK。所有的Elasticsearch节点和客户端需要使用相同版本的JVM。
+
+
+
