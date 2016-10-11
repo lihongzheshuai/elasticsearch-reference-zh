@@ -27,5 +27,5 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-分析上述查询语句，布尔查询包含match\_all查询\(查询部分\)和range查询\(过滤部分\)两部分信息。
+分析上述查询语句，布尔查询包含match\_all查询\(查询部分\)和range查询\(过滤部分\)两个语句。
 
