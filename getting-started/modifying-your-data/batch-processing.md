@@ -4,7 +4,7 @@
 
 举个例子，下面请求通过一个bulk操作同时索引两个文档（ID为1的John Doe 和 ID为2的 Jane Doe）：
 
-```
+```bash
 curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
 {"index":{"_id":"1"}}
 {"name": "John Doe" }
@@ -15,7 +15,7 @@ curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
 
 下面的例子通过一个bulk操作在更新第一个文档（ID为1的）的同时删除第二个文档（ID为2的）：
 
-```
+```bash
 curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
 {"update":{"_id":"1"}}
 {"doc": { "name": "John Doe becomes Jane Doe" } }
