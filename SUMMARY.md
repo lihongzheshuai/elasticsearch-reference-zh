@@ -54,6 +54,8 @@
 
   * [2.1 配置](setup/configuration.md)
 
+  * [2.2 在Linux上以服务形式运行](setup/running-as-a-service-on-linux.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
