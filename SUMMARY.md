@@ -68,6 +68,8 @@
 
     * [2.6.2 滚动升级(Rolling upgrades)](setup/upgrading/rolling-upgrades.md)
 
+    * [2.6.3 全集群重启升级(Rolling upgrades)](setup/upgrading/full-cluster-restart-upgrade.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
