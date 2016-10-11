@@ -4,7 +4,11 @@
 
 > 注意：也可以利用我们的仓库，通过apt或yum命令安装Elasticsearch。参见 [仓库（Repositories）](/setup/repositories.md)。
 
+## 支持的平台
+
+官方支持的操作系统和JVM列表矩阵参见：[支持矩阵](https://www.elastic.co/support/matrix)。Elasticsearch列表中的平台上进行过充分的测试，不过它也可能可以运行在其它平台上。
+
 ## 安装 {#installation}
 
-
+在下载并解压完最新版本后，Elasticsearch可通过如下命令运行：
 
