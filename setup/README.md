@@ -18,3 +18,13 @@ $ bin/elasticsearch
 
 在\*nix操作系统上，上述命令将会在前台运行程序。
 
+### 以守护进程运行
+
+可以通过添加 -d 参数，切换到后台运行模式:
+
+```bash
+$ bin/elasticsearch -d
+```
+
+
+
