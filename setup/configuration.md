@@ -8,3 +8,9 @@ Elasticsearch会使用脚本中内置的JAVA\_OPTS变量的值作为JVM的启动
 
 ES\_HEAP\_SIZE环境变量用来设置Elasticsearch java进程的堆内存的大小。该变量会将最大和最小值设置成相同的值，不过也可以通过变量ES\_MIN\_MEM\(默认值为256m\)和ES\_MAX\_MEM\(默认值为1g\)，分别指定最小值和最大值（不推荐这么做）。
 
+推荐将最小和最大内存设置成相同的值，并开启 mlockall 。
+
+## 系统配置
+
+### 文件描述符
+
