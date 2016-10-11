@@ -60,6 +60,8 @@
 
   * [2.4 目录结构](setup/directory-layout.md)
 
+  * [2.5 目录结构](setup/directory-layout.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
