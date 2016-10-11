@@ -58,6 +58,8 @@
 
   * [2.3 在Windows上以服务形式运行](setup/running-as-a-service-on-windows.md)
 
+  * [2.4 目录结构](setup/directory-layout.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
