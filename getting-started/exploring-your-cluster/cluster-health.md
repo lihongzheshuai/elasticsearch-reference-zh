@@ -4,13 +4,13 @@
 
 我们使用[\_cat API](/cat-apis/README.md)来检查集群健康状态。记住，之前我们的节点开放在9200端口：
 
-```
+```bash
 curl 'localhost:9200/_cat/health?v'
 ```
 
 响应信息：
 
-```
+```bash
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign
 1394735289 14:28:09  elasticsearch green           1         1      0   0    0    0        0
 ```
@@ -23,13 +23,13 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 
 我们可以通过如下命令来获取节点列表：
 
-```
+```bash
 curl 'localhost:9200/_cat/nodes?v'
 ```
 
 响应如下：
 
-```
+```bash
 curl 'localhost:9200/_cat/nodes?v'
 host         ip        heap.percent ram.percent load node.role master name
 mwubuntu1    127.0.1.1            8           4 0.00 d         *      New Goblin
