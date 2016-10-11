@@ -4,7 +4,7 @@
 
 查询的REST API的入口为\_search。下面的例子将返回bank索引中的所有文档：
 
-```
+```bash
 curl 'localhost:9200/bank/_search?q=*&pretty'
 ```
 
@@ -12,7 +12,7 @@ curl 'localhost:9200/bank/_search?q=*&pretty'
 
 响应信息如下（只展示一部分内容）：
 
-```
+```bash
 curl 'localhost:9200/bank/_search?q=*&pretty'
 {
   "took" : 63,
@@ -52,7 +52,7 @@ curl 'localhost:9200/bank/_search?q=*&pretty'
 
 下面是通过请求体发送的，作用一致的查询请求样例：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_all": {} }
@@ -63,7 +63,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 响应信息如下（部分展示）：
 
-```
+```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 {
   "query": { "match_all": {} }
