@@ -6,7 +6,7 @@
 
 在全部使用默认配置的情况下，Elasticsearch节点的绑定地址和单播地址都是127.0.0.1，多次启动节点，会依次自动使用9300，9301等端口，因此不会冲突，还会进行自动发现，组成集群。下面信息为笔者在自己的实验环境下，采用默认配置在同一个机器上启动两个节点后的集群状态。可以看到，两个节点自动加入了同一个集群。
 
-```
+```bash
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent 
 1475336671 23:44:31  elasticsearch green           2         2      0   0    0    0        0             0                  -                100.0% 
 ```
@@ -15,7 +15,7 @@ Elasticsearch还支持组播的自动探测机制，不过根据组播原理，�
 
 概括来说，理解了单播的机制，我们也就自然而然的理解了Elasticsearch集群的配置方法，即只需要在集群中选择几个节点作为单播节点，配置到ES的配置文件elasticsearch.yml中即可。
 
-```
+```bash
 discovery.zen.ping.unicast.hosts: ["host1", "host2"]
 ```
 
