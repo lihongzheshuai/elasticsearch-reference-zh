@@ -50,7 +50,7 @@
 
   * [1.6 总结](getting-started/conclusion.md)
 
-* [2 设置](getting-started/getting-started.md)
+* [2 设置](setup/README.md)
 
 * [cat APIs](cat-apis/README.md)
 
