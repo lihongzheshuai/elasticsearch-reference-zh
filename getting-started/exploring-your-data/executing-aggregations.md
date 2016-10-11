@@ -127,5 +127,45 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 下面的例子展示了我们如何先根据年龄范围进行分组（20-29，30-39以及40-49三段），然后根据性别分组，最后计算每个年龄段中，每种年龄的余额的平均值：
 
-
+```bash
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+{
+  "size": 0,
+  "aggs": {
+    "group_by_age": {
+      "range": {
+        "field": "age",
+        "ranges": [
+          {
+            "from": 20,
+            "to": 30
+          },
+          {
+            "from": 30,
+            "to": 40
+          },
+          {
+            "from": 40,
+            "to": 50
+          }
+        ]
+      },
+      "aggs": {
+        "group_by_gender": {
+          "terms": {
+            "field": "gender"
+          },
+          "aggs": {
+            "average_balance": {
+              "avg": {
+                "field": "balance"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}'
+```
 
