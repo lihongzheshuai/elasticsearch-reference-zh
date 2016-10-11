@@ -6,3 +6,5 @@ Elasticsearch会使用脚本中内置的JAVA\_OPTS变量的值作为JVM的启动
 
 大多数情况下，推荐保留JAVA\_OPTS的默认值不变，而使用ES\_JAVA\_OPTS环境变量来设置\/修改 JVM的设置或参数。
 
+ES\_HEAP\_SIZE环境变量用来设置Elasticsearch java进程的堆内存的大小。该变量会将最大和最小值设置成相同的值，
+
