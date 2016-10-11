@@ -63,6 +63,10 @@
 
     * [11.3.1 匹配查询(Match Query)](query-dsl/full-text-query/match-query.md)
 
+  * [11.4 词条级查询(Term level Query)](query-dsl/term-level-query/README.md)
+
+     * [11.4.3 范围查询(Range Query)](query-dsl/term-level-query/range-query.md)
+
   * [11.5 组合查询](query-dsl/compound-queries/README.md)
 
     * [11.5.2 布尔查询(bool query)](query-dsl/compound-queries/bool-query.md)
