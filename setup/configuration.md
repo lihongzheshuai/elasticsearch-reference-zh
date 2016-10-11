@@ -14,5 +14,5 @@ ES\_HEAP\_SIZE环境变量用来设置Elasticsearch java进程的堆内存的大
 
 ### 文件描述符
 
-> 注意：该部分内容仅适用于Linux和macOS用户，如果你在Windows上运行Elasticsearch可以忽略本部分内容。在Windows上，JVM使用一个[API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx)仅受可用资源的限制。
+> 注意：该部分内容仅适用于Linux和macOS用户，如果你在Windows上运行Elasticsearch可以忽略本部分内容。在Windows上，JVM使用的[API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx\)仅受可用资源的限制。
 
