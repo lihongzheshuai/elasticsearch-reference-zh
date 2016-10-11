@@ -43,8 +43,7 @@ $ kill `cat pid` 注2
 
 > 注意：针对[Linux](/setup/running-as-a-service-on-linux.md)和[Windows](/setup/running-as-a-service-on-windows.md)提供的启动脚本，可以帮助你启动和停止Elastisearch进程。
 
-| \*NIX |
-| --- |
+---
 
-
+> \*NIX
 
