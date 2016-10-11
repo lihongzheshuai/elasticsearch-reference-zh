@@ -64,6 +64,8 @@
 
   * [2.6 升级](setup/upgrading/README.md)
 
+    * [2.6.1 备份你的数据](setup/upgrading/back-up-your-data.md)
+
 * [cat APIs](cat-apis/README.md)
 
 * [模块\(Modules\)](modules/README.md)
