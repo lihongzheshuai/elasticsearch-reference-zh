@@ -132,5 +132,7 @@ node:
   name: ${HOSTNAME}
 ```
 
+## 配置风格
+
 
 
