@@ -206,5 +206,5 @@ $ elasticsearch -Des.index.refresh_interval=5s
 
 ### 日志
 
-Elasticsearch使用内部的日志工具而没有使用[log4j](http://logging.apache.org/log4j/1.2/)。
+Elasticsearch使用内部的日志工具而没有使用[log4j](http://logging.apache.org/log4j/1.2/)。它力图使用[YAML](http://www.yaml.org/)配置来简化log4j配置，并且日志的配置文件为config\/logging.yml。
 
