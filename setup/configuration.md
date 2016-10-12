@@ -48,6 +48,12 @@ sysctl -w vm.max_map_count=262144
 
   最简单的选择就是直接关闭分区。通常情况下，Elasticsearch都是沙箱环境中的唯一服务，并且它的内存使用情况由        ES\_HEAP\_SIZE环境变量控制。因此不再需要交换分区。
 
-  在Linux操作系统上，你可以通过执行sudo swapoff -a 命令来关闭交换分区。
+  在Linux上，你可以通过执行sudo swapoff -a 命令来关闭交换分区。如果想要永久生效，你需要修改\/etc\/fstab文件，注释掉所有含有swap 字符的行。
+
+  在Windows上，你可以通过System Properties → Advanced → Performance → Advanced → Virtual memory 来关闭页面文件。
+
+* **配置交换分区**
+
+  第二个选择是确保vm.swappiness的值设置为0。
 
 
