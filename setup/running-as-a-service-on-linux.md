@@ -64,7 +64,7 @@ sudo service elasticsearch start
 
 ## 使用systemd
 
-像Debian Jessie ， Ubuntu 14 以及许多SUSE派生的系统使用systemd 而不是 chkconfig 工具来注册服务，同时使用\/bin\/systemctl 命令来启动和停止服务（最少在新版本中如此，否则使用chkconfig命令）。在基于rpm系统中配置文件同样存放在\/etc\/sysconfig\/elasticsearch中，基于deb包的系统中，配置文件存放在\/etc\/default\/elasticsearch中。在安装RPM包之后，你需要修改systemd配置，然后启动Elasticsearch
+像Debian Jessie ， Ubuntu 14 这样的系统以及许多SUSE派生的系统使用systemd 而不是 chkconfig 工具来注册服务，同时使用\/bin\/systemctl 命令来启动和停止服务（最少在新版本中如此，否则使用chkconfig命令）。基于rpm的系统配置文件同样存放在\/etc\/sysconfig\/elasticsearch中，基于deb包的系统，配置文件存放在\/etc\/default\/elasticsearch中。在安装RPM包之后，你需要修改systemd配置，然后启动Elasticsearch
 
 ```bash
 sudo /bin/systemctl daemon-reload
