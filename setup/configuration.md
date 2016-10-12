@@ -105,7 +105,5 @@ path:
   data: /var/data/elasticsearch
 ```
 
-
-
-
+### 集群名称
 
