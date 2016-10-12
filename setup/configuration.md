@@ -26,3 +26,7 @@ ES\_HEAP\_SIZE环境变量用来设置Elasticsearch java进程的堆内存的大
 curl localhost:9200/_nodes/stats/process?pretty
 ```
 
+### 虚拟内存
+
+
+
