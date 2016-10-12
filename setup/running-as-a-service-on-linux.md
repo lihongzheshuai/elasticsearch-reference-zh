@@ -11,7 +11,9 @@
 | ES\_USER | 启动用户，默认是elasticsearch |
 | --- | --- |
 | ES\_GROUP | 启动用户群组，默认是elasticsearch |
-| ES\_HEAP\_SIZE |  |
-|  |  |
+| ES\_HEAP\_SIZE |
+| q |
+|  |
+|  |
 |  |  |
 
