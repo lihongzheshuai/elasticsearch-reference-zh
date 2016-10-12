@@ -196,5 +196,9 @@ index :
     refresh_interval: 5s
 ```
 
+这意味着任何在该节点上创建的索引都会使用该刷新间隔为5秒的配置，而无需在创建索引是进行指定。另一方面，在索引级别上的配置会覆盖节点上配置。当然，你同样可以采用闭包"collapsed"的形式完成上述配置，例如：
 
+```bash
+$ elasticsearch -Des.index.refresh_interval=5s
+```
 
