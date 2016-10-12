@@ -90,7 +90,7 @@
 
   * [10.2 集群状态(Cluster State)](cluster-apis/cluster-state.md)
 
-  * [10.3 集群统计信息(Cluster State)](cluster-apis/cluster-state.md)
+  * [10.3 集群统计信息(Cluster Stats)](cluster-apis/cluster-state.md)
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
