@@ -61,3 +61,4 @@ sysctl -w vm.max_map_count=262144
 
 * **mlockall**
 
+      第三个选择是，在Linux\/Unix系统上使用[mlockall](http://opengroup.org/onlinepubs/007908799/xsh/mlockall.html)函数或者在Windows系统上使用[VirtualLock](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366895%28v=vs.85%29.aspx)函数。
