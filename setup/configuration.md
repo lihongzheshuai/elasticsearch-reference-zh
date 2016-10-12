@@ -175,7 +175,9 @@ node:
 Enter value for [node.name]:
 ```
 
-> 注意：
+> 注意：如果你在配置文件中使用了${prompt.text}或${prompt.secret}变量，那么Elasticsearch无法通过后端模式启动。
+
+### 索引配置
 
 
 
