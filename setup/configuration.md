@@ -67,5 +67,9 @@ sysctl -w vm.max_map_count=262144
   bootstrap.memory_lock: true
   ```
 
+  启动Elasticsearch后，你可以通过下述请求响应值中的mlockall部分来检查配置是否生效：
+  ```
+  curl http://localhost:9200/_nodes/process?pretty
+  ```
 
 
