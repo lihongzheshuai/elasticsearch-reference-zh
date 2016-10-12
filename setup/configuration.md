@@ -28,5 +28,5 @@ curl localhost:9200/_nodes/stats/process?pretty
 
 ### 虚拟内存
 
-
+Elasticsearch 默认使用 hybrid mmapfs \/ niofs 文件系统来存储索引。
 
