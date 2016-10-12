@@ -62,6 +62,8 @@
   * [11.5 组合查询](query-dsl/compound-queries/README.md)
     * [11.5.2 布尔查询\(bool query\)](query-dsl/compound-queries/bool-query.md)
 * [15 索引组件](index-modules/README.md)
+  * [15.1 分析](index-modules/analysis.md)
+
 
 
 
