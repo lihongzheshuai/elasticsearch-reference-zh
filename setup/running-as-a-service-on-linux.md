@@ -40,7 +40,7 @@ sudo /etc/init.d/elasticsearch start
 
 ### 安装oracle版JDK
 
-Elastics推荐使用Oracle 版的JDK。然而由于协议的原因Ubuntu 和 Debian 只能在包中内嵌OpenJDK。不过你可以容易的安装oracle版的安装包。如果在你的Debian GNU\/Linux 系统上没有add-apt-repository 命令，你需要安装最新版的Debian Jessie 和 python-software-properties 工具包。
+Elastics推荐使用Oracle 版的JDK。然而由于协议的原因Ubuntu 和 Debian 只能在包中内嵌OpenJDK。不过你可以很容易的安装oracle版的安装包。如果在你的Debian GNU\/Linux 系统上没有add-apt-repository 命令，你需要安装最新版的Debian Jessie 和 python-software-properties 工具包。
 
 ```bash
 sudo add-apt-repository ppa:webupd8team/java
