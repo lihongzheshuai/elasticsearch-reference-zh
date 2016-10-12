@@ -212,7 +212,7 @@ Elasticsearch使用内部日志抽象，从而摆脱[log4j](http://logging.apach
 
 ## 废弃日志
 
-除了常规日志，Elasticsearch支持针对废弃操作的日志配置。例如，如果你想在未来迁移某个功能，该功能可以帮助你提前做出决定。废弃日志记录默认是关闭的。你可以在config\/logging.yml配置文件中将废弃日志级别设置为DEBUG来启用该功能。
+除了常规日志，Elasticsearch支持针对废弃操作的日志配置。例如，如果你想在未来迁移某个功能，该功能可以帮助你提前做出决定。废弃日志记录功能默认是关闭的。你可以在config\/logging.yml配置文件中将废弃日志级别设置为DEBUG来启用该功能。
 
 ```js
 deprecation: DEBUG, deprecation_log_file
