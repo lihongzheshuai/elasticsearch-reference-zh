@@ -28,5 +28,5 @@ curl localhost:9200/_nodes/stats/process?pretty
 
 ### 虚拟内存
 
-Elasticsearch 默认使用 hybrid mmapfs \/ niofs 文件系统来存储索引。
+Elasticsearch 默认使用 [hybrid mmapfs \/ niofs](/index-modules/store.md) 文件系统来存储索引。操作系统默认允许的mmap 数量一般很低，这可能会导致内存溢出异常。
 
