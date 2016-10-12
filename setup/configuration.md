@@ -38,3 +38,7 @@ sysctl -w vm.max_map_count=262144
 
 > 注意：如果你是通过.deb或.rpm包安装的Elasticsearch，那么该配置会被自动修改。可以通过sysctl vm.max\_map\_count 命令来验证。
 
+### 内存配置
+
+
+
