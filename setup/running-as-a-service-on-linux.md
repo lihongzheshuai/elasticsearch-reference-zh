@@ -53,9 +53,14 @@ java -version
 
 ## 基于RPM的安装包
 
+### 使用chkconfig
 
+某些基于RPM的安装包使用chkconfig命令来启用和禁用服务。初始化脚本默认存放在\/etc\/init.d\/elasticsearch，配置文件默认存放在\/etc\/sysconfig\/elasticsearch。与debian包一样，在默认情况下RPM在安装后也不启动，你需要手动执行如下命令：
 
-
+```bash
+sudo /sbin/chkconfig --add elasticsearch
+sudo service elasticsearch start
+```
 
 
 
