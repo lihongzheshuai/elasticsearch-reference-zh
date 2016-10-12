@@ -71,6 +71,8 @@
   * [15.3 映射(Mapper)](index-modules/mapper.md)
   * [15.4 合并(Merge)](index-modules/merge.md)
   * [15.5 相似性组件(Similary module)](index-modules/similarity-module.md)
+  * [15.6 查看日志](index-modules/show-log.md)
+
  
 
 
