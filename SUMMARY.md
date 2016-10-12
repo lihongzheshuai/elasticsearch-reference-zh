@@ -27,6 +27,7 @@
   * [1.6 总结](getting-started/conclusion.md)
 * [2 安装](setup/README.md)
   * [2.1 配置](setup/configuration.md)
+    * [2.1.1 译者注](setup/translator-note-configuration.md)
   * [2.2 在Linux上以服务形式运行](setup/running-as-a-service-on-linux.md)
   * [2.3 在Windows上以服务形式运行](setup/running-as-a-service-on-windows.md)
   * [2.4 目录结构](setup/directory-layout.md)
