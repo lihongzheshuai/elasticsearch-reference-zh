@@ -73,6 +73,8 @@
   * [15.5 相似性组件(Similary module)](index-modules/similarity-module.md)
   * [15.6 查看日志](index-modules/show-log.md)
   * [15.7 存储](index-modules/store.md)
+  * [15.8 事务日志(Translog)](index-modules/translog.md)
+
 
 
  
