@@ -189,5 +189,12 @@ index:
 '
 ```
 
+也可以在节点级别进行索引配置，例如，可在elasticsearch.yml文件进行如下配置：
+
+```js
+index :
+    refresh_interval: 5s
+```
+
 
 
