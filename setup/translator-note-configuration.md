@@ -51,5 +51,48 @@ curl localhost:9200/_nodes/stats/process?pretty
 }
 ```
 
-从响应信息里可以看到，在笔者本地实验环境中。max\_file\_descriptors的值为1024000
+从响应信息里可以看到，在笔者本地实验环境中。max\_file\_descriptors的值为1024000。
+
+## 关于mlockall 信息获取
+
+这里补充一下响应信息：
+
+```bash
+curl http://localhost:9200/_nodes/process?pretty
+{
+  "cluster_name" : "elasticsearch",
+  "nodes" : {
+    "J3YNgJtqQmyj__V_kQMTUw" : {
+      "name" : "Snowbird",
+      "transport_address" : "127.0.0.1:9300",
+      "host" : "127.0.0.1",
+      "ip" : "127.0.0.1",
+      "version" : "2.4.1",
+      "build" : "c67dc32",
+      "http_address" : "127.0.0.1:9200",
+      "process" : {
+        "refresh_interval_in_millis" : 1000,
+        "id" : 21384,
+        "mlockall" : false
+      }
+    },
+    "IdxNrXo3T6KAtLHgIy_onA" : {
+      "name" : "Ariann",
+      "transport_address" : "127.0.0.1:9301",
+      "host" : "127.0.0.1",
+      "ip" : "127.0.0.1",
+      "version" : "2.4.1",
+      "build" : "c67dc32",
+      "http_address" : "127.0.0.1:9201",
+      "process" : {
+        "refresh_interval_in_millis" : 1000,
+        "id" : 21444,
+        "mlockall" : false
+      }
+    }
+  }
+}
+```
+
+可以看到，在笔者的实验环境中，mlockall的值是false。原因就是文中的提到了第一种情况，运行ES的用户没有权限。不过笔者的实验环境中并没有配置交换分区，也就无需关注这里的情况。
 
