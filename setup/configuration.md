@@ -68,8 +68,12 @@ sysctl -w vm.max_map_count=262144
   ```
 
   启动Elasticsearch后，你可以通过下述请求响应值中的mlockall部分来检查配置是否生效：
-  ```
+
+  ```bash
   curl http://localhost:9200/_nodes/process?pretty
   ```
 
+  如果你看到mlockall的值是false，那意味着mlockall请求失败了。对于Linux\/Unix系统，最有可能的原因是运行Elasticsearch的用户没有锁定内存的权限。可以在启动Elasticsearch之前，通过root用户执行 ulimit -l unlimited 命令来赋予权限。
+
+  另一个可能的原因是
 
