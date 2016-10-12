@@ -86,6 +86,8 @@
 
 * [10 集群API(Cluster APIs)](cluster-apis/README.md)
 
+  * [10.1 集群健康(Cluster APIs)](cluster-apis/README.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
