@@ -29,4 +29,4 @@
 
 由于使用了像update-rc.d 这样的debian包工具定义运行时需要的环境，因此debian包内置了所有需要的依赖。如你所想，初始化脚本为/etc/init.d/elasticsearch。配置文件存放在/etc/default/elasticsearch目录。
 
-debian包默认不以服务的形式启动。
+debian包默认不以服务的形式启动。目的是为了避免实例在没有配置好的情况下意外加入集群。
