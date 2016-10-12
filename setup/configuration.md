@@ -18,3 +18,5 @@ ES\_HEAP\_SIZE环境变量用来设置Elasticsearch java进程的堆内存的大
 
 确认增大所在机器（或者运行Elasticsearch的用户）的可打开文件描述符的数量。推荐将其设置为32k，甚至64k。
 
+如果想要测试程序可以打开的文件数，可以在启动时设置参数 -Des.max-open-files 的值为 true。该参数将在启动期打印出程序最大可打开的文件数目。
+
