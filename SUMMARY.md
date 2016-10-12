@@ -66,6 +66,7 @@
   * [15.2 索引分块分配](index-modules/index-shard-allocation/README.md)
     * [15.2.1 分块分配过滤(Shard Allocation Filtering)](index-modules/index-shard-allocation/shard-allocation-filtering.md)
     * [15.2.2 当节点离线时延迟分配](index-modules/index-shard-allocation/delaying-allocation-when-a-node-leaves.md)
+    * [15.2.3 索引恢复优先级](index-modules/index-shard-allocation/index-recovery-prioritization.md)
 
 
 
