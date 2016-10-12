@@ -162,7 +162,20 @@ $ elasticsearch -Des.network.host=10.0.0.4
 }
 ```
 
+另外，如果你不想讲配置保存在配置文件中，你可以使用变量${prompt.text}或${prompt.secret}，然后使用前端模式启动Elasticsearch。区别是，${prompt.secret} 配置会禁用回显，也就是不会值不会显示在你的终端中；${prompt.text} 使你可以看到你输入的值。例如：
 
+```js
+node:
+  name: ${prompt.text}
+```
+
+当执行elasticsearch命令的时候，会提示你输入实际的值：
+
+```bash
+Enter value for [node.name]:
+```
+
+> 注意：
 
 
 
