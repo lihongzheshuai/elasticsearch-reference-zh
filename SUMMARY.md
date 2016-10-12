@@ -37,7 +37,7 @@
     * [2.6.2 滚动升级\(Rolling upgrades\)](setup/upgrading/rolling-upgrades.md)
     * [2.6.3 全集群重启升级\(Rolling upgrades\)](setup/upgrading/full-cluster-restart-upgrade.md)
 * [cat APIs](cat-apis/README.md)
-* [模块\(Modules\)](modules/README.md)
+* [14 组件\(Modules\)](modules/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
 * [6 查询接口](search-apis/README.md)
   * [6.2 URI查询](search-apis/uri-search.md)
