@@ -90,10 +90,22 @@ Elasticsearch的配置文件存放在ES\_HOME\/config 目录下。初始有两�
 
 配置文件是[YAML](http://www.yaml.org/)格式的。下面的例子说明如何修改所有依赖网络的组件所绑定的网络地址：
 
-```
+```js
 network :
     host : 10.0.0.4
 ```
+
+### 路径
+
+在生产环境下，你可能需要修改数据和日志的存放地址：
+
+```js
+path:
+  logs: /var/log/elasticsearch
+  data: /var/data/elasticsearch
+```
+
+
 
 
 
