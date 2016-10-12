@@ -2,3 +2,5 @@
 
 为了以服务形式在你的操作系统上运行Elasticsearch，提供的包尽可能简单的让你在系统重启或更新期间启动和停止elasticsearch。
 
+## Linux
+
