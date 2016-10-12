@@ -100,7 +100,7 @@
 
   * [10.7 节点统计信息(Nodes Stats)](cluster-apis/nodes-stats.md)
 
-  * [10.8 节点信息(Nodes Stats)](cluster-apis/nodes-stats.md) 
+  * [10.8 节点信息(Nodes Info)](cluster-apis/nodes-stats.md) 
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
