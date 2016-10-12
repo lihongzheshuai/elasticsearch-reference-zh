@@ -86,5 +86,14 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearch 配置
 
-Elasticsearch的配置文件存放在ES\_HOME\/config 目录下。初始有两个配置文件， elasticsearch.yml 和 logging.yml，其中elasticsearch.yml 负责配置Elasticsearch的各种组件， logging.yml负责配置Elasticsearch日志。
+Elasticsearch的配置文件存放在ES\_HOME\/config 目录下。初始有两个配置文件， elasticsearch.yml 和 logging.yml，其中elasticsearch.yml 负责配置Elasticsearch的各种[组件](/modules/README.md)， logging.yml负责配置Elasticsearch日志。
+
+配置文件是[YAML](http://www.yaml.org/)格式的。下面的例子说明如何修改所有依赖网络的组件所绑定的网络地址：
+
+```
+network :
+    host : 10.0.0.4
+```
+
+
 
