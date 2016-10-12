@@ -36,5 +36,7 @@ sudo update-rc.d elasticsearch defaults 95 10
 sudo /etc/init.d/elasticsearch start
 ```
 
-使用Debian8 或 Ubuntu 14 以后版本的用户需要配置systemd 而不是 update-rc.d，请参见 "使用systemd"章节。
+使用Debian8 或 Ubuntu 14 以后版本的用户需要配置systemd 而不是 update-rc.d，请参见 "[使用systemd](#使用systemd)"章节。
+
+## 使用systemd
 
