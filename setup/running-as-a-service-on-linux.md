@@ -22,6 +22,8 @@
 | DATA\_DIR | 数据目录，默认是\/var\/lib\/elasticsearch |
 | CONF\_DIR | 配置文件目录（该目录中需要包含elasticsearch.yml和logging.yml配置文件），默认是\/etc\/elasticsearch |
 | ES\_JAVA\_OPTS | 想要配置的额外的java选项。比如你在一个分布式环境下，由puppet或chef进行集群管理，此时你想设置node.name的值而又不想修改elasticsearch.yml配置文件，那么该参数就非常有帮助。例如：ES\_JAVA\_OPTS="-Des.node.name=search-01" |
-|RESTART_ON_UPGRADE|配置在包升级后重启，默认是false。这意味着在你在安装一个包后必须手动重启Elasticsearch。如此配置的原因是想确保集群升级不会导致分块的持续重分配，从而导致过高的网络负载和降低集群的响应速率。|
-|ES_GC_LOG_FILE|垃圾收集日志文件的绝对路径，由JVM创建。需要注意的是，该日志文件可能会增长非常迅速，因此该选项默认是关闭的。|
+| RESTART\_ON\_UPGRADE | 配置在包升级后重启，默认是false。这意味着在你在安装一个包后必须手动重启Elasticsearch。如此配置的原因是想确保集群升级不会导致分块的持续重分配，从而导致过高的网络负载和降低集群的响应速率。 |
+| ES\_GC\_LOG\_FILE | 垃圾收集日志文件的绝对路径，由JVM创建。需要注意的是，该日志文件可能会增长非常迅速，因此该选项默认是关闭的。 |
+
+### Debian/Ubuntu
 
