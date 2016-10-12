@@ -67,7 +67,7 @@ sysctl -w vm.max_map_count=262144
   bootstrap.memory_lock: true
   ```
 
-  启动Elasticsearch后，你可以通过下述请求响应值中的mlockall部分来检查配置是否生效：
+  启动Elasticsearch后，你可以通过下述请求响应值中的mlockall部分来检查配置是否生效：（译者注 2）
 
   ```bash
   curl http://localhost:9200/_nodes/process?pretty
@@ -75,5 +75,16 @@ sysctl -w vm.max_map_count=262144
 
   如果你看到mlockall的值是false，那意味着mlockall请求失败了。对于Linux\/Unix系统，最有可能的原因是运行Elasticsearch的用户没有锁定内存的权限。可以在启动Elasticsearch之前，通过root用户执行 ulimit -l unlimited 命令来赋予权限。
 
-  另一个可能的原因是
+  另一个可能的原因是，临时文件夹\(通常是\/tmp\) 是通过noexec 选项挂载的。这可以通过在启动Elasticsearch时指定新的临时文件夹解决：
+
+  ```bash
+  ./bin/elasticsearch -Djna.tmpdir=/path/to/new/dir
+  ```
+
+  > 警告 ⚠️：如果锁定的内存大于可用内存，mlockall命令会导致JVM或shell 会话退出。
+
+
+## Elasticsearch 配置
+
+
 
