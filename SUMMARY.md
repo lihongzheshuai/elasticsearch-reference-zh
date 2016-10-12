@@ -88,6 +88,8 @@
 
   * [10.1 集群健康(Cluster Health)](cluster-apis/cluster-health.md)
 
+  * [10.2 集群状态(Cluster State)](cluster-apis/cluster-state.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
