@@ -1,6 +1,6 @@
 # 在Linux上以服务形式运行
 
-为了以服务形式在你的操作系统上运行Elasticsearch，提供的包尽可能简单的让你在系统重启或更新期间启动和停止elasticsearch。
+为了以服务形式在系统上运行Elasticsearch，我们提供的安装包尽可能简单的让你在系统重启和升级期间启动和停止elasticsearch。
 
 ## Linux
 
