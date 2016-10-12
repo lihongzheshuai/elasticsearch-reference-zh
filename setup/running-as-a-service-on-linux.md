@@ -14,7 +14,7 @@
 | ES\_HEAP\_SIZE |堆内存大小|
 | ES_HEAP_NEWSIZE | 新生带堆内存大小 |
 | ES_DIRECT_SIZE | 非堆内存最大值 |
-|  |  |
+| MAX_OPEN_FILES | 最大打开文件数，默认是65536 |
 |  |  |
 |  |  |
 
