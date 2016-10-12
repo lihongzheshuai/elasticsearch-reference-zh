@@ -36,3 +36,5 @@ sysctl -w vm.max_map_count=262144
 
 如果想要此修改永久生效，可以修改\/etc\/sysctl.conf配置文件中vm.max\_map\_count 的值。
 
+> 注意：如果你是通过.deb或.rpm包安装的Elasticsearch，那么该配置会被自动修改。可以通过sysctl vm.max\_map\_count 命令来验证。
+
