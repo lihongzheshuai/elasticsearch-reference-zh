@@ -92,7 +92,7 @@
 
   * [10.3 集群统计信息(Cluster Stats)](cluster-apis/cluster-stats.md)
 
-  * [10.4 集群中挂起的任务](cluster-apis/cluster-stats.md)
+  * [10.4 集群中挂起的任务](cluster-apis/pending-cluster-tasts.md)
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
