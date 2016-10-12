@@ -94,6 +94,8 @@
 
   * [10.4 集群中挂起的任务](cluster-apis/pending-cluster-tasts.md)
 
+  * [10.5 集群中挂起的任务](cluster-apis/pending-cluster-tasts.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
