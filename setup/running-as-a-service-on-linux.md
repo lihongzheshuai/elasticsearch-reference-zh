@@ -17,5 +17,5 @@
 | ES\_DIRECT\_SIZE | 直接内存最大值 |
 | MAX\_OPEN\_FILES | 最大打开文件数，默认是65536 |
 | MAX_LOCKED_MEMORY | 最大锁定内存大小。如果在elaticsearch.yml中配置了bootstrap.memory.lock，那么该参数需要设置成"unlimited"。你必须设置ES_HEAP_SIZE的值。 |
-|  |  |
+| MAX_MAP_COUNT | 进程所拥有的最大内存映射区域数。如果使用mmapfs索引存储类型，这里需要设置一个比较大的值。更多信息参见[linux内核文档](https://github.com/torvalds/linux/blob/master/Documentation/sysctl/vm.txt)中关于max_map_count的介绍。该配置是在Elasticsearch启动前，通过sysctl命令指定。默认值是65535。 |
 
