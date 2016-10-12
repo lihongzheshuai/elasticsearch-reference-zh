@@ -86,3 +86,5 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearch 配置
 
+Elasticsearch的配置文件存放在ES\_HOME\/config 目录下。
+
