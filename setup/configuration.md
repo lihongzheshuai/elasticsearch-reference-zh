@@ -34,3 +34,5 @@ Elasticsearch 默认使用 [hybrid mmapfs \/ niofs](/index-modules/store.md) 文
 sysctl -w vm.max_map_count=262144
 ```
 
+如果想要此修改永久生效，可以修改\/etc\/sysctl.conf配置文件中vm.max\_map\_count 的值。
+
