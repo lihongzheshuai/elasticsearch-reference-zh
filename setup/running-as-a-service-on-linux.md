@@ -13,8 +13,7 @@
 | ES\_GROUP | 启动用户群组，默认是elasticsearch |
 | ES\_HEAP\_SIZE |堆内存大小|
 | ES_HEAP_NEWSIZE | 新生带堆内存大小 |
-
-|  |  |
+| ES_DIRECT_SIZE | 非堆内存最大值 |
 |  |  |
 |  |  |
 |  |  |
