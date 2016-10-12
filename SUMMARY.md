@@ -102,7 +102,7 @@
 
   * [10.8 节点信息(Nodes Info)](cluster-apis/nodes-info.md) 
 
-  * [10.8 节点信息(Nodes Info)](cluster-apis/nodes-info.md) 
+  * [10.9 任务管理API](cluster-apis/task-management-api.md) 
 
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
