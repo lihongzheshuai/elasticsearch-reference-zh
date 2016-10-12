@@ -114,5 +114,5 @@ cluster:
   name: <NAME OF YOUR CLUSTER>
 ```
 
-
+请确保你不要在不同的环境下使用相同的集群名字，否则可能会导致节点加入错误的集群。例如，你可以使用logging-dev, logging-stage 和 logging-prod  分别命名
 
