@@ -64,7 +64,7 @@
 * [15 索引组件](index-modules/README.md)
   * [15.1 分析](index-modules/analysis.md)
   * [15.2 索引分块分配](index-modules/index-shard-allocation/README.md)
-    * [15.2.1 分块分配过滤(Shard Allocation Filtering)](index-modules/index-shard-allocation/README.md)
+    * [15.2.1 分块分配过滤(Shard Allocation Filtering)](index-modules/index-shard-allocation/shard-allocation-filtering.md)
 
 
 
