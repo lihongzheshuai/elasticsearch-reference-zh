@@ -104,6 +104,8 @@
 
   * [10.9 任务管理API](cluster-apis/task-management-api.md) 
 
+  * [10.10 节点热点线程(Nodes hot_threads)](cluster-apis/nodes-hot-threads.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
