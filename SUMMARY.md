@@ -69,6 +69,8 @@
     * [15.2.3 索引恢复优先级](index-modules/index-shard-allocation/index-recovery-prioritization.md)
     * [15.2.4 每个节点上的分块数量](index-modules/index-shard-allocation/total-shards-per-node.md)
   * [15.3 映射(Mapper)](index-modules/mapper.md)
+  * [15.4 合并(Merge)](index-modules/mapper.md)
+
 
 
 
