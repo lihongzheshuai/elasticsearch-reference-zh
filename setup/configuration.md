@@ -206,7 +206,7 @@ $ elasticsearch -Des.index.refresh_interval=5s
 
 ### 日志
 
-Elasticsearch使用内部日志抽象，从而摆脱[log4j](http://logging.apache.org/log4j/1.2/) 配置上的束缚。它力图使用[YAML](http://www.yaml.org/)配置来简化log4j配置，日志的配置文件为config\/logging.yml。Elasticsearch也支持[JSON](http://en.wikipedia.org/wiki/JSON)和[properties](http://en.wikipedia.org/wiki/.properties)格式的配置。Elasticsearch支持同时加载多个配置文件，文件名须以logging开头并以支持的后缀名结尾（.yml, .yaml, .json, .properties 中的一种），这种情况下多个配置会被合并。logger部分包括java包路径和其对应的日志级别，包路径可以省略org.elasticsearch的前缀。appender部分包括日志存放位置。更多的关于如何自定义logging已经所有支持的appender的信息可以参见[log4j 文档](http://logging.apache.org/log4j/1.2/manual.html)。
+Elasticsearch使用内部日志抽象，从而摆脱[log4j](http://logging.apache.org/log4j/1.2/) 配置上的束缚。Elasticsearch力图使用[YAML](http://www.yaml.org/)配置来简化log4j配置，日志的配置文件为config\/logging.yml。Elasticsearch也支持[JSON](http://en.wikipedia.org/wiki/JSON)和[properties](http://en.wikipedia.org/wiki/.properties)格式的配置。Elasticsearch支持同时加载多个配置文件，文件名须以logging开头并以支持的后缀名结尾（.yml, .yaml, .json, .properties 中的一种），这种情况下多个配置会被合并。logger部分包括java包路径和其对应的日志级别，包路径可以省略org.elasticsearch的前缀。appender部分包括日志存放位置。更多的关于如何自定义logging已经所有支持的appender的信息可以参见[log4j 文档](http://logging.apache.org/log4j/1.2/manual.html)。
 
 除此之外，[logj4-extras](http://logging.apache.org/log4j/extras/) 提供的附加的Appenders和其他日志类也可以使用。
 
