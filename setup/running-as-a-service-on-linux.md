@@ -27,4 +27,4 @@
 
 ### Debian/Ubuntu
 
-
+由于使用了像update-rc.d 这样的debian包工具定义运行时需要的环境，因此debian包内置了所有需要的依赖。
