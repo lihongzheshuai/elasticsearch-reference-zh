@@ -70,6 +70,8 @@
     * [15.2.4 每个节点上的分块数量](index-modules/index-shard-allocation/total-shards-per-node.md)
   * [15.3 映射(Mapper)](index-modules/mapper.md)
   * [15.4 合并(Merge)](index-modules/merge.md)
+  * [15.5 相似性组件(Similary module)](index-modules/similarity-module.md)
+ 
 
 
 
