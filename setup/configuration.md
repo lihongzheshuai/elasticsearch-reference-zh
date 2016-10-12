@@ -63,5 +63,9 @@ sysctl -w vm.max_map_count=262144
 
   第三个选择是，在Linux\/Unix系统上使用[mlockall](http://opengroup.org/onlinepubs/007908799/xsh/mlockall.html)函数或者在Windows系统上使用[VirtualLock](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366895%28v=vs.85%29.aspx)函数来在RAM中锁定程序的地址空间，从而避免Elasticsearch程序的内存被交换出去。可以通过在config\/elasticsearch.yml配置文件中添加如下信息来配置：
 
+  ```js
+  bootstrap.memory_lock: true
+  ```
+
 
 
