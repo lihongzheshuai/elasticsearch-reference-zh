@@ -202,3 +202,5 @@ index :
 $ elasticsearch -Des.index.refresh_interval=5s
 ```
 
+可以在[索引组件](/index-modules/README.md)部分查看到所有索引级别的配置。
+
