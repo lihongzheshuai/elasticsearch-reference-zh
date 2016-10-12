@@ -210,3 +210,7 @@ Elasticsearch使用内部日志抽象，从而摆脱[log4j](http://logging.apach
 
 除此之外，[logj4-extras](http://logging.apache.org/log4j/extras/) 提供的附加的Appenders和其他日志类也可以使用。
 
+## 废弃日志
+
+除了常规日志，Elasticsearch支持针对废弃操作的日志配置。例如，如果你想在未来迁移某个功能，该功能可以帮助你提早决定。
+
