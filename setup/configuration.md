@@ -134,5 +134,17 @@ node:
 
 ## 配置风格
 
-在内部，所以的配置都包裹在命名空间中。例如，上面的配置node.name。
+在内部，所以的配置都包裹在命名空间（namespaced）中。例如，上面的配置node.name。这意味着可以很轻松的支持配置格式，如[JSON](http://www.json.org/)。如果喜欢JSON格式配置，可以简单的将elasticsearch.yml 重命名为 elasticsearch.json ，并且添加内容：
+
+```js
+{
+    "network" : {
+        "host" : "10.0.0.4"
+    }
+}
+```
+
+同样，这也意味着可以方便的将配置外置，
+
+
 
