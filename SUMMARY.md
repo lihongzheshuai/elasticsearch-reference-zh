@@ -96,6 +96,8 @@
 
   * [10.5 集群重新分配](cluster-apis/cluster-reroute.md)
 
+  * [10.6 集群更新配置](cluster-apis/cluster-reroute.md)
+
 * [11 查询领域专用语言\(DSL\)](query-dsl/README.md)
 
   * [11.3 全文检索](query-dsl/full-text-query/README.md)
