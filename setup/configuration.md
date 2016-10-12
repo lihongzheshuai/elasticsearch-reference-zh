@@ -179,5 +179,15 @@ Enter value for [node.name]:
 
 ### 索引配置
 
+在集群中创建索引时可以提供独立的配置。例如，下面的例子创建了一个刷新间隔为5秒的索引，而非使用默认间隔（可以使用YAML或JSON格式）:
+
+```bash
+$ curl -XPUT http://localhost:9200/kimchy/ -d \
+'
+index:
+    refresh_interval: 5s
+'
+```
+
 
 
