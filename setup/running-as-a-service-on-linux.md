@@ -72,3 +72,5 @@ sudo /bin/systemctl enable elasticsearch.service
 sudo /bin/systemctl start elasticsearch.service
 ```
 
+同时需要需要到，修改\/etc\/sysconfig\/elasticsearch 配置文件中的MAX\_MAP\_COUNT没有任何效果，你需要修改\/usr\/lib\/sysctl.d\/elasticsearch.conf 配置文案件中的值才可以使其在启动时生效。
+
