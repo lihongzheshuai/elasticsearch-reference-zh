@@ -218,5 +218,5 @@ Elasticsearch使用内部日志抽象，从而摆脱[log4j](http://logging.apach
 deprecation: DEBUG, deprecation_log_file
 ```
 
-这会在你的日志文件中创建一个每日滚动生成的废弃日志文件。
+这会在你的日志文件中创建一个每日滚动生成的废弃日志文件。当你想要升级一个主版本的时候，你可以检查该文件。
 
