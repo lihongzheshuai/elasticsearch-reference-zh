@@ -128,5 +128,45 @@ ExecStart=/usr/share/elasticsearch/bin/elasticsearch \
 
 这里笔者又稍微“好事”的研究了一下Elasticsearch是如何接受到这些变量的值的，其实这本没有什么可好奇的，只是因为笔者在之前研究未指定变量时，默认读取config目录的源码时，发现在Environment类中使用的key是path.conf，而这里指定的是es.default.path.conf，想知道是哪里做了处理（其实更重要的原因是，最开始笔者读错了源码，笔者研究了半天master分支的源码，与这里的key更对不上，还看到了Java 8的Function特性，而文档提到最低需要Java 7。。。）。
 
+在2.4版本中，InternalSettingsPreparer类中，定义了default前缀数组
 
+```java
+static final String[] PROPERTY_DEFAULTS_PREFIXES = {"es.default.", "elasticsearch.default."};
+```
+
+在initializeSetting中，针对每个前缀做了如下处理：
+
+```java
+private static void initializeSettings(Settings.Builder output, Settings input, boolean loadDefaults) {
+        output.put(input);
+        if (useSystemProperties(input)) {
+            if (loadDefaults) {
+                for (String prefix : PROPERTY_DEFAULTS_PREFIXES) {
+                    output.putProperties(prefix, System.getProperties());
+                }
+            }
+            for (String prefix : PROPERTY_PREFIXES) {
+                output.putProperties(prefix, System.getProperties(), PROPERTY_DEFAULTS_PREFIXES);
+            }
+        }
+        output.replacePropertyPlaceholders();
+    }
+```
+
+其中output.putProperties实现如下：
+
+```java
+public Builder putProperties(String prefix, Properties properties) {
+            for (Object key1 : properties.keySet()) {
+                String key = (String) key1;
+                String value = properties.getProperty(key);
+                if (key.startsWith(prefix)) {
+                    map.put(key.substring(prefix.length()), value);
+                }
+            }
+            return this;
+        }
+```
+
+即将前缀处理掉，再存入环境变量，这就可以解释Elasticsearch是如何读取到变量指定的配置文件的路径了。
 
