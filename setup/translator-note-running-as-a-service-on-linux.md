@@ -39,5 +39,5 @@ configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显
 
 ### systemd 模式运行
 
-现在再来说说以服务形式运行的情况。之所以先介绍了tar包模式运行的的情况，就是为了做一个对比。
+现在再来说说以服务形式运行的情况。之所以先介绍了tar包模式运行的的情况，就是为了做一个对比。笔者所使用的操作系统版本是CentOS 7，所以对应下载.rpm包。安装后，根据2.2章节说明，Elasticsearch程序文件存放在\/usr\/share\/elasticsearch目录。其中bin目录下存放的启动脚本，但是并不存在config目录。
 
