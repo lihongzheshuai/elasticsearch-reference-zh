@@ -10,7 +10,7 @@
 
 此时，我们修改config目录下的elasticsearch.yml和logging.yml配置文件，即可完成对Elasticsearch服务和日志的配置。即，前文提到的配置参数，在此两个配置文件中基本都可找到。
 
-注意到，从bin\/elasticsearch启动脚本中，笔者并未发现跟配置文件目录有关的信息，
+出于“强迫症”的性格，笔者想最后找到Elasticsearch默认从主目录下的config目录加载配置文件的政府。在bin\/elasticsearch启动脚本中，笔者并未发现跟配置文件目录有关的信息，在内部脚本bin\/elasticsearch.in.sh中\(用于应用用户指定的环境变量\)中也没有找到配置，因此只能从源码中找到证据，一路阅读启动代码在Environment.java中找到证据：
 
 ```java
 public Environment(Settings settings) {
@@ -32,6 +32,7 @@ public Environment(Settings settings) {
         } else {
             scriptsFile = configFile.resolve("scripts");
         }
-
 ```
+
+
 
