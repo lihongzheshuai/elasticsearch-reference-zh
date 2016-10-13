@@ -45,12 +45,12 @@ configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显
 /usr/share/elasticsearch/bin/elasticsearch
 Exception in thread "main" ElasticsearchException[Failed to load logging configuration]; nested: NoSuchFileException[/usr/share/elasticsearch/config];
 Likely root cause: java.nio.file.NoSuchFileException: /usr/share/elasticsearch/config
-	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
-	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
-	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+    at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+    at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+    at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+    at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+    at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
 ```
 
-因此，我们知道，第一，Elasticsearch必须要找到配置文件方可启动，因此配置文件一定存放在其它目录中，第二，采用rpm包安装后，是不能直接使用脚本启动的，必须要进行注册系统服务的配置。对于第一个问题，我们可以先直接给出答案，rpm安装后，配置文件的存放目录为\/etc\/elasticsearch，在该目录下存放了elaticsearch.yml和logging.yml配置文件。对于第二个问题，就回到了2.2节中介绍的内容，采用chkconfig或者systemd来注册和管理服务，二者选其一即可。在CentOS 7上，虽然两个命令都存在，但实际上最终都是由systemctl管理的，也就是采用了systemd模式。即使你使用官方文档中提到的命令service elasticsearch start  启动，系统也会自动转为systemctl模式。
+因此，我们知道，第一，Elasticsearch必须要找到配置文件方可启动，因此配置文件一定存放在其它目录中，第二，采用rpm包安装后，是不能直接使用脚本启动的，必须要进行注册系统服务的配置。对于第一个问题，我们可以先直接给出答案，rpm安装后，配置文件的存放目录为\/etc\/elasticsearch，在该目录下存放了elaticsearch.yml和logging.yml配置文件。对于第二个问题，就回到了2.2节中介绍的内容，采用chkconfig或者systemd来注册和管理服务，二者选其一即可。在CentOS 7上，虽然两个命令都存在，但实际上最终都是由systemctl管理的，也就是采用了systemd模式。即使你使用官方文档中提到的命令service elasticsearch start  启动，系统也会自动转为systemctl模式。因此，虽然如官方文档所述，存在\/etc\/init.d\/elasticsearch 启动脚本，但实际并未使用（笔者尝试过移除该文件，一切正常。）
 
