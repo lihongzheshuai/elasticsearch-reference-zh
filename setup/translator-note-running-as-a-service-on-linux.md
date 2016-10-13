@@ -34,5 +34,5 @@ public Environment(Settings settings) {
         }
 ```
 
-configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显示指定情况下的config目录。
+configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显示配置的情况下使用$ES\_HOME\/config目录。
 
