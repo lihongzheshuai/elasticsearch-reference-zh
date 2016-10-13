@@ -32,11 +32,14 @@ public Environment(Settings settings) {
         } else {
             scriptsFile = configFile.resolve("scripts");
         }
+        ......
 ```
+
+
 
 configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显示配置的情况下使用$ES\_HOME\/config目录。
 
 ### systemd 模式运行
 
-现在再来说说以服务形式运行的情况。
+现在再来说说以服务形式运行的情况。只所以先介绍了
 
