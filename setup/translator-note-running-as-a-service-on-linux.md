@@ -6,5 +6,32 @@
 
 ### tar模式运行
 
-先说一下tar包部署模式，这是笔者目前采用的部署模式，在这种模式下，所有的文件都存放在解压后的目录下，例如在笔者环境中Elasticsearch解压后存放在\/data\/elasticsearch-2.4.1目录下。以此为ES\_HOME，所有的运行脚本存放在$ES\_HOME\/bin下，包括Linux和Windows的运行脚本。所有的配置文件存放在$ES\_HOME\/config 下，包括elaticsearch.yml 和 loggin.yml。
+先说一下tar包部署模式，这是笔者目前采用的部署模式，在这种模式下，所有的文件都存放在解压后的目录下，例如在笔者环境中Elasticsearch解压后存放在\/data\/elasticsearch-2.4.1目录下。以此为ES\_HOME，所有的运行脚本存放在$ES\_HOME\/bin下，包括Linux和Windows的运行脚本。所有的配置文件存放在$ES\_HOME\/config 下，包括elaticsearch.yml 和 logging.yml。
+
+此时，我们修改config目录下的elasticsearch.yml和logging.yml配置文件，即可完成对Elasticsearch服务和日志的配置。即，前文提到的配置参数，在此两个配置文件中基本都可找到。
+
+注意到，从bin\/elasticsearch启动脚本中，笔者并未发现跟配置文件目录有关的信息，
+
+```java
+public Environment(Settings settings) {
+        final Path homeFile;
+        if (PATH_HOME_SETTING.exists(settings)) {
+            homeFile = PathUtils.get(cleanPath(PATH_HOME_SETTING.get(settings)));
+        } else {
+            throw new IllegalStateException(PATH_HOME_SETTING.getKey() + " is not configured");
+        }
+
+        if (PATH_CONF_SETTING.exists(settings)) {
+            configFile = PathUtils.get(cleanPath(PATH_CONF_SETTING.get(settings)));
+        } else {
+            configFile = homeFile.resolve("config");
+        }
+
+        if (PATH_SCRIPTS_SETTING.exists(settings)) {
+            scriptsFile = PathUtils.get(cleanPath(PATH_SCRIPTS_SETTING.get(settings)));
+        } else {
+            scriptsFile = configFile.resolve("scripts");
+        }
+
+```
 
