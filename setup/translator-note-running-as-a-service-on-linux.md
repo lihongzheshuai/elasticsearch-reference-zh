@@ -39,5 +39,18 @@ configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显
 
 ### systemd 模式运行
 
-现在再来说说以服务形式运行的情况。之所以先介绍了tar包模式运行的的情况，就是为了做一个对比。笔者所使用的操作系统版本是CentOS 7，所以对应下载.rpm包。安装后，根据2.2章节说明，Elasticsearch程序文件存放在\/usr\/share\/elasticsearch目录。其中bin目录下存放的启动脚本，但是并不存在config目录。
+现在再来说说以服务形式运行的情况。之所以先介绍了tar包模式运行的的情况，就是为了做一个对比。笔者所使用的操作系统版本是CentOS 7，所以对应下载.rpm包。安装后，根据2.2章节说明，Elasticsearch程序文件存放在\/usr\/share\/elasticsearch目录。其中bin目录下存放的启动脚本，但是并不存在config目录。根据我们之前的分析，此时如果直接运行\/usr\/share\/elasticsearch\/bin目录下的脚本，会找不到配置文件：
+
+```bash
+/usr/share/elasticsearch/bin/elasticsearch
+Exception in thread "main" ElasticsearchException[Failed to load logging configuration]; nested: NoSuchFileException[/usr/share/elasticsearch/config];
+Likely root cause: java.nio.file.NoSuchFileException: /usr/share/elasticsearch/config
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+```
+
+因此，我们知道，第一，Elasticsearch必须要找到配置文件方可启动，因此配置文件一定存放在其它目录中，第二，采用rpm包安装后，是不能直接使用脚本启动的，必须要进行注册系统服务的配置。对于第一个问题，我们可以先直接给出答案，rpm安装后，配置文件的存放目录为\/etc\/elasticsearch，在该目录下存放了elaticsearch.yml和logging.yml配置文件。对于第二个问题，就回到了2.2节中介绍的内容，采用chkconfig或者systemd来注册和管理服务，二者选其一即可。在CentOS 7上，虽然两个命令都存在，但实际上最终都是由systemctl管理的，也就是采用了systemd模式。即使你使用官方文档中提到的命令service elasticsearch start  启动，系统也会自动转为systemctl模式。
 
