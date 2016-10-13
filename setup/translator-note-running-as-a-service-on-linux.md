@@ -6,5 +6,5 @@
 
 ### tar模式安装
 
-先说一下tar包部署模式，这是笔者目前采用的部署模式，在这种模式下，所有的文件都存放在解压后的目录下，例如在笔者环境中Elasticsearch解压后存放在\/data\/elasticsearch-2.4.1目录下。以此为ES\_HOME，所有的运行脚本存放在$ES\_HOME\/bin下，包括Linux和Windows的运行脚本。所有的配置文件存放在$ES\_HOME\/conf 下，包括elaticsearch.yml 和 loggin.yml
+先说一下tar包部署模式，这是笔者目前采用的部署模式，在这种模式下，所有的文件都存放在解压后的目录下，例如在笔者环境中Elasticsearch解压后存放在\/data\/elasticsearch-2.4.1目录下。以此为ES\_HOME，所有的运行脚本存放在$ES\_HOME\/bin下，包括Linux和Windows的运行脚本。所有的配置文件存放在$ES\_HOME\/conf 下，包括elaticsearch.yml 和 loggin.yml。
 
