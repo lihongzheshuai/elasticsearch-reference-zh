@@ -35,11 +35,9 @@ public Environment(Settings settings) {
         ......
 ```
 
-
-
 configFile = homeFile.resolve\("config"\)，这段代码即指定了在没有显示配置的情况下使用$ES\_HOME\/config目录。
 
 ### systemd 模式运行
 
-现在再来说说以服务形式运行的情况。只所以先介绍了
+现在再来说说以服务形式运行的情况。之所以先介绍了tar包模式运行的的情况，就是为了做一个对比。
 
