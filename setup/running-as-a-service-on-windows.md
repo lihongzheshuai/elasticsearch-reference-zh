@@ -10,3 +10,15 @@ Usage: service.bat install|remove|start|stop|manager [SERVICE_ID]
 
 该脚本在所执行操作后需要参数service id\(在安装多个Elasticsearch服务时很有用。\)
 
+支持的操作有：
+
+| 命令 | 描述 |
+| --- | --- |
+|  install | 安装Elasticsearch 服务  |
+|remove|移除已安装的Elasticsearch服务（会停止已启动的服务）|
+|start|启动Elasticsearch服务（如果已安装）|
+|stop|停止Elasticsearch服务(如果已启动)|
+|manager|启动一个图形界面管理已安装的服务|
+
+
+
