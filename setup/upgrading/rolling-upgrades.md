@@ -89,3 +89,11 @@ GET _cat/health
 
 未配置sync-flushed的分块，恢复将耗费更多的时间。单个分块的回复状态，可通过[_cat/recovery](/cat-apis/cat-recovery.md) 接口进行监控：
 
+```bash
+GET _cat/recovery
+```
+如果你停止了索引，那么当恢复完成后你就可以安全的重启索引。
+
+## 第七步：重复
+
+当节点恢复完成集群稳定后，在其它节点上重复上述步骤。
