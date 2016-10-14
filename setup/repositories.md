@@ -14,3 +14,15 @@
 
 ## APT
 
+下载并安装公开签名Key:
+
+```bash
+wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+```
+
+将仓库定义保存到/etc/apt/sources.list.d/elasticsearch-2.x.list:
+
+```bash
+echo "deb https://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+```
+
