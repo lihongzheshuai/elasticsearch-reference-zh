@@ -46,5 +46,5 @@ path.data: ["/mnt/first", "/mnt/second"]
 |data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|/var/lib/elasticsearch/data|/var/lib/elasticsearch|
 |logs|日志文件地址|/var/log/elasticsearch|/var/log/elasticsearch|
 |plugins|插件文件地址。每个插件将会保存在一个子目录里。|/usr/share/elasticsearch/plugins|/usr/share/elasticsearch/plugins|
-|repo|分块文件系统仓库地址。可以指定多个位置。文件系统仓库可被放置在这里指定的目录的任意子目录中|Not configured|Not configured|
+|repo|分块文件系统仓库地址。|Not configured|Not configured|
 |script|脚本文件地址|{path.conf}/scripts|path.scripts|
