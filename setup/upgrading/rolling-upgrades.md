@@ -87,5 +87,5 @@ GET _cat/health
 >
 当其它节点升级以后，分块副本会立即被分配，集群状态将会变为绿色。
 
-未配置sync-flushed的分块，恢复将耗费更多的时间。单个分块的回复状态，可通过_cat/recovery 接口进行监控：
+未配置sync-flushed的分块，恢复将耗费更多的时间。单个分块的回复状态，可通过[_cat/recovery](/cat-apis/cat-recovery.md) 接口进行监控：
 
