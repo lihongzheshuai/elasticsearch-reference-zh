@@ -55,7 +55,7 @@ path.data: ["/mnt/first", "/mnt/second"]
 |---|---|---|---|
 | home | Elasticsearch安装包的根目录 |{extract.path}（译者注：解压路径）|
 | bin | 包括用于启动节点的elasticsearch脚本在内的各种脚本| {extract.path}/bin|
-|conf|配置文件目录，包含elasticsearch.yml等配置文件|	
+|conf|配置文件目录，包含elasticsearch.yml等配置文件| 	
 {extract.path}/config | 
 |data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|	
 {extract.path}/data|
