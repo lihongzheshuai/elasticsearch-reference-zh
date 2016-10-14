@@ -47,7 +47,7 @@ The service 'elasticsearch-service-x64' has been installed.
 
 service.bat脚本底层使用 [Apache Commons Daemon](http://commons.apache.org/proper/commons-daemon/)项目来安装服务。如果想要完全灵活的配置方式，比如修改服务运行的用户，你可以修改脚本的里的安装参数。需要注意的时，需要安装服务才能是新配置生效。
 
-> 注意： 这里有一篇关于如何自定义MSI安装器的详细介绍：[https://github.com/salyh/elasticsearch-msi-installer](https://github.com/salyh/elasticsearch-msi-installer)（作者：Hendrik Saly)）
+> 注意： 这里有一篇关于如何自定义MSI安装器的详细介绍：[https://github.com/salyh/elasticsearch-msi-installer](https://github.com/salyh/elasticsearch-msi-installer)（作者：Hendrik Saly)
 
 
 
