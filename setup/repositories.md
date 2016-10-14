@@ -26,3 +26,12 @@ wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add 
 echo "deb https://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
 ```
 
+> 警告⚠️: 上面我们使用echo命令添加仓库地址。请不要使用add-apt-repository命令，因为该命令会同时添加deb-src配置，但是我们没有提供源码包。如果你添加了deb-src配置，你将会看到如下错误：
+>
+```
+Unable to find expected entry 'main/source/Sources' in Release file (Wrong sources.list entry or malformed file)
+```
+> 只需要从/etc/apt/sources.list文件中删除deb-src配置，安装即可恢复正常。
+
+
+
