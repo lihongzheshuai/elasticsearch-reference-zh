@@ -40,4 +40,5 @@ PUT /_cluster/settings
 
 ### 第三部: 备份你的数据
 
+在禁用索引刷新和重分配之后，你可以任何你熟悉的备份方法（tar, storage array snapshots, 备份软件）备份Elasticsearch的数据目录。
 
