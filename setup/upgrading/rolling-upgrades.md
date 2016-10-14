@@ -22,3 +22,9 @@ PUT /_cluster/settings
 ## 第二步：禁用不必要的索引并采用同步刷新（可选）
 
 你可以在升级期间继续进行索引。不过，如果你临时禁止非必须的索引并使用[同步刷新(synced-flush)](/flush/synced-flush.md)，那么分块恢复会快的多:
+
+```bash
+POST /_flush/synced
+```
+
+同步flush请求是一个"best effort"（尽力而为）的操作。如果存在任何挂起的索引操作它都会失败，但是，它在必要的情况下重新请求多次的时候是安全的。
