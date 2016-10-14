@@ -31,3 +31,5 @@ Using JAVA_HOME (64-bit):  "c:\jvm\jdk1.8"
 The service 'elasticsearch-service-x64' has been installed.
 ```
 
+
+
