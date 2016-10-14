@@ -14,7 +14,7 @@
 
 ## APT
 
-下载并安装公开签名Key:
+下载并安装公共签名密钥:
 
 ```bash
 wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -60,6 +60,11 @@ sudo /bin/systemctl enable elasticsearch.service
 
 ## YUM/DNF
 
+下载并安装公共签名密钥：
+
+```bash
+rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+```
 
 
 
