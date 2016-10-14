@@ -89,7 +89,18 @@ yum install elasticsearch
 dnf install elasticsearch
 ```
 
+配置Elasticsearch在操作系统启动时自动启动。如果你的系统是使用SysV初始化（可通过ps -p 1命令查看），你需要执行：
 
+> 警告⚠️：该仓库不支持使用RPM v3的老版本系统，如CentOS5。
 
+```bash
+chkconfig --add elasticsearch
+```
 
+否则，如果使用systemd执行：
+
+```bash
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+```
 
