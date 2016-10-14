@@ -22,4 +22,12 @@ Usage: service.bat install|remove|start|stop|manager [SERVICE_ID]
 
 需要注意的是，在服务的安装阶段会拷贝环境变量的值，并在服务的整个生命周期中有效。也就是说，在服务安装后修改环境变量的值将不会生效，除非你重新安装服务。
 
+根据安装的JDK/JRE版本(通过JAVA_HOME指定)，会对应安装64位或32位服务。这部分信息在安装时可见:
+
+```bash
+c:\elasticsearch-{version}bin>service install
+Installing service      :  "elasticsearch-service-x64"
+Using JAVA_HOME (64-bit):  "c:\jvm\jdk1.8"
+The service 'elasticsearch-service-x64' has been installed.
+```
 
