@@ -66,6 +66,18 @@ sudo /bin/systemctl enable elasticsearch.service
 rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
 ```
 
+将如下信息添加到/etc/yum.repos.d/文件夹下某个以.repo结尾的文件中，例如 elasticsearch.repo
+
+```bash
+[elasticsearch-2.x]
+name=Elasticsearch repository for 2.x packages
+baseurl=https://packages.elastic.co/elasticsearch/2.x/centos
+gpgcheck=1
+gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+```
+
+
 
 
 
