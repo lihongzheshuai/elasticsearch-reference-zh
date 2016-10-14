@@ -37,6 +37,7 @@
     * [2.6.1 备份你的数据](setup/upgrading/back-up-your-data.md)
     * [2.6.2 滚动升级\(Rolling upgrades\)](setup/upgrading/rolling-upgrades.md)
     * [2.6.3 全集群重启升级\(Rolling upgrades\)](setup/upgrading/full-cluster-restart-upgrade.md)
+* [3 破坏性变化(Breaking changes)](breaking-changes/README.md)
 * [cat APIs](cat-apis/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
 * [6 查询接口](search-apis/README.md)
