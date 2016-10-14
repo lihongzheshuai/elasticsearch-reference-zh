@@ -28,3 +28,47 @@ POST /_flush/synced
 ```
 
 同步flush请求是一个"best effort"（尽力而为）的操作。如果存在任何挂起的索引操作它都会失败，但是，它在必要的情况下重新请求多次的时候是安全的。
+
+### 第三步：停止并升级单个节点
+
+在升级集群中的某个节点前先停止该节点。
+
+> 小提示：当使用zip或tar包版的时候，config,data,logs和plugins目录都默认存放在Elasticsearch的主目录下。
+>
+一个比较好的习惯是讲它们放置在不同路径这，这样在升级Elasticsearch的时候删除这些目录，都无需其它的更改。这些自定义的路径可通过path.conf和path.data等选项进行[配置](/setup/configuration.md)。
+>
+Debain和RPM包将这些目录放置在操作系统[合适的位置](/setup/directory-layout.md)。
+
+对于使用[Debian或RPM](/setup/repositories.md)包进行升级来说：
+
+* 使用rpm或dpkg命令安装新的包。所有的文件会被放置在合适的位置，并且配置文件不会被覆盖。
+
+对于使用zip或tar包升级来说：
+
+* 将zip或tar包解压到新的位置，确认不要覆盖config和data目录。
+* 可以将旧版本config目录下的配置文件拷贝到新版本下，也可以通过--path.conf选项指向外部配置文件目录。
+* 可以将旧版data目录拷贝到新版中，也可以在config/elasticsearch.yml配置文件中，通过配置path.data选项配置data目录的位置。
+
+## 第四步：启动升级后的节点
+
+启动升级后的节点，然后通过日志文件或如下请求确认该节点是否成功加入集群：
+
+```bash
+GET _cat/nodes
+```
+## 第五步：重启分块重分配
+
+当节点加入集群后，重新开启分块重分配功能:
+
+```bash
+PUT /_cluster/settings
+{
+  "transient": {
+    "cluster.routing.allocation.enable": "all"
+  }
+}
+```
+
+## 第六步：等待节点恢复
+
+在升级下一个节点之前，你需要等待集群完成分块重分配。你可以通过_cat/health请求检查该过程：
