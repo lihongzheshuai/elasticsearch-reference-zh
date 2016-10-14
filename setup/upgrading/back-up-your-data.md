@@ -45,3 +45,19 @@ PUT /_cluster/settings
 ### 第四部: 重启重分配和刷新
 
 当备份结束不需要再从Elasticsearch的数据目录读取数据的时候，需要重启重分配和索引刷新：
+
+```bash
+PUT /_all/_settings
+{
+  "index": {
+    "translog.disable_flush": "false"
+  }
+}
+
+PUT /_cluster/settings
+{
+  "transient": {
+    "cluster.routing.allocation.enable": "all"
+  }
+}
+```
