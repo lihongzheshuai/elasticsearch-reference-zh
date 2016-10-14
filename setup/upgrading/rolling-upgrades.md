@@ -2,4 +2,4 @@
 
 滚动升级可以让Elasticsearch集群一次升级一个节点，不间断的对用户提供服务。除升级期间之外，其它时间Elasticsearch集群不允许多版本共存，因为分块不会从高版本复制到低版本。
 
-可通过此表格来确认你的Elasticsearch版本是否支持滚动升级。
+可通过此[表格](/setup/upgrading/README.md)来确认你的Elasticsearch版本是否支持滚动升级。
