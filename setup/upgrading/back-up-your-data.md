@@ -28,3 +28,13 @@ PUT /_all/_settings
 ### 第二步: 禁用重分配(reallocation)
 
 这将避免集群在备份期间将数据从一个节点迁移到另一个节点:
+
+```bash
+PUT /_cluster/settings
+{
+  "transient": {
+    "cluster.routing.allocation.enable": "none"
+  }
+}
+```
+
