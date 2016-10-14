@@ -35,5 +35,20 @@ The service 'elasticsearch-service-x64' has been installed.
 
 ## 自定义服务配置
 
+有两种方法自定义服务配置:
+
+**管理界面**
+
+可通过manager命令启动，管理界面提供了对已安装服务状态，启动类型，以及启动停止配置等许多配置选项。通过之前介绍的选项，在命令行运行service.bat脚本便可启动管理窗口：
+
+![](/assets/service-manager-win.png)
+
+## 自定义service.bat脚本
+
+service.bat脚本底层使用 [Apache Commons Daemon](http://commons.apache.org/proper/commons-daemon/)项目来安装服务。如果想要完全灵活的配置方式，比如修改服务运行的用户，你可以修改脚本的里的安装参数。需要注意的时，需要安装服务才能是新配置生效。
+
+> 注意： 这里有一篇关于如何自定义MSI安装器的详细介绍：[https://github.com/salyh/elasticsearch-msi-installer](https://github.com/salyh/elasticsearch-msi-installer)（作者：Hendrik Saly)）
+
+
 
 
