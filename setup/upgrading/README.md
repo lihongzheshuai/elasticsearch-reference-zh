@@ -16,5 +16,9 @@ Elasticsearch 可以进行滚动升级，从而不中断服务。本章将详细
 |1.x|2.x|[全集群重启](/setup/upgrading/full-cluster-restart-upgrade.md)|
 |2.x|2.y|[滚动升级](/setup/upgrading/rolling-upgrades.md)(y > x)|
 
+## 升级带插件的Elasticsearch
 
+考虑插件的升级。插件必须与Elasticsearch一起升级。
+
+查看插件的提供者，确认插件是否与你要升级到的版本兼容。如果执行滚动升级，还需要确认插件是否同时兼容集群中各种混合版本。
 
