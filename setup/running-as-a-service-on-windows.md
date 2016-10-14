@@ -33,5 +33,7 @@ The service 'elasticsearch-service-x64' has been installed.
 
 > 注意：尽管Elasticsearch服务可以使用JRE，不过由于JRE使用的是客户端模式的VM（与服务端模式JVM相对，服务端模式对长期运行的应用提供了更好的性能支持。），因此我们不推荐使用JRE，并会给出警告。
 
+## 自定义服务配置
+
 
 
