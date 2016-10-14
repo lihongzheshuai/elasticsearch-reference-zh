@@ -57,10 +57,8 @@ path.data: ["/mnt/first", "/mnt/second"]
 | bin | 包括用于启动节点的elasticsearch脚本在内的各种脚本| {extract.path}/bin|
 |conf|配置文件目录，包含elasticsearch.yml等配置文件|	
 {extract.path}/config|
-
-|conf|包含heap size, file description等环境变量的配置文件|/etc/default/elasticsearch|/etc/sysconfig/elasticsearch|
-
-|data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|/var/lib/elasticsearch/data|/var/lib/elasticsearch|
+|data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|	
+{extract.path}/data|
 
 |logs|日志文件地址|/var/log/elasticsearch|/var/log/elasticsearch|
 
