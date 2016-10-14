@@ -46,7 +46,7 @@ Duplicate sources.list entry https://packages.elastic.co/elasticsearch/2.x/debia
 ```
 > 请检查/etc/apt/sources.list.d/elasticsearch-2.x.list 文件中是否存在重复的配置，或者在/etc/apt/sources.list.d/文件下的文件以及/etc/apt/sources.list文件中定位重复配置。
 
-配置Elasticsearch在操作系统启动是自动启动。如果你的系统是使用SysV初始化，你需要执行：
+配置Elasticsearch在操作系统启动时自动启动。如果你的系统是使用SysV初始化，你需要执行：
 
 ```bash
 sudo update-rc.d elasticsearch defaults 95 10
@@ -75,6 +75,18 @@ baseurl=https://packages.elastic.co/elasticsearch/2.x/centos
 gpgcheck=1
 gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
 enabled=1
+```
+
+你的仓库已经可用。可通过如下命令安装：
+
+```bash
+yum install elasticsearch
+```
+
+对于新版的Fedora 和 Redhat，执行：
+
+```bash
+dnf install elasticsearch
 ```
 
 
