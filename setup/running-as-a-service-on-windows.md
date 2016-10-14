@@ -20,5 +20,6 @@ Usage: service.bat install|remove|start|stop|manager [SERVICE_ID]
 |stop|停止Elasticsearch服务(如果已启动)|
 |manager|启动一个图形界面管理已安装的服务|
 
+需要注意的是，在服务的安装阶段会拷贝环境变量的值，并在服务的整个生命周期中有效。也就是说，在服务安装后修改环境变量的值将不会生效，除非你重新安装服务。
 
 
