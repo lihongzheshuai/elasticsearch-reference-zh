@@ -44,7 +44,6 @@ path.data: ["/mnt/first", "/mnt/second"]
 |conf|配置文件目录，包含elasticsearch.yml等配置文件|/etc/elasticsearch|/etc/elasticsearch|
 |conf|包含heap size, file description等环境变量的配置文件|/etc/default/elasticsearch|/etc/sysconfig/elasticsearch|
 |data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|/var/lib/elasticsearch/data|/var/lib/elasticsearch|
-
 |logs|日志文件地址|{path.home}/logs|path.logs|
 
 |plugins|插件文件地址。每个插件将会保存在一个子目录里。|{path.home}/plugins|path.plugins|
