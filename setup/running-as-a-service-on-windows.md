@@ -8,5 +8,5 @@ c:\elasticsearch-2.4.1\bin>service
 Usage: service.bat install|remove|start|stop|manager [SERVICE_ID]
 ```
 
-
+该脚本在所执行操作后需要参数service id\(在安装多个Elasticsearch服务时很有用。\)
 
