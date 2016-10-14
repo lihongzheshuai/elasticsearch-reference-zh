@@ -39,6 +39,28 @@ Unable to find expected entry 'main/source/Sources' in Release file (Wrong sourc
 sudo apt-get update && sudo apt-get install elasticsearch
 ```
 
+> 警告⚠️：如果存在两个关于同一个Elasticsearch仓库的配置，你会再执行apt-get update期间看到如下错误：
+>
+```
+Duplicate sources.list entry https://packages.elastic.co/elasticsearch/2.x/debian/ ...`
+```
+> 请检查/etc/apt/sources.list.d/elasticsearch-2.x.list 文件中是否存在重复的配置，或者在/etc/apt/sources.list.d/文件下的文件以及/etc/apt/sources.list文件中定位重复配置。
+
+配置Elasticsearch在操作系统启动是自动启动。如果你的系统是使用SysV初始化，你需要执行：
+
+```bash
+sudo update-rc.d elasticsearch defaults 95 10
+```
+如果你的系统使用systemd,则执行：
+
+```bash
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+```
+
+## YUM/DNF
+
+
 
 
 
