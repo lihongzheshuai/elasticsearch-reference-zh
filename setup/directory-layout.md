@@ -55,8 +55,8 @@ path.data: ["/mnt/first", "/mnt/second"]
 |---|---|---|---|
 | home | Elasticsearch安装包的根目录 |{extract.path}（译者注：解压路径）|
 | bin | 包括用于启动节点的elasticsearch脚本在内的各种脚本| {extract.path}/bin|
-
-|conf|配置文件目录，包含elasticsearch.yml等配置文件|/etc/elasticsearch|/etc/elasticsearch|
+|conf|配置文件目录，包含elasticsearch.yml等配置文件|	
+{extract.path}/config|
 
 |conf|包含heap size, file description等环境变量的配置文件|/etc/default/elasticsearch|/etc/sysconfig/elasticsearch|
 
