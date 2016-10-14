@@ -48,3 +48,25 @@ path.data: ["/mnt/first", "/mnt/second"]
 |plugins|插件文件地址。每个插件将会保存在一个子目录里。|/usr/share/elasticsearch/plugins|/usr/share/elasticsearch/plugins|
 |repo|分块文件系统仓库地址。|Not configured|Not configured|
 |script|脚本文件地址|/etc/elasticsearch/scripts|/etc/elasticsearch/scripts|
+
+### zip和tar.gz包
+
+|名字|描述|路径|
+|---|---|---|---|
+| home | Elasticsearch安装包的根目录 |{extract.path}（解压路径）|
+
+| bin | 包括用于启动节点的elasticsearch脚本在内的各种脚本| /usr/share/elasticsearch/bin|/usr/share/elasticsearch/bin|
+
+|conf|配置文件目录，包含elasticsearch.yml等配置文件|/etc/elasticsearch|/etc/elasticsearch|
+
+|conf|包含heap size, file description等环境变量的配置文件|/etc/default/elasticsearch|/etc/sysconfig/elasticsearch|
+
+|data|节点上保存每个索引/分块数据文件的目录地址。可指定多个位置|/var/lib/elasticsearch/data|/var/lib/elasticsearch|
+
+|logs|日志文件地址|/var/log/elasticsearch|/var/log/elasticsearch|
+
+|plugins|插件文件地址。每个插件将会保存在一个子目录里。|/usr/share/elasticsearch/plugins|/usr/share/elasticsearch/plugins|
+
+|repo|分块文件系统仓库地址。|Not configured|Not configured|
+
+|script|脚本文件地址|/etc/elasticsearch/scripts|/etc/elasticsearch/scripts|
