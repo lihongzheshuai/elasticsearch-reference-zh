@@ -44,6 +44,7 @@
   * [6.2 URI查询](search-apis/uri-search.md)
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
 * [7 聚合](aggregations/README.md)
+* [8 索引接口(Indices APIs)](indices-apis/README.md)
 * [10 集群API\(Cluster APIs\)](cluster-apis/README.md)
   * [10.1 集群健康\(Cluster Health\)](cluster-apis/cluster-health.md)
   * [10.2 集群状态\(Cluster State\)](cluster-apis/cluster-state.md)
