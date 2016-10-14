@@ -33,5 +33,12 @@ Unable to find expected entry 'main/source/Sources' in Release file (Wrong sourc
 ```
 > 只需要从/etc/apt/sources.list文件中删除deb-src配置，安装即可恢复正常。
 
+执行apt-get update 命令使仓库出于就绪状态，然后可通过如下命令安装：
+
+```bash
+sudo apt-get update && sudo apt-get install elasticsearch
+```
+
+
 
 
