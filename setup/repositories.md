@@ -97,7 +97,7 @@ dnf install elasticsearch
 chkconfig --add elasticsearch
 ```
 
-否则，如果使用systemd执行：
+否则，如果使用systemd,则执行：
 
 ```bash
 sudo /bin/systemctl daemon-reload
