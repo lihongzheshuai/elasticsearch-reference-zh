@@ -38,7 +38,7 @@
     * [2.6.2 滚动升级\(Rolling upgrades\)](setup/upgrading/rolling-upgrades.md)
     * [2.6.3 全集群重启升级\(Rolling upgrades\)](setup/upgrading/full-cluster-restart-upgrade.md)
 * [3 破坏性变化(Breaking changes)](breaking-changes/README.md)
-* [4 API约定(API Conventions)](api-conventions/README.md)
+* [4 API规则(API Conventions)](api-conventions/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
 * [6 查询接口](search-apis/README.md)
   * [6.2 URI查询](search-apis/uri-search.md)
