@@ -48,4 +48,4 @@ POST /_flush/synced
 
 如果你指定了主节点，也就是将node.master设置为true（默认）将node.data设置为false的节点，那么最好先启动这些节点。然后等待这些节点选举出一个主管理节点并组成集群后再处理数据节点。你可以通过日志检查整个过程。
 
-当达到[主节点选取所需要最低数目的节点数量](/modules/discovery/zen-discovery.md)的时候，它们会选举出一个主节点并组成集群。从那时起，[_cat/health](/cat-apis/cat-health.md) 和 _cat/nodes API就可以用于监控加入集群的节点了。
+当达到[主节点选取所需要最低数目的节点数量](/modules/discovery/zen-discovery.md)的时候，它们会选举出一个主节点并组成集群。从那时起，[_cat/health](/cat-apis/cat-health.md) 和 [_cat/nodes](/cat-apis/cat-nodes.md) API就可以用于监控加入集群的节点了。
