@@ -46,4 +46,4 @@ POST /_flush/synced
 
 # 第四节：启动集群
 
-
+如果你指定了主节点，也就是将node.master设置为true（默认）将node.data设置为false的节点，那么最好先启动这些节点。
