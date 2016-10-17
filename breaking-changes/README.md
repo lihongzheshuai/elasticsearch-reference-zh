@@ -7,4 +7,4 @@
 * 主版本间迁移 - 例如：从1.x升级到2.x，需要[全集群重启](/setup/upgrading/full-cluster-restart-upgrade.md)。
 * 小版本间迁移 - 例如：从1.x升级到1.y，可以使用[滚动升级](/setup/upgrading/rolling-upgrades.md)。
 
-更多信息，参见升级章节。
+更多信息，参见[升级](/setup/upgrading/README.md)章节。
