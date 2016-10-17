@@ -44,7 +44,7 @@ POST /_flush/synced
 
 停止集群中所有节点上的Elasticsearch服务。每个节点都可以按照上节[第三步：停止并升级单节](/setup/upgrading/rolling-upgrades.md)点介绍那样完成升级。
 
-# 第四节：启动集群
+# 第四步：启动集群
 
 如果你指定了主节点，也就是将node.master设置为true（默认）将node.data设置为false的节点，那么最好先启动这些节点。然后等待这些节点选举出一个主管理节点并组成集群后再处理数据节点。你可以通过日志检查整个过程。
 
@@ -56,3 +56,5 @@ GET _cat/health
 GET _cat/nodes
 ```
 使用上述API检查是否所有节点都成功加入集群。
+
+## 第五步：
