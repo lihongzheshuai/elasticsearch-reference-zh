@@ -48,7 +48,7 @@
     * [8.22.1 同步Flush](flush/synced-flush.md)
 * [9 cat APIs](cat-apis/README.md)
   * [9.5 cat health](cat-apis/cat-health.md)
-  * [9.9 cat nodes](cat-apis/cat-health.md)
+  * [9.9 cat nodes](cat-apis/cat-nodes.md)
   * [9.12 cat recovery](cat-apis/cat-recovery.md)
 * [10 集群API\(Cluster APIs\)](cluster-apis/README.md)
   * [10.1 集群健康\(Cluster Health\)](cluster-apis/cluster-health.md)
