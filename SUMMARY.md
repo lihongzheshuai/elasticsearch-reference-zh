@@ -68,6 +68,8 @@
   * [11.5 组合查询](query-dsl/compound-queries/README.md)
     * [11.5.2 布尔查询\(bool query\)](query-dsl/compound-queries/bool-query.md)
 * [14 组件\(Modules\)](modules/README.md)
+  * [14.2 发现](modules/discovery/README.md)
+    * [14.2.4 发现](modules/discovery/zen-discovery.md)
   * [14.10 快照和恢复](modules/snapshot-and-restore.md)
 * [15 索引组件](index-modules/README.md)
   * [15.1 分析](index-modules/analysis.md)
