@@ -6,3 +6,4 @@ Elasticsearch 使用[JSON格式通过HTTP协议](/modules/http.md)暴露REST 接
 
 * 多重索引
 * 索引名中的日期计算
+* 通用选项
