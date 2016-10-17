@@ -1,4 +1,4 @@
-# 全集群重启升级
+## # 全集群重启升级
 
 当进行主版本升级的时候，比如从0.x升级到1.x或者从1.x升级到2.x系列，Elasticsearch升级时需要全集群重启。滚动升级不支持主版本升级。
 
@@ -63,5 +63,28 @@ GET _cat/nodes
 
 当每个节点都完成本地分块恢复的时候，集群状态变为黄色，代表所有的主分块已经恢复完成，但是不是所有的副本分块都分配完成。这是意料之中的，因为分配功能还处于关闭状态。
 
+## 第六步:重开启分配
+
+当所有节点都加入集群后再进行副本分块的分配使得主节点可以将分块分配到在本地已经存在分块拷贝的节点上（译者注：就是这个分块的拷贝在节点上本来有，直接启用即可，不用再走网络拷贝。）。此时，所有节点都加入集群，你就可以安全的开启分块分配功能：
+
+```bash
+PUT /_cluster/settings
+{
+  "persistent": {
+    "cluster.routing.allocation.enable": "all"
+  }
+}
+```
+如果是从0.90.x升级到1.x，使用下述命令：
+
+```bash
+PUT /_cluster/settings
+{
+  "persistent": {
+    "cluster.routing.allocation.disable_allocation": false,
+    "cluster.routing.allocation.enable": "all"
+  }
+}
+```
 
 
