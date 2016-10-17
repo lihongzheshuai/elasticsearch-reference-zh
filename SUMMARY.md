@@ -40,7 +40,7 @@
 * [3 破坏性变化(Breaking changes)](breaking-changes/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
   * [4.1 多重索引(Multiple Indices)](api-conventions/multiple-indices.md)
-  * [4.2 索引名中的日期计算(API Conventions)](api-conventions/README.md)
+  * [4.2 索引名中的日期计算](api-conventions/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
