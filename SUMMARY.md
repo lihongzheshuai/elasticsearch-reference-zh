@@ -39,7 +39,7 @@
     * [2.6.3 全集群重启升级\(Rolling upgrades\)](setup/upgrading/full-cluster-restart-upgrade.md)
 * [3 破坏性变化(Breaking changes)](breaking-changes/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
-  * [4.1 多重索引(API Conventions)](api-conventions/README.md)
+  * [4.1 多重索引(Multiple Indices)](api-conventions/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
