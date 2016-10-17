@@ -43,3 +43,7 @@ POST /_flush/synced
 ## 第三步：停止并升级所有节点
 
 停止集群中所有节点上的Elasticsearch服务。每个节点都可以按照上节[第三步：停止并升级单节](/setup/upgrading/rolling-upgrades.md)点介绍那样完成升级。
+
+# 第四节：启动集群
+
+
