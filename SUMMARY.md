@@ -41,7 +41,7 @@
 * [4 API规则(API Conventions)](api-conventions/README.md)
   * [4.1 多重索引(Multiple Indices)](api-conventions/multiple-indices.md)
   * [4.2 索引名中的日期计算](api-conventions/date-math-support-in-index-names.md)
-* [4 API规则(API Conventions)](api-conventions/README.md)
+* [4.3 通用选项(Common options)](api-conventions/common-options.md)
 * [4 API规则(API Conventions)](api-conventions/README.md)
   * [脚本\(Scripting\)](modules/scripting/README.md)
 * [6 查询接口](search-apis/README.md)
