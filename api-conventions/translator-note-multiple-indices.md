@@ -69,7 +69,7 @@ curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
 
 **使用\*n\*查询，排除不想检索的索引bank:**
 
-即只从lihongzhe所有检索数据
+即只从lihongzhe索引检索数据
 
 ```bash
 curl -XGET 'localhost:9200/*n*,-bank/_search?q=*&pretty'
