@@ -15,8 +15,55 @@ green  open   customer    5   1          3            0     19.3kb          9.6k
 
 ## 跨多索引查询
 
-从lihongzhe和customer两个索引中查数据：
+* 从lihongzhe和customer两个索引中查数据：
 
 ```bash
+curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 10,
+    "successful" : 10,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 4,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "AVenLFWSLAc7FsOe-vIu",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "Jane Doe"
+      }
+    }, {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "AVenLDXxLAc7FsOe-vIt",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "Jane Doe"
+      }
+    }, {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "1",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "John Doe becomes Jane Doe"
+      }
+    }, {
+      "_index" : "lihongzhe",
+      "_type" : "one",
+      "_id" : "1",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "lihongzhe"
+      }
+    } ]
+  }
+}
 
 ```
