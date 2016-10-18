@@ -67,4 +67,4 @@ curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
 }
 ```
 
-**使用_all查询，排除不想检索的索引account**
+**使用_all查询，排除不想检索的索引account:**
