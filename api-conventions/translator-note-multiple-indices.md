@@ -137,3 +137,5 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
 }
 
 ```
+
+此时，默认是false。
