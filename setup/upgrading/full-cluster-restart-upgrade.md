@@ -30,7 +30,7 @@ PUT /_cluster/settings
 
 ## 第二步：进行同步刷新(synced flush)
 
-如果你临时禁止非必须的索引并使用[同步刷新(synced-flush)](/flush/synced-flush.md)，那么分块恢复会快的多:
+如果你临时禁止非必须的索引并使用[同步刷新(synced-flush)](/indices-apis/flush/synced-flush.md)，那么分块恢复会快的多:
 
 ```bash
 
