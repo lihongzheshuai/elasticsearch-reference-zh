@@ -188,4 +188,71 @@ curl -XGET 'localhost:9200/aa*/_search?q=*&allow_no_indices=true&pretty'
 **expand_wildcards**参数：
 
 ```bash
+curl -XGET 'localhost:9200/*o*/_search?q=*&expand_wildcards=open&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 10,
+    "successful" : 10,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 4,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "AVenLFWSLAc7FsOe-vIu",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "Jane Doe"
+      }
+    }, {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "AVenLDXxLAc7FsOe-vIt",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "Jane Doe"
+      }
+    }, {
+      "_index" : "customer",
+      "_type" : "external",
+      "_id" : "1",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "John Doe becomes Jane Doe"
+      }
+    }, {
+      "_index" : "lihongzhe",
+      "_type" : "one",
+      "_id" : "1",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "lihongzhe"
+      }
+    } ]
+  }
+}
 
+```
+
+```bash
+ curl -XGET 'localhost:9200/*o*/_search?q=close&expand_wildcards=closed&ignore_unavailable=true&pretty'
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 0,
+    "successful" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  }
+}
+
+```
