@@ -15,7 +15,7 @@ green  open   customer    5   1          3            0     19.3kb          9.6k
 
 ## 跨多索引查询
 
-* 从lihongzhe和customer两个索引中查数据：
+**从lihongzhe和customer两个索引中查数据：**
 
 ```bash
 curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
@@ -65,5 +65,6 @@ curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
     } ]
   }
 }
-
 ```
+
+**使用_all查询，排除不想检索的索引accont**
