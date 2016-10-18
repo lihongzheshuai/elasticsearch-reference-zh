@@ -93,5 +93,4 @@ curl -XGET 'localhost:9200/*n*,-bank/_search?q=*&pretty'
     } ]
   }
 }
-
 ```
