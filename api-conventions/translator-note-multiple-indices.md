@@ -100,4 +100,3 @@ curl -XGET 'localhost:9200/*n*,-bank/_search?q=*&pretty'
 **ignore_unavailable**参数：
 
 查询关闭的索引close，分别设置ignore_unavailable参数值为true和false：
-
