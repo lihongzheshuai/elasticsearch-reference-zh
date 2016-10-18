@@ -100,3 +100,40 @@ curl -XGET 'localhost:9200/*n*,-bank/_search?q=*&pretty'
 **ignore_unavailable**参数：
 
 查询关闭的索引close，分别设置ignore_unavailable参数值为true和false：
+
+```bash
+curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=true&pretty'
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 0,
+    "successful" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  }
+}
+[rc@dl-rc-optd-es-test-lhz-v-test-1 ~
+```
+
+```bash
+curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
+{
+  "error" : {
+    "root_cause" : [ {
+      "type" : "index_closed_exception",
+      "reason" : "closed",
+      "index" : "close"
+    } ],
+    "type" : "index_closed_exception",
+    "reason" : "closed",
+    "index" : "close"
+  },
+  "status" : 403
+}
+
+```
