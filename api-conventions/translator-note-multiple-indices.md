@@ -117,7 +117,6 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=true&pretty'
     "hits" : [ ]
   }
 }
-[rc@dl-rc-optd-es-test-lhz-v-test-1 ~
 ```
 
 ```bash
@@ -138,4 +137,4 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
 
 ```
 
-此时，默认是false。
+此场景下，默认是false。
