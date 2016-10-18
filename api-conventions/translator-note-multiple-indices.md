@@ -145,7 +145,7 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
 
 ```bash
 curl -XGET 'localhost:9200/aa*/_search?q=*&allow_no_indices=false&pretty'
-{"error":{"root_cause":[{"type":"index_closed_exception","reason":"closed","index":"close"}],"type":"index_closed_exception","reason":"closed","index":"close"},"status":403}{
+{
   "error" : {
     "root_cause" : [ {
       "type" : "index_not_found_exception",
@@ -163,4 +163,29 @@ curl -XGET 'localhost:9200/aa*/_search?q=*&allow_no_indices=false&pretty'
   "status" : 404
 }
 
+
 ```
+
+```bash
+curl -XGET 'localhost:9200/aa*/_search?q=*&allow_no_indices=true&pretty'
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 0,
+    "successful" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  }
+}
+
+```
+
+**expand_wildcards**参数：
+
+```bash
+
