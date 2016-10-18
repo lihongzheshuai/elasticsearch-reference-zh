@@ -18,3 +18,5 @@ green  open   customer    5   1          3            0     19.3kb          9.6k
 从lihongzhe和customer两个索引中查数据：
 
 ```bash
+
+```
