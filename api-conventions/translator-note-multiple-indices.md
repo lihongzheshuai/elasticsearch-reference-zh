@@ -143,3 +143,24 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
 
 测试方法同上：
 
+```bash
+curl -XGET 'localhost:9200/aa*/_search?q=*&allow_no_indices=false&pretty'
+{"error":{"root_cause":[{"type":"index_closed_exception","reason":"closed","index":"close"}],"type":"index_closed_exception","reason":"closed","index":"close"},"status":403}{
+  "error" : {
+    "root_cause" : [ {
+      "type" : "index_not_found_exception",
+      "reason" : "no such index",
+      "resource.type" : "index_or_alias",
+      "resource.id" : "aa*",
+      "index" : "aa*"
+    } ],
+    "type" : "index_not_found_exception",
+    "reason" : "no such index",
+    "resource.type" : "index_or_alias",
+    "resource.id" : "aa*",
+    "index" : "aa*"
+  },
+  "status" : 404
+}
+
+```
