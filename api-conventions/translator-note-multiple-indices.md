@@ -67,4 +67,31 @@ curl -XGET 'localhost:9200/lihongzhe,customer/_search?q=*&pretty'
 }
 ```
 
-**使用_all查询，排除不想检索的索引account:**
+**使用\*n\*查询，排除不想检索的索引bank:**
+
+```bash
+curl -XGET 'localhost:9200/*n*,-bank/_search?q=*&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "lihongzhe",
+      "_type" : "one",
+      "_id" : "1",
+      "_score" : 1.0,
+      "_source" : {
+        "name" : "lihongzhe"
+      }
+    } ]
+  }
+}
+
+```
