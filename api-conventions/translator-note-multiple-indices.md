@@ -138,3 +138,8 @@ curl -XGET 'localhost:9200/close/_search?q=*&ignore_unavailable=false&pretty'
 ```
 
 此场景下，默认是false。
+
+**allow_no_indices**参数：
+
+测试方法同上：
+
