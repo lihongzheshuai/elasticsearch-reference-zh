@@ -52,7 +52,7 @@
 * [8 索引接口(Indices APIs)](indices-apis/README.md)
   * [8.10 索引别名](indices-apis/index-aliases.md)
   * [8.22 Flush](indices-apis/flush/README.md)
-    * [8.22.1 同步Flush](flush/synced-flush.md)
+    * [8.22.1 同步Flush](indices-apis/flush/synced-flush.md)
 * [9 cat APIs](cat-apis/README.md)
   * [9.5 cat health](cat-apis/cat-health.md)
   * [9.9 cat nodes](cat-apis/cat-nodes.md)
