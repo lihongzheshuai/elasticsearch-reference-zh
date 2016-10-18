@@ -10,7 +10,8 @@ health status index     pri rep docs.count docs.deleted store.size pri.store.siz
 green  open   lihongzhe   5   1          1            0      7.3kb          3.6kb 
 green  open   bank        5   1       1000            0    885.3kb        442.6kb 
        close  close                                                               
-green  open   customer    5   1          3            0     19.3kb          9.6kb ```
+green  open   customer    5   1          3            0     19.3kb          9.6kb 
+```
 
 ## 跨多索引查询
 
