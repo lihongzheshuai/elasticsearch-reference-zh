@@ -19,3 +19,15 @@
 |date_format|可选项，用于指定计算后日期的结果格式。默认是YYYY.MM.dd|
 |time_zone|可选项，指定时区。默认是utc|
 
+日期计算表达式必须用尖括号括起来，例如：
+
+```bash
+curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>/_search' {
+  "query" : {
+    ...
+  }
+}
+```
+
+> 注意：在日期计算表达式中使用/必须转义成 %2F 使用。
+
