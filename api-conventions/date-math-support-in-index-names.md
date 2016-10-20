@@ -16,4 +16,6 @@
 |---|---|
 |static_name|索引名中固定文本部分|
 |date_math_expr|动态的日期计算表达式|
-|date_format||
+|date_format|可选项，用于指定计算后日期的结果格式。默认是YYYY.MM.dd|
+|time_zone|可选项，指定时区。默认是utc|
+
