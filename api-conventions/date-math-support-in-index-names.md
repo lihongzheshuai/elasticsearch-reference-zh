@@ -12,12 +12,12 @@
 
 其中：
 
-|参数名|描述|
-|---|---|
-|static_name|索引名中固定文本部分|
-|date_math_expr|动态的日期计算表达式|
-|date_format|可选项，用于指定计算后日期的结果格式。默认是YYYY.MM.dd|
-|time_zone|可选项，指定时区。默认是utc|
+| 参数名 | 描述 |
+| --- | --- |
+| static\_name | 索引名中固定文本部分 |
+| date\_math\_expr | 动态的日期计算表达式 |
+| date\_format | 可选项，用于指定计算后日期的结果格式。默认是YYYY.MM.dd |
+| time\_zone | 可选项，指定时区。默认是utc |
 
 日期计算表达式必须用尖括号括起来，例如：
 
@@ -29,23 +29,23 @@ curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>/_search' {
 }
 ```
 
-> 注意：在日期计算表达式中使用 / 必须转义成 %2F 使用。
+> 注意：在日期计算表达式中使用 \/ 必须转义成 %2F 使用。
 
 下面的以当前时间为2024年3月22日为例，来说明日期计算表达式与其匹配到实际索引名字的关系：
 
-|表达式|解析后结果|
-|---|---|
-|&lt;logstash-{now/d}&gt;|logstash-2024.03.22|
-|&lt;logstash-{now/M}&gt;|logstash-2024.03.01|
-|&lt;logstash-{now/M{YYYY.MM}}&gt;|logstash-2024.03|
-|&lt;logstash-{now/M-1M{YYYY.MM}}&gt;|logstash-2024.02|
-|&lt;logstash-{now/d{YYYY.MM.dd&brvbar;+12:00}}}&gt;|logstash-2024.03.23|
+| 表达式 | 解析后结果 |
+| --- | --- |
+| &lt;logstash-{now\/d}&gt; | logstash-2024.03.22 |
+| &lt;logstash-{now\/M}&gt; | logstash-2024.03.01 |
+| &lt;logstash-{now\/M{YYYY.MM}}&gt; |logstash-2024.03|
+| &lt;logstash-{now\/M-1M{YYYY.MM}}&gt; | logstash-2024.02 |
+| &lt;logstash-{now\/d{YYYY.MM.dd \| +12:00}}}&gt; | logstash-2024.03.23 |
 
 如果想要固定文本部分使用大括号{和}，需要通过斜杠\进行转义，例如：
 
-* &lt;elastic\\{ON\\}-{now/M}&gt;  解析为 elastic{ON}-2024.03.01
+* &lt;elastic{ON}-{now\/M}&gt;  解析为 elastic{ON}-2024.03.01
 
-下面的例子展示了如何查询过去三天的Logstash的索引数据，假定使用的是Logstash默认的索引命名格式，logstash-YYYY.MM.dd 
+下面的例子展示了如何查询过去三天的Logstash的索引数据，假定使用的是Logstash默认的索引命名格式，logstash-YYYY.MM.dd
 
 ```bash
 curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>,<logstash-{now%2Fd-1d}>,<logstash-{now%2Fd}>/_search' {
@@ -54,3 +54,4 @@ curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>,<logstash-{now%2Fd-1d}>,<logs
   }
 }
 ```
+
