@@ -15,3 +15,5 @@
 |参数名|描述|
 |---|---|
 |static_name|索引名中固定文本部分|
+|date_math_expr|动态的日期计算表达式|
+|date_format||
