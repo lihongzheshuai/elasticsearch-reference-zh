@@ -33,5 +33,7 @@ curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>/_search' {
 
 下面的以当前时间为2024年3月22日为例，来说明日期计算表达式与其匹配到实际索引名字的关系：
 
-
+|表达式|解析后结果|
+|---|---|
+|<logstash-{now/d}>|logstash-2024.03.22|
 
