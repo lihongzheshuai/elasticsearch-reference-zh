@@ -49,6 +49,9 @@ curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>/_search' {
 <tr>
 <td>&lt;logstash-{now/M-1M{YYYY.MM}}&gt;</td><td>logstash-2024.02</td>
 </tr>
+<tr>
+<td>&lt;logstash-{now/d{YYYY.MM.dd | +12:00}}&gt;</td><td>logstash-2024.03.23</td>
+</tr>
 </table>
 
 | 表达式 | 解析后结果 |
