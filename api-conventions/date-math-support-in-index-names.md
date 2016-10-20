@@ -4,3 +4,8 @@
 
 几乎所有包含索引参数的API都支持针对索引参数名的日期计算。
 
+日期计算的索引名格式如下：
+
+```
+<static_name{date_math_expr{date_format|time_zone}}>
+```
