@@ -36,4 +36,5 @@ curl -XGET 'localhost:9200/<logstash-{now%2Fd-2d}>/_search' {
 |表达式|解析后结果|
 |---|---|
 |&lt;logstash-{now/d}&gt;|logstash-2024.03.22|
+|&lt;logstash-{now/M}&gt;|logstash-2024.03.01|
 
