@@ -77,3 +77,8 @@ curl -XGET 'localhost:9200/_nodes/stats?filter_path=nodes.*.ho*'
 }
 ```
 
+也可以通过符号**来匹配不知道精确路径的字段。例如，我们可以通过下述请求返回每段的Lucene版本号：
+
+```bash
+
+```
