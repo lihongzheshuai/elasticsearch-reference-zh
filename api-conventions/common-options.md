@@ -116,3 +116,19 @@ curl 'localhost:9200/_segments?pretty&filter_path=indices.**.version'
 }
 ```
 注意到，Elasticsearch有时会直接返回字段的原始值，例如_source 字段。如果你想要过滤_source字段，你需要组合已有的_source参数(详见[Get API文档](/document-apis/get-api.md))和filter_path参数：
+
+```bash
+curl -XGET 'localhost:9200/_search?pretty&filter_path=hits.hits._source&_source=title'
+{
+  "hits" : {
+    "hits" : [ {
+      "_source":{"title":"Book #2"}
+    }, {
+      "_source":{"title":"Book #1"}
+    }, {
+      "_source":{"title":"Book #3"}
+    } ]
+  }
+}
+```
+
