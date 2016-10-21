@@ -24,6 +24,42 @@
 
 举几个例子：
 
+<table>
+<thead>
+<tr><td>表达式</td><td>描述</td></tr>
 
+</thead>
+
+<tr>
+
+<td>&lt;logstash-{now/d}&gt;</td><td>logstash-2024.03.22</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;logstash-{now/M}&gt;</td><td>logstash-2024.03.01</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;logstash-{now/M{YYYY.MM}}&gt;</td><td>logstash-2024.03</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;logstash-{now/M-1M{YYYY.MM}}&gt;</td><td>logstash-2024.02</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;logstash-{now/d{YYYY.MM.dd | +12:00}}&gt;</td><td>logstash-2024.03.23</td>
+
+</tr>
+
+</table>
 
 
