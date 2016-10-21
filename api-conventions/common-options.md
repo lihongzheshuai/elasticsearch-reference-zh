@@ -8,4 +8,4 @@
 
 ## 便于阅读的输出格式
 
-统计数据的结果会以更便于人阅读的格式（例如："exist_time": "1h" 或 "size":"1kb"）以及更便于计算的格式返回(例如:"exists_time_in_millis": 3600000 或 "size_in_bytes": 1024)。可以通过参数 ?human=false关闭返回便于阅读的格式。
+统计数据的结果会以更便于人阅读的格式（例如："exist_time": "1h" 或 "size":"1kb"）以及更便于计算的格式返回(例如:"exists_time_in_millis": 3600000 或 "size_in_bytes": 1024)。可以通过参数 ?human=false关闭返回便于阅读的格式。这种情况用于返回值被监控工具使用而不是人来阅读。默认的human参数的值是false。
