@@ -37,7 +37,6 @@
 <tr>
 <td>now+1h/d</td><td>当前时间加一小时后，向下精确到最近的天</td>
 </tr>
-
 <tr>
 
 <td>&lt;logstash-{now/M-1M{YYYY.MM}}&gt;</td><td>logstash-2024.02</td>
