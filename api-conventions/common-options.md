@@ -30,7 +30,6 @@
 </thead>
 <tr>
 <td>&lt;logstash-{now/d}&gt;</td><td>logstash-2024.03.22</td>
-
 </tr>
 
 <tr>
