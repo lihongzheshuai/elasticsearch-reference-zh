@@ -29,10 +29,10 @@
 <tr><td>表达式</td><td>描述</td></tr>
 </thead>
 <tr>
-<td>now+1h</td><td>当前时间加上一个小时，以毫秒计算</td>
+<td>now+1h</td><td>当前时间加一小时，以毫秒计算</td>
 </tr>
 <tr>
-<td>now+1h+1m</td><td>logstash-2024.03.01</td>
+<td>now+1h+1m</td><td>当前时间加一小时一分钟，以毫秒计算</td>
 
 </tr>
 
