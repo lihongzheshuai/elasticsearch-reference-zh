@@ -29,7 +29,7 @@
 <tr><td>表达式</td><td>描述</td></tr>
 </thead>
 <tr>
-<td>now+1h</td><td>logstash-2024.03.22</td>
+<td>now+1h</td><td>当前时间加上一个小时，以毫秒计算</td>
 </tr>
 
 <tr>
