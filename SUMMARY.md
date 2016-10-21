@@ -50,6 +50,7 @@
   * [6.2 URI查询](search-apis/uri-search.md)
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
 * [7 聚合](aggregations/README.md)
+* [7.2 桶聚合(Bucket Aggregations)](aggregations/README.md)
 * [8 索引接口(Indices APIs)](indices-apis/README.md)
   * [8.10 索引别名](indices-apis/index-aliases.md)
   * [8.22 Flush](indices-apis/flush/README.md)
