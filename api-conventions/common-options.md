@@ -80,5 +80,38 @@ curl -XGET 'localhost:9200/_nodes/stats?filter_path=nodes.*.ho*'
 也可以通过符号**来匹配不知道精确路径的字段。例如，我们可以通过下述请求返回每段的Lucene版本号：
 
 ```bash
-
+curl 'localhost:9200/_segments?pretty&filter_path=indices.**.version'
+{
+  "indices" : {
+    "movies" : {
+      "shards" : {
+        "0" : [ {
+          "segments" : {
+            "_0" : {
+              "version" : "5.2.0"
+            }
+          }
+        } ],
+        "2" : [ {
+          "segments" : {
+            "_0" : {
+              "version" : "5.2.0"
+            }
+          }
+        } ]
+      }
+    },
+    "books" : {
+      "shards" : {
+        "0" : [ {
+          "segments" : {
+            "_0" : {
+              "version" : "5.2.0"
+            }
+          }
+        } ]
+      }
+    }
+  }
+}
 ```
