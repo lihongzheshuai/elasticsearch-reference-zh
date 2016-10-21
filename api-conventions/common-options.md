@@ -44,4 +44,4 @@
 
 ## 响应过滤器
 
-
+所有的REST API都可以使用filter_path参数来缩小Elasticsearch的响应值。
