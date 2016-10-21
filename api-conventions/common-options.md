@@ -32,7 +32,7 @@
 <td>now+1h</td><td>当前时间加上一个小时，以毫秒计算</td>
 </tr>
 <tr>
-<td>&lt;logstash-{now/M}&gt;</td><td>logstash-2024.03.01</td>
+<td>now+1h+1m</td><td>logstash-2024.03.01</td>
 
 </tr>
 
