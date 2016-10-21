@@ -64,3 +64,16 @@ curl -XGET 'localhost:9200/_search?pretty&filter_path=took,hits.hits._id,hits.hi
   }
 }
 ```
+该参数还支持符号*进行模糊匹配字段名：
+
+```bash
+curl -XGET 'localhost:9200/_nodes/stats?filter_path=nodes.*.ho*'
+{
+  "nodes" : {
+    "lvJHed8uQQu4brS-SXKsNA" : {
+      "host" : "portable"
+    }
+  }
+}
+```
+
