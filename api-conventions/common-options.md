@@ -28,7 +28,6 @@
 <thead>
 <tr><td>表达式</td><td>描述</td></tr>
 </thead>
-
 <tr>
 
 <td>&lt;logstash-{now/d}&gt;</td><td>logstash-2024.03.22</td>
