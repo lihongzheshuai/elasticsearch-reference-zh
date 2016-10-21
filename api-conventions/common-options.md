@@ -13,3 +13,6 @@
 ## 日期计算
 
 大多数接受日期格式的参数都支持日期计算，例如：[范围查询](/query-dsl/term-level-query/range-query.md)中的 gt 和 lt参数，以及 [日期范围聚合](/aggregations/bucket-aggregations/date-range-aggregation.md)中的from和to参数。
+
+表达式以一个基准日期开始，可以是now或是以||结尾的日期字符串。该基础日期后可添加数学表达式：
+
