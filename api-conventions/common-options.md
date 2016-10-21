@@ -44,4 +44,23 @@
 
 ## 响应过滤器
 
-所有的REST API都可以使用filter_path参数来缩小Elasticsearch的响应值。
+所有的REST API都可以使用filter_path参数来缩减Elasticsearch的响应值。该参数的值一组以逗号分隔的，.格式的列表：
+
+```bash
+curl -XGET 'localhost:9200/_search?pretty&filter_path=took,hits.hits._id,hits.hits._score'
+{
+  "took" : 3,
+  "hits" : {
+    "hits" : [
+      {
+        "_id" : "3640",
+        "_score" : 1.0
+      },
+      {
+        "_id" : "3642",
+        "_score" : 1.0
+      }
+    ]
+  }
+}
+```
