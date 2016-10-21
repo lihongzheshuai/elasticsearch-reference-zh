@@ -39,9 +39,7 @@
 </tr>
 <tr>
 <td>2015-01-01||+1M/d</td><td>logstash-2024.02</td>
-
 </tr>
-
 <tr>
 
 <td>&lt;logstash-{now/d{YYYY.MM.dd | +12:00}}&gt;</td><td>logstash-2024.03.23</td>
