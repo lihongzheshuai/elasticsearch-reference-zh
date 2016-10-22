@@ -243,3 +243,8 @@ fuzziness参数可指定如下值：
 * 0,1,2
 
 Levenshtein Edit Distance允许的最大值(或编辑数 number of edits)
+
+* AUTO
+
+
+
