@@ -217,3 +217,5 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 |厘米|cm或centimeters|
 |毫米|mm或millimeters|
 |海里|NM,nmi或nauticalmiles|
+
+在Geohash Cell Query中的精度(precision)参数支持上述距离单位，但是如果没有指定单位，精度被解释为geohash的长度。
