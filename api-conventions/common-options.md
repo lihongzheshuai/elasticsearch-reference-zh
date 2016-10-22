@@ -132,6 +132,8 @@ curl -XGET 'localhost:9200/_search?pretty&filter_path=hits.hits._source&_source=
 }
 ```
 
-扁平化设置(Flat Setting)
+## 扁平化设置(Flat Setting)
+
+
 
 
