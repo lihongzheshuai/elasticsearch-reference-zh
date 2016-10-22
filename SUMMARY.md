@@ -79,6 +79,8 @@
     * [11.4.3 范围查询\(Range Query\)](query-dsl/term-level-query/range-query.md)
   * [11.5 组合查询](query-dsl/compound-queries/README.md)
     * [11.5.2 布尔查询\(bool query\)](query-dsl/compound-queries/bool-query.md)
+  * [11.7 Geo查询（Geo Queries）](query-dsl/geo-queries/README.md)
+
 * [14 组件\(Modules\)](modules/README.md)
   * [14.2 发现](modules/discovery/README.md)
     * [14.2.4 Zen Discovery(发现)](modules/discovery/zen-discovery.md)
