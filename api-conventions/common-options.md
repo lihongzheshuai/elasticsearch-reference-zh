@@ -236,3 +236,4 @@ fuzziness参数需要指定数值类型的值，例如2或2.0。日期字段接�
 
 ### 字符串字段
 
+当查询字符串类型字段时，fuzziness被解释为[Levenshtein Edit Distance(编辑距离)](https://en.wikipedia.org/wiki/Levenshtein_distance)
