@@ -209,9 +209,9 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 |单位名称|缩写|
 |---|---|
 |英里|mi或miles|
-
-|kb|千字节|
-
+|码|yd或yards|
+|尺|ft或feet|
+|英尺|in或inch|
 |mb|兆字节|
 
 |gb|千兆字节|
