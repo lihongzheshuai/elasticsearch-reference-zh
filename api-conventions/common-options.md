@@ -225,3 +225,10 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 某些查询条件和接口通过fuzziness参数支持模糊匹配。fuzziness参数是上下文敏感的，也就是说它依赖于被查询字段的类型。
 
 ### 数值，日期和IPv4字段
+
+当时查询数值，日期和IPv4字段时，fuzziness被解释为+/-边界。其行为就类似于[范围查询](/query-dsl/term-level-query/range-query.md)：
+
+```
+-fuzziness <= field value <= +fuzziness
+
+```
