@@ -202,4 +202,8 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 
 ## 距离单位
 
-当需要指定距离的时候，例如，在Geo Distance Query中需要设置distance参数的时，默认单位是米。也可以使用其他单位，例如1km或2mi（2英里）。
+当需要指定距离的时候，例如，在[Geo Distance Query](/query-dsl/geo-queries/geo-distance-query.md)中需要设置distance参数的时，默认单位是米。也可以使用其他单位，例如1km或2mi（2英里）。
+
+所有支持的单位有：
+
+
