@@ -258,7 +258,9 @@ Levenshtein Edit Distance允许的最大值(或编辑数 number of edits)
 
 所有的REST API都支持case参数。当设置值为camelCase是，返回值中的所有字段名都会以驼峰格式返回，否则将会使用下划线格式。注意，这不适用于被索引的源文档。
 
+## 请求字符串中的请求体
 
+对于不支持在非POST请求中添加请求体的工具库，你可以代替使用查询参数source来发送请求体。
 
 
 
