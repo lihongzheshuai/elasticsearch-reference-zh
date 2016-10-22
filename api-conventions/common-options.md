@@ -162,6 +162,8 @@ flat_setting参数会影响配置列表的展示效果。当flat_setting设置�
 
 ## 参数
 
+Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用下划线的格式。
+
 
 
 
