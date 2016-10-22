@@ -246,5 +246,7 @@ Levenshtein Edit Distance允许的最大值(或编辑数 number of edits)
 
 * AUTO
 
+基于词组长度生成一个编辑距离。对于长度
 
+0..2, 必须完全匹配。
 
