@@ -231,3 +231,5 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 ```
 -fuzziness <= field value <= +fuzziness
 ```
+
+fuzziness参数需要指定数值类型的值，例如2或2.0。日期字段会当做毫秒处理，不过也支持字符串类型的值，如时间单位部分介绍的1h。
