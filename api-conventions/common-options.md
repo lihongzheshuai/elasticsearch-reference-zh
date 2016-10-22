@@ -256,6 +256,8 @@ Levenshtein Edit Distance允许的最大值(或编辑数 number of edits)
 
 ## 结果格式（Result Casing）
 
+所有的REST API都支持case参数。当设置值为camelCase是，返回值中的所有字段名都会以驼峰格式返回，否则将会使用下划线格式。注意，这不适用于被索引的源文档。
+
 
 
 
