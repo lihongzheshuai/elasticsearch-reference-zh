@@ -134,6 +134,34 @@ curl -XGET 'localhost:9200/_search?pretty&filter_path=hits.hits._source&_source=
 
 ## 扁平化设置(Flat Setting)
 
+flat_setting参数会影响配置列表的展示效果。当flat_setting设置为true的时候，配置列表以扁平格式(flat format)输出：
+
+```javascript
+{
+  "persistent" : { },
+  "transient" : {
+    "discovery.zen.minimum_master_nodes" : "1"
+  }
+}
+```
+当flat_setting设置为false的时候，配置列表以更易于人阅读的格式输出：
+
+```javascript
+{
+  "persistent" : { },
+  "transient" : {
+    "discovery" : {
+      "zen" : {
+        "minimum_master_nodes" : "1"
+      }
+    }
+  }
+}
+```
+默认值是false。
+
+## 参数
+
 
 
 
