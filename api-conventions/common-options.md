@@ -202,3 +202,4 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 
 ## 距离单位
 
+当需要指定距离的时候，例如，在Geo Distance Query中需要设置distance参数的时，默认单位是米。
