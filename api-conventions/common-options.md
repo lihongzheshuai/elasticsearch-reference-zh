@@ -164,6 +164,12 @@ flat_setting参数会影响配置列表的展示效果。当flat_setting设置�
 
 Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用下划线的格式。
 
+## 布尔值
+
+所有REST APIs的参数（包括请求参数和JSON体）支持将值:false,0,no 和 off解析为"false"语义。其他所有的值都认为是"true"。注意，这个规则不适用于文档内部的布尔型字段。
+
+## 数值类型值
+
 
 
 
