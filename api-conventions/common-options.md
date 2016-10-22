@@ -219,3 +219,9 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 |海里|NM,nmi或nauticalmiles|
 
 在[Geohash Cell Query](/query-dsl/geo-queries/geohash-cell-query.md)中的精度(precision)参数支持上述距离单位，但是如果没有指定单位，精度被解释为geohash的长度。
+
+## 模糊匹配
+
+某些查询条件和接口通过fuzziness参数支持模糊匹配。fuzziness参数是上下文敏感的，也就是说它依赖于被查询字段的类型。
+
+### 数值，日期和IPv4字段
