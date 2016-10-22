@@ -230,5 +230,4 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 
 ```
 -fuzziness <= field value <= +fuzziness
-
 ```
