@@ -241,4 +241,4 @@ fuzziness参数需要指定数值类型的值，例如2或2.0。日期字段接�
 fuzziness参数可指定如下值：
 
 0,1,2
-Levenshtein Edit Distance允许的最大数(或编辑数 number of edits)
+Levenshtein Edit Distance允许的最大值(或编辑数 number of edits)
