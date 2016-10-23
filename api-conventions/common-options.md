@@ -226,7 +226,7 @@ Rest参数（当使用HTTP时，映射到HTTP URL的参数）按照约定使用�
 
 ### 数值，日期和IPv4字段
 
-当时查询数值，日期和IPv4字段时，fuzziness被解释为+/-边界。其行为就类似于[范围查询](/query-dsl/term-level-query/range-query.md)：
+当查询数值，日期和IPv4字段时，fuzziness被解释为+/-边界。其行为就类似于[范围查询](/query-dsl/term-level-query/range-query.md)：
 
 ```
 -fuzziness <= field value <= +fuzziness
