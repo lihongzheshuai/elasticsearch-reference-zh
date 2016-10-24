@@ -47,4 +47,40 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 通过source参数发送即：
 
+```bash
+curl -g -XGET 'localhost:9200/bank/_search?source={"query":{"match_all":{}},"size":1}&pretty'
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1000,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "bank",
+      "_type" : "account",
+      "_id" : "25",
+      "_score" : 1.0,
+      "_source" : {
+        "account_number" : 25,
+        "balance" : 40540,
+        "firstname" : "Virginia",
+        "lastname" : "Ayala",
+        "age" : 39,
+        "gender" : "F",
+        "address" : "171 Putnam Avenue",
+        "employer" : "Filodyne",
+        "email" : "virginiaayala@filodyne.com",
+        "city" : "Nicholson",
+        "state" : "PA"
+      }
+    } ]
+  }
+}
+
+```
 
