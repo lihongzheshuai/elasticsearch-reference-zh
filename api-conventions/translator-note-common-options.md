@@ -81,6 +81,12 @@ curl -g -XGET 'localhost:9200/bank/_search?source={"query":{"match_all":{}},"siz
     } ]
   }
 }
+```
 
+注意，通过curl发送JSON格式的source参数值是，需要添加-g参数，否则报错。
+
+```bash
+curl -XGET 'localhost:9200/bank/_search?source={"query":{"match_all":{}},"size":1}&pretty'
+curl: (3) [globbing] nested braces not supported at pos 45
 ```
 
