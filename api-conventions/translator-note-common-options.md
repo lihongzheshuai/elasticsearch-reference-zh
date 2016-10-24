@@ -92,4 +92,4 @@ curl: (3) [globbing] nested braces not supported at pos 45
 
 ## 关于Levenshtein Edit Distance(编辑距离) 
 
-
+即讲一个字符串变换成另一个字符串最少需要几步。例如：kitten -> sitting，最少需要3部，那这个编辑距离就是3。
