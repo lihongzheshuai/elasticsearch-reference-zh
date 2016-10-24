@@ -43,6 +43,7 @@
     * [4.1.1 译者注 - 补充样例](api-conventions/translator-note-multiple-indices.md)
   * [4.2 索引名中的日期计算](api-conventions/date-math-support-in-index-names.md)
   * [4.3 通用选项(Common options)](api-conventions/common-options.md)
+     * [4.3.1 译者注 - 通用选项(Common options)](api-conventions/translator-note-common-options.md)
   * [4.4 基于URL的访问控制](api-conventions/url-based-access-control.md)
 * [5 文档API(Document APIs)](document-apis/README.md)
   * [5.2 Get API](document-apis/get-api.md)
