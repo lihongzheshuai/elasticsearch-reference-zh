@@ -96,4 +96,62 @@ curl: (3) [globbing] nested braces not supported at pos 45
 
 因此文章中对于该距离进行模糊匹配的意思就是，对于字符串长度为0-2的字符串，只支持完全匹配。对于长度3-5的，可模糊匹配距离是1的字符串。5以上支持距离是2的模糊匹配。例如：
 
+```bash
+curl -XPOST 'localhost:9200/bank/_search?pretty' -d '{
+> "query": {
+>   "fuzzy" : { "firstname" : "Rachelle" }
+> }
+> }'
+{
+  "took" : 24,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 2,
+    "max_score" : 5.610157,
+    "hits" : [ {
+      "_index" : "bank",
+      "_type" : "account",
+      "_id" : "542",
+      "_score" : 5.610157,
+      "_source" : {
+        "account_number" : 542,
+        "balance" : 23285,
+        "firstname" : "Michelle",
+        "lastname" : "Mayo",
+        "age" : 35,
+        "gender" : "M",
+        "address" : "657 Caton Place",
+        "employer" : "Biflex",
+        "email" : "michellemayo@biflex.com",
+        "city" : "Beaverdale",
+        "state" : "WY"
+      }
+    }, {
+      "_index" : "bank",
+      "_type" : "account",
+      "_id" : "222",
+      "_score" : 5.5900564,
+      "_source" : {
+        "account_number" : 222,
+        "balance" : 14764,
+        "firstname" : "Rachelle",
+        "lastname" : "Rice",
+        "age" : 36,
+        "gender" : "M",
+        "address" : "333 Narrows Avenue",
+        "employer" : "Enaut",
+        "email" : "rachellerice@enaut.com",
+        "city" : "Wright",
+        "state" : "AZ"
+      }
+    } ]
+  }
+}
 
+```
+通过Rachelle，可以模糊匹配到firstname为Rachelle和Michelle的账户，因为他们的edit distance<=2。
