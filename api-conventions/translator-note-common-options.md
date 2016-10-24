@@ -93,3 +93,7 @@ curl: (3) [globbing] nested braces not supported at pos 45
 ## 关于Levenshtein Edit Distance(编辑距离) 
 
 即讲一个字符串变换成另一个字符串最少需要几步。例如：kitten -> sitting，最少需要3部，那这个编辑距离就是3。
+
+因此文章中对于该距离进行模糊匹配的意思就是，对于字符串长度为0-2的字符串，只支持完全匹配。对于长度3-5的，可模糊匹配距离是1的字符串。5以上支持距离是2的模糊匹配。例如：
+
+
