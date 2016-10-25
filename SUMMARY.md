@@ -47,10 +47,12 @@
   * [4.4 基于URL的访问控制](api-conventions/url-based-access-control.md)
 * [5 文档API(Document APIs)](document-apis/README.md)
   * [5.2 Get API](document-apis/get-api.md)
-  * [脚本\(Scripting\)](modules/scripting/README.md)
+  * [5.6 多请求API(Multi Get API)](document-apis/multi-get-api.md)
+  * [5.7 批量API(Bulk API)](document-apis/bulk-api.md)
 * [6 查询接口](search-apis/README.md)
   * [6.2 URI查询](search-apis/uri-search.md)
   * [6.3 请求体查询](search-apis/request-body-search/README.md)
+  * [6.7 多查询API(Multi Search API)](search-apis/multi-search-api.md)
 * [7 聚合](aggregations/README.md)
   * [7.2 桶聚合(Bucket Aggregations)](aggregations/bucket-aggregations/README.md)
     * [7.2.3 日期范围聚合(Date Range Aggregations)](aggregations/bucket-aggregations/date-range-aggregation.md)
@@ -87,6 +89,7 @@
   * [14.2 发现](modules/discovery/README.md)
     * [14.2.4 Zen Discovery(发现)](modules/discovery/zen-discovery.md)
   * [14.4 HTTP](modules/http.md)
+  * [14.9 脚本\(Scripting\)](modules/scripting/README.md)
   * [14.10 快照和恢复](modules/snapshot-and-restore.md)
 * [15 索引组件](index-modules/README.md)
   * [15.1 分析](index-modules/analysis.md)
@@ -101,6 +104,8 @@
   * [15.6 查看日志](index-modules/show-log.md)
   * [15.7 存储](index-modules/store.md)
   * [15.8 事务日志(Translog)](index-modules/translog.md)
+  、
+
 
 
 
