@@ -54,3 +54,6 @@ curl 'localhost:9200/_mget?pretty' -d '{
 ```
 rest.action.multi.allow_explicit_index: true
 ```
+
+效果如下：
+
