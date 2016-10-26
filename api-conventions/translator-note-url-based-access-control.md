@@ -57,3 +57,30 @@ rest.action.multi.allow_explicit_index: false
 
 效果如下：
 
+```bash
+curl 'localhost:9200/_mget?pretty' -d '{
+>     "docs" : [
+>         {
+>             "_index" : "bank",
+>             "_type" : "account",
+>             "_id" : "1"
+>         },
+>         {
+>             "_index" : "customer",
+>             "_type" : "external",
+>             "_id" : "1"
+>         }
+>     ]
+> }'
+{
+  "error" : {
+    "root_cause" : [ {
+      "type" : "illegal_argument_exception",
+      "reason" : "explicit index in multi get is not allowed"
+    } ],
+    "type" : "illegal_argument_exception",
+    "reason" : "explicit index in multi get is not allowed"
+  },
+  "status" : 400
+}
+```
