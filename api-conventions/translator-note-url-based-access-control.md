@@ -52,7 +52,7 @@ curl 'localhost:9200/_mget?pretty' -d '{
 开启后，
 
 ```
-rest.action.multi.allow_explicit_index: true
+rest.action.multi.allow_explicit_index: false
 ```
 
 效果如下：
