@@ -59,19 +59,19 @@ rest.action.multi.allow_explicit_index: false
 
 ```bash
 curl 'localhost:9200/_mget?pretty' -d '{
->     "docs" : [
->         {
->             "_index" : "bank",
->             "_type" : "account",
->             "_id" : "1"
->         },
->         {
->             "_index" : "customer",
->             "_type" : "external",
->             "_id" : "1"
->         }
->     ]
-> }'
+     "docs" : [
+         {
+             "_index" : "bank",
+             "_type" : "account",
+             "_id" : "1"
+         },
+         {
+             "_index" : "customer",
+             "_type" : "external",
+             "_id" : "1"
+         }
+     ]
+ }'
 {
   "error" : {
     "root_cause" : [ {
