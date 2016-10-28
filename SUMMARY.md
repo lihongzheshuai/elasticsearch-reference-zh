@@ -61,6 +61,7 @@
   * [7.2 桶聚合(Bucket Aggregations)](aggregations/bucket-aggregations/README.md)
     * [7.2.3 日期范围聚合(Date Range Aggregations)](aggregations/bucket-aggregations/date-range-aggregation.md)
 * [8 索引接口(Indices APIs)](indices-apis/README.md)
+  * [8.1 创建索引](indices-apis/create-index.md)
   * [8.10 索引别名](indices-apis/index-aliases.md)
   * [8.22 Flush](indices-apis/flush/README.md)
     * [8.22.1 同步Flush](indices-apis/flush/synced-flush.md)
