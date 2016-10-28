@@ -9,5 +9,20 @@ $ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
     "message" : "trying out Elasticsearch"
 }'
 ```
+上述操作的结果是：
 
+```bash
+{
+    "_shards" : {
+        "total" : 10,
+        "failed" : 0,
+        "successful" : 10
+    },
+    "_index" : "twitter",
+    "_type" : "tweet",
+    "_id" : "1",
+    "_version" : 1,
+    "created" : true
+}
+```
 
