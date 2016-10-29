@@ -41,4 +41,4 @@ _shards部分提供了索引操作所涉及到的副本和分块信息。
 
 映射本身是非常灵活自由的。新的字段和对象会自动的随着指定的类型添加到映射定义中。更多关于映射定义的信息科参考[映射](/mapping/README.md)章节。
 
-可以通过将所有节点的配置文件中的选项action.auto_create_index的值设置为false来关闭索引自动创建功能。
+可以通过将所有节点的配置文件中的选项action.auto_create_index的值设置为false来关闭索引自动创建功能。自动创建映射的功能可通过将选项index.mapper.dynamic的值设置为false来关闭（或者在指定索引上配置）。
