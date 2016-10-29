@@ -47,4 +47,4 @@ _shards部分提供了索引操作所涉及到的副本和分块信息。
 
 ## 版本
 
-每个索引的都有一个版本号。版本号会作为索引请求返回值的一部分返回。当指定version参数的时候，索引接口可选择弃用[乐观并发控制( optimistic concurrency control)](http://en.wikipedia.org/wiki/Optimistic_concurrency_control)这会控制操作所在文档的版本。
+每个索引的都有一个版本号。版本号会作为索引请求返回值的一部分返回。当指定version参数的时候，索引接口可选择弃用[乐观并发控制( optimistic concurrency control)](http://en.wikipedia.org/wiki/Optimistic_concurrency_control)这会控制操作所针对文档的版本。
