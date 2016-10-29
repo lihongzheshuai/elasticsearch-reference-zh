@@ -44,3 +44,6 @@ _shards部分提供了索引操作所涉及到的副本和分块信息。
 可以通过将所有节点的配置文件中的选项action.auto_create_index的值设置为false来关闭索引自动创建功能。自动创建映射的功能可通过将选项index.mapper.dynamic的值设置为false来关闭（或者在指定索引上配置）。
 
 自动创建索引功能可包含基于模式匹配的黑/白名单，例如，将选项action.auto_create_index的值设置为+aaa*,-bbb*,+ccc*,-*（+号代表允许，-号代表禁止）。
+
+## 版本
+
