@@ -91,6 +91,7 @@
   * [11.7 Geo查询（Geo Queries）](query-dsl/geo-queries/README.md)
     * [11.7.3 Geo 距离查询（Geo Distance Query）](query-dsl/geo-queries/geo-distance-query.md)
     * [11.7.6 Geohash Cell 查询（Geohash Cell Query）](query-dsl/geo-queries/geohash-cell-query.md)
+* [12 映射\(DSL\)](query-dsl/README.md)
 * [14 组件\(Modules\)](modules/README.md)
   * [14.2 发现](modules/discovery/README.md)
     * [14.2.4 Zen Discovery(发现)](modules/discovery/zen-discovery.md)
