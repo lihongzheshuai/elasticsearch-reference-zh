@@ -65,3 +65,4 @@ curl -XPUT 'localhost:9200/twitter/tweet/1?version=2' -d '{
 
 ### 版本类型
 
+除了上面介绍的internal 和 external版本类型
