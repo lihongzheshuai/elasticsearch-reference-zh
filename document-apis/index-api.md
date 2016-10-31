@@ -59,4 +59,4 @@ curl -XPUT 'localhost:9200/twitter/tweet/1?version=2' -d '{
 
 默认情况下使用内部版本号，从1开始并且每次更新、删除操作增加一个版本。也可以选择外部提供版本号（例如，在数据库中维护版本号）。如果想启用该功能，需要将version_type的值设置为external。版本号的值必须是数字long型的，大于等于0且小于9.2e+18。当使用
 
-（**译者注**：如果对于该版本内容不是很理解，可参考《Elasticsearch权威指南》中的[版本控制](http://es.xiaoleilu.com/030_Data/40_Version_control.html)部分，有具体的例子进行说明。）
+（**译者注**：如果对于该部分的内容不是很理解，可参考《Elasticsearch权威指南》中的[版本控制](http://es.xiaoleilu.com/030_Data/40_Version_control.html)部分，有具体的例子进行说明。）
