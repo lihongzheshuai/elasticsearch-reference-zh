@@ -67,5 +67,7 @@ curl -XPUT 'localhost:9200/twitter/tweet/1?version=2' -d '{
 
 除了上面介绍的内部(internal)和外部(external）版本类型，Elasticsearch还支持用于特定场景的版本类型。下面是对于不同版本类型及其语义的简介。
 
+内部(internal)
+
 
 
