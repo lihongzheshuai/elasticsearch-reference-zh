@@ -47,7 +47,7 @@ _shards部分提供了索引操作所涉及到的副本和分块信息。
 
 ## 版本
 
-每个索引的都有一个版本号。版本号会作为索引请求返回值的一部分返回。当指定version参数的时候，索引接口可选择弃用[乐观并发控制( optimistic concurrency control)](http://en.wikipedia.org/wiki/Optimistic_concurrency_control)这会控制操作所针对文档的版本。一个使用版本控制的很好的例子是执行一个读后更新(read-then-update)的事务。从最初读取的文档中指定一个版本(version)可确保在这段时间内不会发生任何变化(当读取为了更新时，推荐设置preference的值为_primary)。例如：
+每个索引的都有一个版本号。版本号会作为索引请求返回值的一部分返回。当指定version参数的时候，索引接口可选择弃用[乐观并发控制( optimistic concurrency control)](http://en.wikipedia.org/wiki/Optimistic_concurrency_control)这会控制操作所针对文档的版本。一个使用版本控制的很好的例子是执行一个读后更新(read-then-update)的事务。指定从最初读取的文档中的版本(version)可确保在这段时间内不会发生任何变化(当读取为了更新时，推荐设置preference的值为_primary)。例如：
 
 ```bash
 curl -XPUT 'localhost:9200/twitter/tweet/1?version=2' -d '{
