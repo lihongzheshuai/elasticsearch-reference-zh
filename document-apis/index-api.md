@@ -73,5 +73,5 @@ curl -XPUT 'localhost:9200/twitter/tweet/1?version=2' -d '{
 
 外部(external) 或 external_gt
 
-    仅当给懂
+    仅当给定的版本号大于已存储文档的版本号或文档不存在时索引文档。
 
