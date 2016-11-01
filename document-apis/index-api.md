@@ -83,3 +83,4 @@ external_gte
 
 ## 操作类型
 
+索引操作还支持op_type参数，该可参数可用来将允许"存在就更新(put-if-absent)"的操作强制指定为创建(create)操作。
