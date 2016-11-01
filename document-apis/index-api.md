@@ -87,4 +87,10 @@ external_gte
 
 下面是一个使用op_type参数的例子：
 
-
+```bash
+$ curl -XPUT 'http://localhost:9200/twitter/tweet/1?op_type=create' -d '{
+    "user" : "kimchy",
+    "post_date" : "2009-11-15T14:12:12",
+    "message" : "trying out Elasticsearch"
+}'
+```
