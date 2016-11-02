@@ -105,4 +105,6 @@ $ curl -XPUT 'http://localhost:9200/twitter/tweet/1/_create' -d '{
 }'
 ```
 
+## ID自动生成
+
 
