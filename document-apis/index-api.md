@@ -149,5 +149,7 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet?routing=kimchy' -d '{
 
 当索引的时候，子文档可以指定其父文档。例如：
 
+```bash
+
 
 
