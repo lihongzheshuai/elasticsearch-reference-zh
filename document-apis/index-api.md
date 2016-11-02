@@ -157,4 +157,6 @@ curl -XPUT localhost:9200/blogs/blog_tag/1122?parent=1111 -d '{
 
 当索引子文档的时候，路由值会被自动的设置成与其父文档一致，除非使用routing参数显式指定路由值。
 
+## 时间戳
 
+> 注意
