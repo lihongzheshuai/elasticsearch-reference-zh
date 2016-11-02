@@ -94,3 +94,7 @@ $ curl -XPUT 'http://localhost:9200/twitter/tweet/1?op_type=create' -d '{
     "message" : "trying out Elasticsearch"
 }'
 ```
+
+另一种使用create操作类型的方式是使用如下url：
+
+```bash
