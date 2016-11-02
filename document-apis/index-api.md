@@ -116,3 +116,15 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet/' -d '{
     "message" : "trying out Elasticsearch"
 }'
 ```
+
+上述索引操作的返回值是：
+
+```json
+{
+    "_index" : "twitter",
+    "_type" : "tweet",
+    "_id" : "6a8ca01c-7896-48e9-81cc-9f70661fcb32",
+    "_version" : 1,
+    "created" : true
+}
+```
