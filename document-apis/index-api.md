@@ -107,4 +107,6 @@ $ curl -XPUT 'http://localhost:9200/twitter/tweet/1/_create' -d '{
 
 ## ID自动生成
 
-索引操作支持不指定ID。在这种情况下，id会自动生成。另外，参数op_type会被自动设置成值create。
+索引操作支持不指定ID。在这种情况下，id会自动生成。另外，参数op_type会被自动设置成值create。下面是一个例子(注意到使用POST代替PUT请求):
+
+
