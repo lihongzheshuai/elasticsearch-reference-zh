@@ -130,3 +130,5 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet/' -d '{
 ```
 
 ## 路由
+
+默认情况下，分块分配 - 或称作路由 - 是通过文档id的hash值控制的。
