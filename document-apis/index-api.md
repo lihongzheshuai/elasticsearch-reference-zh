@@ -159,4 +159,4 @@ curl -XPUT localhost:9200/blogs/blog_tag/1122?parent=1111 -d '{
 
 ## 时间戳
 
-> 警告⚠️： 
+> 警告⚠️：在版本2.0.0-beta2中已经废弃。_timestamp字段已经废弃。现在使用date字段代替，并显式赋值。
