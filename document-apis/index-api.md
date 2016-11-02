@@ -141,4 +141,4 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet?routing=kimchy' -d '{
 }'
 ```
 
-在上述例子中，文档"tweet"根据参数routing的值"kimchy"进行路由分块。
+在上述例子中，文档"tweet"根据参数routing的值"kimchy"进行hash计算路由分块。
