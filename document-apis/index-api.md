@@ -131,4 +131,7 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet/' -d '{
 
 ## 路由
 
-默认情况下，分块分配 - 或称作路由 - 是通过文档id的hash值控制的。
+默认情况下，分块分配 - 或称作路由 - 是通过文档id的hash值控制的。为了更精确的控制，可以在每个操作中通过参数routing直接指定传入路由所用hash函数的入参。例如：
+
+```bash
+
