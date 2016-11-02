@@ -145,4 +145,7 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet?routing=kimchy' -d '{
 
 当设置明确的映射时，字段_routing可被选择用来指导索引操作，从而将路由值从文档本身分离出来。这会导致一部分文档解析的消耗（非常小）。如果定义了_routing映射并设置为required，那么当没有提供routing值的时候操作将会失败。
 
+## 父&子
+
+
 
