@@ -215,5 +215,5 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 索引操作只有在副本组中所有的**活动**分块都完成文档索引（同步复制）后才能返回。
 
-
+## 无更新(Noop Updates)
 
