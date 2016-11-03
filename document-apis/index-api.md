@@ -217,3 +217,4 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 ## 无更新(Noop Updates)
 
+当使用索引接口更新的文档的时候，即使文档没有任何变化，文档的版本也会更新。
