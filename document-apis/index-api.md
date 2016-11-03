@@ -199,4 +199,4 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
     "message": "Trying out elasticsearch, so far so good?"
 }'
 ```
-更多信息可参考_ttl映射页面。
+更多信息可参考[_ttl映射页面](/mapping/meta-field/_ttl-field.md)。
