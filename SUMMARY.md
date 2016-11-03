@@ -94,7 +94,7 @@
 * [12 映射\(Mapping\)](mapping/README.md)
   * [12.2 字段数据类型](mapping/field-datatypes/README.md)
     * [12.2.4 日期类型](mapping/field-datatypes/date-datatype.md)
-  * [12.2 字段数据类型](mapping/field-datatypes/README.md)
+  * [12.3 字段数据类型](mapping/field-datatypes/README.md)
 * [14 组件\(Modules\)](modules/README.md)
   * [14.2 发现](modules/discovery/README.md)
     * [14.2.4 Zen Discovery(发现)](modules/discovery/zen-discovery.md)
