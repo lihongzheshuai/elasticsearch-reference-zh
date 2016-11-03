@@ -130,7 +130,7 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet/' -d '{
 ```
 
 ## 路由
-
+``
 默认情况下，分块分配 - 或称作路由 - 是通过文档id的hash值控制的。为了更精确的控制，可以在每个操作中通过参数routing直接指定传入路由所用hash函数的入参。例如：
 
 ```bash
@@ -160,3 +160,6 @@ curl -XPUT localhost:9200/blogs/blog_tag/1122?parent=1111 -d '{
 ## 时间戳
 
 > 警告⚠️：在版本2.0.0-beta2中已经废弃。_timestamp字段已经废弃。现在使用[date](/mapping/field-datatypes/date-datatype.md)字段代替，并显式赋值。
+
+文档在索引时可添加时间戳(timestamp)。可通过参数timestamp设置时间戳的值。例如：
+
