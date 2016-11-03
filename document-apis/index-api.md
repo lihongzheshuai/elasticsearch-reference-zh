@@ -169,3 +169,5 @@ $ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d
     "message" : "trying out Elasticsearch"
 }'
 ```
+
+如果时间戳的值没有在
