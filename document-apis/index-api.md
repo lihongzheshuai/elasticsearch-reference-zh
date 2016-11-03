@@ -217,4 +217,4 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 ## 无更新(Noop Updates)
 
-当使用索引接口更新的文档的时候，即使文档没有任何变化，文档的版本也会更新。如果在使用_update api时不想要此效果，可将detect_noop的值设置为true。
+当使用索引接口更新的文档的时候，即使文档没有任何变化，文档的版本也会更新。如果在使用_update api时不想要此效果，可将detect_noop的值设置为true。该参数在索引api中不可用，因为索引api不获取旧的数据因此无法与新数据进行比较。
