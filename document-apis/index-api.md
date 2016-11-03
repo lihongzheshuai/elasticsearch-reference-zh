@@ -163,3 +163,9 @@ curl -XPUT localhost:9200/blogs/blog_tag/1122?parent=1111 -d '{
 
 文档在索引时可添加时间戳(timestamp)。可通过参数timestamp设置时间戳的值。例如：
 
+```bash
+$ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d '{
+    "user" : "kimchy",
+    "message" : "trying out Elasticsearch"
+}'
+```
