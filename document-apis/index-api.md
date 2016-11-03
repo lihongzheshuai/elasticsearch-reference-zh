@@ -209,3 +209,5 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 为了避免写操作发生在"错误"的网络分区上，默认情况下，索引操作只有在存在合法数量（>副本数/2 + 1）的可用分块时才能成功。该默认配置可通过在每个节点上设置action.write_consistency选项进行覆盖。如果想调整每个操作的行为，可通过使用consistency参数。
 
+可用写一致性的值有one,quorum和all。
+
