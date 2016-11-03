@@ -211,3 +211,5 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 可用写一致性的值有one,quorum和all。
 
+
+
