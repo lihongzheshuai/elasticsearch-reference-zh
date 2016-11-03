@@ -211,5 +211,7 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 
 可用写一致性的值有one,quorum和all。
 
+注意，当副本数是1的时候（数据一共2份拷贝），默认的行为是当1个拷贝（主分块）可写的时候即为成功。
+
 
 
