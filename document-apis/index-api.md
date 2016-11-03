@@ -179,3 +179,9 @@ $ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d
 文档在索引时可指定ttl(存活时间 time to live)。过期的文档会被自动删除。文档的过期时间可通过相对于文档时间戳(timestamp）的ttl时间指定，也就说可以相对于索引时间也可以相对于给定的时间戳时间。ttl的值必须是正数，可以是数字（毫秒数）也是可以是下面列子中展示的任何正确的时间值：
 
 ```bash
+curl -XPUT 'http://localhost:9200/twitter/tweet/1?ttl=86400000' -d '{
+    "user": "kimchy",
+    "message": "Trying out elasticsearch, so far so good?"
+}'
+```
+
