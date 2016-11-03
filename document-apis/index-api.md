@@ -174,4 +174,4 @@ $ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d
 
 ## TTL
 
-> 警告⚠️：
+> 警告⚠️：在2.0.0-beta2中废弃。
