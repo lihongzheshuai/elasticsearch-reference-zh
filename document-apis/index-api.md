@@ -176,4 +176,4 @@ $ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d
 
 > 警告⚠️：在2.0.0-beta2中废弃。当前的_ttl实现已经废弃并会在未来的版本中被不同的实现替代。
 
-文档在索引时可指定ttl(存活时间 time to live)。过期的文档会被自动删除。
+文档在索引时可指定ttl(存活时间 time to live)。过期的文档会被自动删除。文档的过期时间可通过相对于文档时间戳(timestamp）的ttl时间指定，
