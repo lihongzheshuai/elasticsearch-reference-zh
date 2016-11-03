@@ -200,3 +200,6 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
 }'
 ```
 更多信息可参考[_ttl映射页面](/mapping/meta-field/_ttl-field.md)。
+
+## 分布式
+
