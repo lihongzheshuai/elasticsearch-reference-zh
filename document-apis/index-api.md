@@ -185,3 +185,18 @@ curl -XPUT 'http://localhost:9200/twitter/tweet/1?ttl=86400000' -d '{
 }'
 ```
 
+```bash
+curl -XPUT 'http://localhost:9200/twitter/tweet/1?ttl=1d' -d '{
+    "user": "kimchy",
+    "message": "Trying out elasticsearch, so far so good?"
+}'
+```
+
+```bash
+curl -XPUT 'http://localhost:9200/twitter/tweet/1' -d '{
+    "_ttl": "1d",
+    "user": "kimchy",
+    "message": "Trying out elasticsearch, so far so good?"
+}'
+```
+更多信息可参考_ttl映射页面。
