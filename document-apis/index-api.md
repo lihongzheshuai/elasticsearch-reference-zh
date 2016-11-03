@@ -170,4 +170,4 @@ $ curl -XPUT localhost:9200/twitter/tweet/1?timestamp=2009-11-15T14%3A12%3A12 -d
 }'
 ```
 
-如果没有在外部或者_source中指定时间戳的值，那么时间戳的值会被制动设置成文档被索引时的时间。更多信息可参见_timestamp映射页面。
+如果没有在外部或者_source中指定时间戳的值，那么时间戳的值会被制动设置成文档被索引时的时间。更多信息可参见[_timestamp映射页面](/mapping/meta-field/_timestamp-field.md)。
