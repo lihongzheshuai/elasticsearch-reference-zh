@@ -30,3 +30,4 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1'
 curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1'
 ```
 
+## 实时
