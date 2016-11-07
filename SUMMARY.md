@@ -48,7 +48,7 @@
     * [4.4.1 译者注 - 基于URL的访问控制](api-conventions/translator-note-url-based-access-control.md)
 * [5 文档API(Document APIs)](document-apis/README.md)
   * [5.1 索引(Index) API](document-apis/index-api.md)
-  * [5.2 查询(Get) API](document-apis/get-api.md)
+  * [5.2 获取(Get) API](document-apis/get-api.md)
   * [5.3 删除 API](document-apis/delete-api.md)
   * [5.4 更新 API](document-apis/update-api.md)
   * [5.6 多请求API(Multi Get API)](document-apis/multi-get-api.md)
