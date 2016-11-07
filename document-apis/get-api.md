@@ -22,6 +22,5 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1'
     }
 }
 ```
-
-
+上述结果中包含了我们想要从文档获取的_index，_type，_id 和 _version字段，如果可以找到文档的话也包括文档实际内容的_source字段。
 
