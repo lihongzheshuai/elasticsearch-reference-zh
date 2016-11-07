@@ -8,6 +8,7 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1'
 
 上述操作的结果为：
 
-```bash
+```json
+
 
 
