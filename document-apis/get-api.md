@@ -31,3 +31,5 @@ curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1'
 ```
 
 ## 实时
+
+默认情况下，获取(get)API是实时的，并且不会受索引刷新速率的影响（）。
