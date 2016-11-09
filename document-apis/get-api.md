@@ -63,3 +63,6 @@ curl -XGET 'http://localhost:9200/twitter/_all/1?pretty'
 
 ## 源数据过滤
 
+默认情况下，获取操作会返回_source字段的内容，除非你使用了fields参数或禁用了_source字段。你可以通过_source参数关闭_source获取:
+
+
