@@ -42,7 +42,7 @@ curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1'
 
 获取API允许选择_type字段。设置为_all可以获取所有类型中匹配给定id的第一个文档。
 
-(译者注：例如：
+(**译者注：**例如：
 
 ```bash
 curl -XGET 'http://localhost:9200/twitter/_all/1?pretty'
