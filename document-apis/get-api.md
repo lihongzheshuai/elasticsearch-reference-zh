@@ -33,3 +33,5 @@ curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1'
 ## 实时
 
 默认情况下，获取(get)API是实时的，并且不会受索引刷新速率的影响（当数据将变得对查询可见的时候）。
+
+如果想要关闭实时获取（GET），可设置参数realtime的值为false，或设置节点上全局设置参数action.get.realtime的值为false。
