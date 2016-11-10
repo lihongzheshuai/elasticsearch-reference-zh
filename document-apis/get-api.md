@@ -88,3 +88,4 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=*.id,retweeted'
 ```bash
 curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 ```
+为了向后兼容，如果请求的字段没有被存储，那么将会从_source中（解析并抽取）获取。
