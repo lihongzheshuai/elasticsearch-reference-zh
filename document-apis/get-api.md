@@ -83,4 +83,5 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=*.id,retweeted'
 
 ## 字段
 
+获取操作支持通过fileds参数指定返回一组已存储的字段。例如：
 
