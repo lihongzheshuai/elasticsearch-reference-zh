@@ -68,5 +68,4 @@ curl -XGET 'http://localhost:9200/twitter/_all/1?pretty'
 ```bash
 curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=false'
 ```
-
-
+如果你仅需要_source中的一两个字段，你可以使用_source_include和_source_exclude参数来包含或过滤出你需要的部分。
