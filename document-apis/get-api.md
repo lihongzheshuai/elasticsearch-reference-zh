@@ -71,4 +71,7 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=false'
 如果你仅需要_source中的一两个字段，你可以使用_source_include和_source_exclude参数来包含或过滤出你需要的部分。这在获取大文档的时候尤其有帮助，因为获取部分数据可降低网络负载。两个参数都是使用逗号分隔的方式列出字段或模糊匹配表达式。例如：
 
 ```bash
+curl -XGET 'http://localhost:9200/twitter/tweet/1?_source_include=*.id&_source_exclude=entities'
+
+```
 
