@@ -75,5 +75,10 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?_source_include=*.id&_source_e
 
 ```
 
+如果你仅想指定包含的字段，可以使用简写的表示形式：
+
+```bash
+curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=*.id,retweeted'
+```
 
 
