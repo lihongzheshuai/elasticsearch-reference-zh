@@ -89,3 +89,5 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?_source=*.id,retweeted'
 curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 ```
 为了向后兼容，如果请求的字段没有被存储，那么将会从_source中（解析并抽取）获取。该功能已被[源数据过滤](#源数据过滤)参数取代。
+
+从文档自身获取的字段值总是以数组的形式返回。诸如_routing和_parent等元数据字段则从不以数组形式返回。
