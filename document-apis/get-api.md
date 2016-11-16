@@ -93,3 +93,6 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 从文档自身获取的字段值总是以数组的形式返回。诸如_routing和_parent等元数据字段则从不以数组形式返回。
 
 仅有叶子节点字段可以通过field选项返回。因此对象字段不能返回并且这样的请求会失败。
+
+## 生成字段
+
