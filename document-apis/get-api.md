@@ -112,4 +112,9 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1/_source'
 curl -XGET 'http://localhost:9200/twitter/tweet/1/_source?_source_include=*.id&_source_exclude=entities'
 ```
 
+注意，对_source访问点，也支持通过HEAD来高效的测试文档是否存在。Curl的例子：
+
+```bash
+curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1/_source'
+```
 
