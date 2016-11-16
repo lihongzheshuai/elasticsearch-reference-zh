@@ -109,3 +109,7 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1/_source'
 你还可以使用同样的内容过滤参数来控制_source中需要返回的部分：
 
 ```bash
+curl -XGET 'http://localhost:9200/twitter/tweet/1/_source?_source_include=*.id&_source_exclude=entities'
+```
+
+
