@@ -120,4 +120,10 @@ curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1/_source'
 
 ## 路由
 
+当索引时使用了路由控制功能，那么在获取文档时也需要指定路由值。例如：
+
+```bash
+curl -XGET 'http://localhost:9200/twitter/tweet/1?routing=kimchy'
+```
+
 
