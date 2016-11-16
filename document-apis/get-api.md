@@ -100,3 +100,8 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 
 ## 直接获取_source字段
 
+使用/{index}/{type}/{id}/_source 访问点来仅获取文档的_source字段而不包含任何多余的内容。例如：
+
+```bash
+curl -XGET 'http://localhost:9200/twitter/tweet/1/_source'
+```
