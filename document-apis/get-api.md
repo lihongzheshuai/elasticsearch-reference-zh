@@ -118,3 +118,6 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1/_source?_source_include=*.id&_
 curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1/_source'
 ```
 
+## 路由
+
+
