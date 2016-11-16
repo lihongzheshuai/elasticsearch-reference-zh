@@ -96,3 +96,4 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 
 ## 生成字段
 
+如果在索引和刷新
