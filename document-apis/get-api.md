@@ -126,4 +126,4 @@ curl -XHEAD -i 'http://localhost:9200/twitter/tweet/1/_source'
 curl -XGET 'http://localhost:9200/twitter/tweet/1?routing=kimchy'
 ```
 
-
+上述例子将会获取id为1的推文，但是将会根据用户进行路由分配。注意，在获取时未指定正确的路由将会导致获取不到文档。
