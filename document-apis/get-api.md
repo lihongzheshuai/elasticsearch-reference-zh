@@ -96,4 +96,4 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?fields=title,content'
 
 ## 生成字段
 
-如果在索引和刷新
+如果在索引和刷新中间没有发生刷新，那么GET请求将会访问事务日志以获取文档。
