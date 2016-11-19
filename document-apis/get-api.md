@@ -132,4 +132,6 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?routing=kimchy'
 
 可以控制获取请求更倾向于运行在哪个分块副本上。默认的，操作是在副本间随机分配的。
 
+preference可设置下列值：
+
 
