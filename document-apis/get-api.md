@@ -135,5 +135,6 @@ curl -XGET 'http://localhost:9200/twitter/tweet/1?routing=kimchy'
 preference可设置下列值：
 
 _primary  &nbsp仅会再主分块上执行操作。  
-_local
+
+_local &nbsp如果可能的话优先考虑本地分块执行操作。
     
