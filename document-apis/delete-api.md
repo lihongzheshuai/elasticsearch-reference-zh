@@ -5,3 +5,6 @@
 ```bash
 $ curl -XDELETE 'http://localhost:9200/twitter/tweet/1'
 ```
+
+上述删除操作的结果如下：
+
